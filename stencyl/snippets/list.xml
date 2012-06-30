@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<pack>
+    <snippet attachedevent="true" class="scripts.SceneEvents_0" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="0" language="" name="SceneEvents_0" oid="-1" package="scripts." sceneid="0" scenespecific="true" shared="false" type="scene">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_1_1_SwitchSceneonEnterRegion" desc="Switch scene when an actor enters a region." description="Switch scene when an actor enters a region." design="true" drawOrder="0" id="1" language="" name="Switch Scene on Enter Region" oid="-1" package="scripts" scenespecific="false" shared="false" type="scene">
+        <region default="" desc="The region which will trigger the scene switch." dropdown="" fullname="Region" hidden="false" id="1" name="_Region" order="1"/>
+        <scene default="" desc="The scene to switch to." dropdown="" fullname="Next Scene" hidden="false" id="2" name="_NextScene" order="2"/>
+        <actor default="" desc="The actor that will trigger the scene switch when entering the region." dropdown="" fullname="Actor" hidden="false" id="4" name="_Actor" order="0"/>
+        <number default="0.5" desc="The time to fade out, in seconds." dropdown="" fullname="Fade Out Time" hidden="false" id="5" name="_FadeOutTime" order="3"/>
+        <number default="0.5" desc="The time to fade in, in seconds." dropdown="" fullname="Fade In Time" hidden="false" id="6" name="_FadeInTime" order="4"/>
+        <blocks/>
+        <events>
+            <event displayName="Updated" enabled="true" id="1" name="step" order="1" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.ActorEvents_2" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="2" language="" name="ActorEvents_2" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_3_3_TileBasedMovement" desc="A simple tile-based movement behavior.&#10;&#10;To use this behavior, make sure that all tiles that should be passable have NO collision set to them." description="A simple tile-based movement behavior.&#10;&#10;To use this behavior, make sure that all tiles that should be passable have NO collision set to them." design="true" drawOrder="0" id="3" language="" name="Tile Based Movement" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <number default="0.0" desc="" dropdown="" fullname="Grid X" hidden="true" id="1" name="_GridX" order="1"/>
+        <number default="0.0" desc="" dropdown="" fullname="Grid Y" hidden="true" id="2" name="_GridY" order="2"/>
+        <number default="0.0" desc="The amount of seconds it should take for the character to move one tile." dropdown="" fullname="Move Duration" hidden="false" id="4" name="_MoveDuration" order="4"/>
+        <animation default="" desc="" dropdown="" fullname="Up Anim" hidden="false" id="5" name="_UpAnim" order="5"/>
+        <animation default="" desc="" dropdown="" fullname="Down Anim" hidden="false" id="6" name="_DownAnim" order="6"/>
+        <animation default="" desc="" dropdown="" fullname="Left Anim" hidden="false" id="7" name="_LeftAnim" order="7"/>
+        <animation default="" desc="" dropdown="" fullname="Right Anim" hidden="false" id="8" name="_RightAnim" order="8"/>
+        <number default="0.0" desc="X coordinate of the player graphic that should be on the left side of the tile it stands on.&#10;&#10;(A 32x32 graphic on a 32x32 tile would have an x offset of 0. A 64x32 graphic that should be centered on the tile should have an x offset of 16.)" dropdown="" fullname="X Offset" hidden="false" id="9" name="_XOffset" order="9"/>
+        <number default="0.0" desc="Y coordinate of the player graphic that should be on the top side of the tile it stands on.&#10;&#10;(A 32x32 graphic on a 32x32 tile would have a y offset of 0. A 32x64 graphic with the bottom half on the collision tile would have a y offset of 32.)" dropdown="" fullname="Y Offset" hidden="false" id="10" name="_YOffset" order="10"/>
+        <boolean default="false" desc="Should this actor move when the arrow keys are pressed on the keyboard?&#10;&#10;If not, you can tell this behavior to moveUp, moveDown, moveLeft, or moveRight instead." dropdown="" fullname="Player controlled" hidden="false" id="11" name="_Playercontrolled" order="3"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <blocks>
+            <ureceiver blockID="0" id="1"/>
+            <ureceiver blockID="0" id="2"/>
+            <receiver blockID="5" id="3"/>
+            <receiver blockID="32" id="4"/>
+            <receiver blockID="4" id="5"/>
+        </blocks>
+        <events>
+            <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
+            <event displayName="Updated" enabled="true" id="2" name="step" order="2" repeats="true"/>
+            <event displayName="snapToGrid" enabled="true" id="3" name="event-custom" order="3" repeats="true"/>
+            <event displayName="moveUp" enabled="true" id="4" name="event-custom" order="4" repeats="true"/>
+            <event displayName="moveDown" enabled="true" id="5" name="event-custom" order="5" repeats="true"/>
+            <event displayName="moveLeft" enabled="true" id="6" name="event-custom" order="6" repeats="true"/>
+            <event displayName="moveRight" enabled="true" id="7" name="event-custom" order="7" repeats="true"/>
+            <event displayName="tileHasCollision" enabled="true" id="8" name="event-custom-block-global" order="8" repeats="true"/>
+            <event displayName="moveActor" enabled="true" id="9" name="event-custom-block" order="9" repeats="true"/>
+        </events>
+    </snippet>
+</pack>
