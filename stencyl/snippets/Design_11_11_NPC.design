@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <backforward comment="false" x="26" y="40">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="3"/>
+                </backforward>
+                <ignore-screen-tolerance comment="false" x="26" y="67">
+                    <ACTOR eid="this" id="0"/>
+                </ignore-screen-tolerance>
+                <actors-of-type3 comment="false" x="26" y="94">
+                    <group eventID="-1" id="-1">
+                        <set-val-11-19 comment="false" x="37" y="126">
+                            <actor-of-type comment="false" id="0" x="0" y="0"/>
+                        </set-val-11-19>
+                    </group>
+                    <ACTORTYPE eid="var" id="0" vid="18"/>
+                </actors-of-type3>
+            </group>
+        </init>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="-1" id="-1">
+                        <stop comment="false" x="37" y="83"/>
+                    </group>
+                    <or comment="false" id="0" x="0" y="0">
+                        <value comment="false" id="0" x="0" y="0">
+                            <int id="0" val="19"/>
+                            <int id="1" val="1"/>
+                        </value>
+                        <not comment="false" id="1" x="0" y="0">
+                            <isalive comment="false" id="0" x="0" y="0">
+                                <ACTOR eid="var" id="0" vid="19"/>
+                            </isalive>
+                        </not>
+                    </or>
+                </if>
+                <if comment="false" x="26" y="115">
+                    <group eventID="-1" id="-1">
+                        <if comment="false" x="37" y="148">
+                            <group eventID="-1" id="-1">
+                                <set-val-11-13 comment="false" x="48" y="178">
+                                    <true comment="false" id="0" x="0" y="0"/>
+                                </set-val-11-13>
+                                <custom-23 comment="false" x="48" y="203">
+                                    <ACTOR eid="this" id="0"/>
+                                    <get-item-text comment="false" id="1" x="0" y="0">
+                                        <get-val-11-4 comment="false" id="0" x="0" y="0"/>
+                                        <get-val-11-11 comment="false" id="1" x="0" y="0"/>
+                                    </get-item-text>
+                                </custom-23>
+                            </group>
+                            <not comment="false" id="0" x="0" y="0">
+                                <get-val-11-13 comment="false" id="0" x="0" y="0"/>
+                            </not>
+                        </if>
+                    </group>
+                    <is-in-region comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="var" id="0" vid="19"/>
+                        <REGION eid="var" id="1" vid="21"/>
+                    </is-in-region>
+                </if>
+                <else-if comment="false" x="26" y="264">
+                    <group eventID="2" id="-1">
+                        <set-val-11-13 comment="false" x="37" y="289">
+                            <false comment="false" id="0" x="0" y="0"/>
+                        </set-val-11-13>
+                        <custom-27 comment="false" x="37" y="314">
+                            <ACTOR eid="this" id="0"/>
+                        </custom-27>
+                        <if comment="false" x="37" y="341">
+                            <group eventID="-1" id="-1">
+                                <incdec comment="false" x="48" y="381">
+                                    <int id="0" val="11"/>
+                                    <int id="1" val="0"/>
+                                    <int id="2" val="1"/>
+                                </incdec>
+                            </group>
+                            <less comment="false" id="0" x="0" y="0">
+                                <get-val-11-11 comment="false" id="0" x="0" y="0"/>
+                                <minus comment="false" id="1" x="0" y="0">
+                                    <length-list comment="false" id="0" x="0" y="0">
+                                        <get-val-11-4 comment="false" id="0" x="0" y="0"/>
+                                    </length-list>
+                                    <int id="1" val="1"/>
+                                </minus>
+                            </less>
+                        </if>
+                    </group>
+                    <get-val-11-13 comment="false" id="0" x="0" y="0"/>
+                </else-if>
+            </group>
+        </step>
+    </group>
+    <group eventID="2" id="-1"/>
+</groups>

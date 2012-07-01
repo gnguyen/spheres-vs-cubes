@@ -77,4 +77,132 @@
             <event displayName="Created" enabled="true" id="3" name="init" order="2" repeats="true"/>
         </events>
     </snippet>
+    <snippet attachedevent="true" class="scripts.ActorEvents_6" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="7" language="" name="ActorEvents_6" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_8_8_4WayMovement" desc="Allows the actor to move up, down, left and right." description="Allows the actor to move up, down, left and right." design="true" drawOrder="0" id="8" language="" name="4 Way Movement" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
+        <control default="" desc="" dropdown="" fullname="Right Control" hidden="false" id="34" name="_RightControl" order="10"/>
+        <control default="" desc="" dropdown="" fullname="Down Control" hidden="false" id="32" name="_DownControl" order="8"/>
+        <control default="" desc="" dropdown="" fullname="Left Control" hidden="false" id="33" name="_LeftControl" order="9"/>
+        <number default="0.0" desc="" dropdown="" fullname="Move X" hidden="true" id="38" name="_MoveX" order="1"/>
+        <number default="0.0" desc="" dropdown="" fullname="Move Y" hidden="true" id="39" name="_MoveY" order="2"/>
+        <boolean default="true" desc="If selected, the actor will not be able to turn while moving." dropdown="" fullname="Stop Turning" hidden="false" id="40" name="_StopTurning" order="13"/>
+        <number default="30.0" desc="The speed of the movement." dropdown="" fullname="Speed" hidden="false" id="11" name="_Speed" order="11"/>
+        <boolean default="true" desc="If selected, the control attributes will be used to control the movement.&lt;br /&gt;&#10;If unselected, the control attributes are ignored and the movement can be controlled by triggering custom events.&lt;br /&gt;&#10;Trigger the events  &lt;var&gt;MoveUp&lt;/var&gt;, &lt;var&gt;MoveDown&lt;/var&gt;, &lt;var&gt;MoveLeft&lt;/var&gt; or &lt;var&gt;MoveRight&lt;/var&gt; to make the actor move as if the keys were pressed." dropdown="" fullname="Use Controls" hidden="false" id="46" name="_UseControls" order="6"/>
+        <boolean default="false" desc="" dropdown="" fullname="X Idle" hidden="true" id="47" name="_XIdle" order="4"/>
+        <boolean default="false" desc="" dropdown="" fullname="Prefer X" hidden="true" id="44" name="_PreferX" order="3"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <boolean default="false" desc="If selected, the actor will stop moving if diagonal keys are pressed at the same.&lt;br /&gt;&#10;If unselected, the actor will move in the direction of the most recently pressed key." dropdown="" fullname="Diagonal Stop" hidden="false" id="45" name="_DiagonalStop" order="12"/>
+        <animation default="" desc="" dropdown="" fullname="Up Animation" hidden="false" id="51" name="_UpAnimation" order="16"/>
+        <animation default="" desc="" dropdown="" fullname="Up Animation (Idle)" hidden="false" id="50" name="_UpAnimationIdle" order="15"/>
+        <boolean default="false" desc="" dropdown="" fullname="Y Idle" hidden="true" id="49" name="_YIdle" order="5"/>
+        <animation default="" desc="" dropdown="" fullname="Left Animation" hidden="false" id="55" name="_LeftAnimation" order="20"/>
+        <animation default="" desc="" dropdown="" fullname="Left Animation (Idle)" hidden="false" id="54" name="_LeftAnimationIdle" order="19"/>
+        <animation default="" desc="" dropdown="" fullname="Down Animation" hidden="false" id="53" name="_DownAnimation" order="18"/>
+        <animation default="" desc="" dropdown="" fullname="Down Animation (Idle)" hidden="false" id="52" name="_DownAnimationIdle" order="17"/>
+        <boolean default="true" desc="If selected, the animation attributes will be used, otherwise they will be ignored." dropdown="" fullname="Use Animations" hidden="false" id="58" name="_UseAnimations" order="14"/>
+        <animation default="" desc="" dropdown="" fullname="Right Animation" hidden="false" id="57" name="_RightAnimation" order="22"/>
+        <animation default="" desc="" dropdown="" fullname="Right Animation (Idle)" hidden="false" id="56" name="_RightAnimationIdle" order="21"/>
+        <control default="" desc="" dropdown="" fullname="Up Control" hidden="false" id="31" name="_UpControl" order="7"/>
+        <blocks/>
+        <events>
+            <event displayName="Updated" enabled="true" id="3" name="step" order="3" repeats="true"/>
+            <event displayName="Custom Event" enabled="true" id="4" name="event-custom" order="4" repeats="true"/>
+            <event displayName="Custom Event" enabled="true" id="5" name="event-custom" order="5" repeats="true"/>
+            <event displayName="Custom Event" enabled="true" id="6" name="event-custom" order="6" repeats="true"/>
+            <event displayName="Custom Event" enabled="true" id="7" name="event-custom" order="7" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.DialogBoxCore" desc="Set it and forget it" description="Set it and forget it" design="false" drawOrder="0" id="9" language="" name="Dialog Box Core" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_10_10_DialogBoxUI" desc="" description="" design="true" drawOrder="0" id="10" language="" name="Dialog Box UI" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <number default="0.0" desc="1) No image, fixed size = Do not use a backgound image for the Dialog box, use dimensions specified&lt;br&gt;&#10;2) No image, variable size = Do not use an image, and let the Dialog box shrink/expand based on text&lt;br&gt;&#10;3) Image, fixed size = Use an image, and force the dialog box to that size&lt;br&gt;&#10;4) Image, variable size = Use an image and allow it to shrink/grow based on dimensions specified" dropdown="No Image, Fixed Size = 1&#10;No Image, Variable Size = 2&#10;Image, Fixed Size = 3&#10;Image, Variable Size = 4" fullname="Dialog Box Mode" hidden="false" id="1" name="DialogBoxMode" order="2"/>
+        <number default="0.0" desc="Dialog box width.  Used for Dialog Box modes 1 &amp; 4" dropdown="" fullname="Width" hidden="false" id="2" name="Width" order="6"/>
+        <number default="0.0" desc="Dialog box height.  Used for Dialog Box modes 1 &amp; 4" dropdown="" fullname="Height" hidden="false" id="3" name="Height" order="7"/>
+        <number default="0.0" desc="Enter the horizontal offset based on the alignment" dropdown="" fullname="Dialog Horizontal Offset" hidden="false" id="5" name="DialogHorizontalOffset" order="8"/>
+        <number default="0.0" desc="Enter the vertical offset based on the alignment" dropdown="" fullname="Dialog Vertical Offset" hidden="false" id="6" name="DialogVerticalOffset" order="9"/>
+        <number default="0.0" desc="Select where you want the dialog box to be aligned" dropdown="On Actor = 1&#10;Top Left = 2&#10;Top Right = 3&#10;Bottom Left = 4&#10;Bottom Right = 5&#10;Center = 6&#10;Top Center = 7&#10;Bottom Center = 8" fullname="Alignment" hidden="false" id="7" name="Alignment" order="1"/>
+        <number default="0.0" desc="" dropdown="" fullname="xPos" hidden="true" id="8" name="xPos" order="28"/>
+        <number default="0.0" desc="" dropdown="" fullname="yPos" hidden="true" id="9" name="yPos" order="29"/>
+        <number default="0.0" desc="Amount of padding to the left of the text" dropdown="" fullname="Text Left Margin" hidden="false" id="10" name="TextLeftMargin" order="10"/>
+        <number default="0.0" desc="Amount of padding to the right of the text" dropdown="" fullname="Text Right Margin" hidden="false" id="11" name="TextRightMargin" order="11"/>
+        <number default="0" desc="Amount of padding above the text" dropdown="" fullname="Text Top Margin" hidden="false" id="12" name="TextTopMargin" order="12"/>
+        <number default="0" desc="Amount of padding below the text" dropdown="" fullname="Text Bottom Margin" hidden="false" id="13" name="TextBottomMargin" order="13"/>
+        <actortype default="" desc="The image of this actor will be used as the background for the &lt;br&gt; dialog box if mode 3 or 4 is selected above." dropdown="" fullname="Dialog Box Actor" hidden="false" id="14" name="DialogBoxActor" order="3"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <number default="0.0" desc="Amount of time to fade in / out the dialog box" dropdown="" fullname="Fade Time" hidden="false" id="15" name="FadeTime" order="14"/>
+        <boolean default="false" desc="Display the text one character at a time?" dropdown="" fullname="Use Typing Effect?" hidden="false" id="17" name="UseTypingEffect" order="18"/>
+        <text default="Dialog Box Core" desc="" dropdown="" fullname="Core Behavior" hidden="true" id="16" name="CoreBehavior" order="27"/>
+        <actortype default="" desc="Use this image to indicate that there is more text to display" dropdown="" fullname="Text Overflow Indicator" hidden="false" id="19" name="TextOverflowIndicator" order="21"/>
+        <number default="0.15" desc="Delay between each character" dropdown="" fullname="Typing Delay" hidden="false" id="18" name="TypingDelay" order="19"/>
+        <number default="0.0" desc="By default the overflow image will be placed at the bottom center.  &lt;br&gt;&#10;Enter the verticall offset here." dropdown="" fullname="Overflow Vertical Offset" hidden="false" id="21" name="OverflowVerticalOffset" order="23"/>
+        <number default="0.0" desc="By default the overflow image will be placed at the bottom center.  &lt;br&gt;&#10;Enter the horizontal offset here." dropdown="" fullname="Overflow Horizontal Offset" hidden="false" id="20" name="OverflowHorizontalOffset" order="22"/>
+        <number default="0.0" desc="By default the portrait will display at the top left of the dialog box. &lt;br&gt;&#10;Enter the horizontal offset here" dropdown="" fullname="Portrait Horiztonal Offset" hidden="false" id="23" name="PortraitHoriztonalOffset" order="25"/>
+        <actortype default="" desc="This will be used as the character portrait" dropdown="" fullname="Portrait Actor Type" hidden="false" id="22" name="PortraitActorType" order="24"/>
+        <sound default="" desc="Sound to play for each character" dropdown="" fullname="Typing Sound" hidden="false" id="25" name="TypingSound" order="20"/>
+        <number default="0.0" desc="By default the portrait will display at the top left of the dialog box. &lt;br&gt;&#10;Enter the vertical offset here" dropdown="" fullname="Portrait Vertical Offset" hidden="false" id="24" name="PortraitVerticalOffset" order="26"/>
+        <color default="" desc="If a separate actor is not being used to &lt;br&gt;&#10;represent your dialog box, enter the color &lt;br&gt;&#10;you'd like to use as the default background." dropdown="" fullname="Dialog Box Color" hidden="false" id="27" name="_DialogBoxColor" order="4"/>
+        <font default="" desc="Select the font to use in the Dialog Box" dropdown="" fullname="Font" hidden="false" id="26" name="_Font" order="30"/>
+        <sound default="" desc="Sound to play when opening the Dialog Box" dropdown="" fullname="Open Dialog Sound" hidden="false" id="29" name="_OpenDialogSound" order="15"/>
+        <number default="100.0" desc="Enter a value between 0-100 to specify &lt;br&gt;&#10;where 0 is completely transparent" dropdown="" fullname="Dialog Box Transparency" hidden="false" id="28" name="_DialogBoxTransparency" order="5"/>
+        <sound default="" desc="Sound to play when closing the Dialog Box" dropdown="" fullname="Close Dialog Sound" hidden="false" id="31" name="_CloseDialogSound" order="17"/>
+        <sound default="" desc="Sound to play when dislaying the next page&lt;br&gt;of the Dialog Box" dropdown="" fullname="Next Page Dialog Sound" hidden="false" id="30" name="_NextPageDialogSound" order="16"/>
+        <font default="" desc="Not yet implemented" dropdown="" fullname="Keyword Font" hidden="false" id="32" name="_KeywordFont" order="31"/>
+        <blocks>
+            <receiver blockID="39" id="1"/>
+            <receiver blockID="40" id="2"/>
+            <receiver blockID="23" id="3"/>
+            <receiver blockID="17" id="4"/>
+            <receiver blockID="16" id="5"/>
+            <receiver blockID="22" id="6"/>
+            <receiver blockID="18" id="7"/>
+            <receiver blockID="19" id="8"/>
+            <receiver blockID="20" id="9"/>
+            <receiver blockID="21" id="10"/>
+            <receiver blockID="26" id="11"/>
+            <receiver blockID="27" id="12"/>
+        </blocks>
+        <events>
+            <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
+            <event displayName="SetMode" enabled="true" id="2" name="event-custom" order="2" repeats="true"/>
+            <event displayName="SetPosition" enabled="true" id="3" name="event-custom" order="3" repeats="true"/>
+            <event displayName="SetProperties" enabled="true" id="4" name="event-custom" order="4" repeats="true"/>
+            <event displayName="DisplayDialog" enabled="true" id="5" name="event-custom-block" order="5" repeats="true"/>
+            <event displayName="ChangePortrait" enabled="true" id="6" name="event-custom-block" order="8" repeats="true"/>
+            <event displayName="ChangeDialogImage" enabled="true" id="7" name="event-custom-block" order="9" repeats="true"/>
+            <event displayName="IsDisplaying" enabled="true" id="8" name="event-custom-block" order="10" repeats="true"/>
+            <event displayName="changeFont" enabled="true" id="9" name="event-custom-block" order="11" repeats="true"/>
+            <event displayName="changeDBColor" enabled="true" id="10" name="event-custom-block" order="12" repeats="true"/>
+            <event displayName="HasOverflow" enabled="true" id="11" name="event-custom-block" order="13" repeats="true"/>
+            <event displayName="DialogBoxTyping" enabled="true" id="12" name="event-custom-block" order="14" repeats="true"/>
+            <event displayName="CloseDialog" enabled="true" id="13" name="event-custom-block" order="7" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_11_11_NPC" desc="Attach this to a non player character to allow the Actor to use dialog boxes" description="Attach this to a non player character to allow the Actor to use dialog boxes" design="true" drawOrder="0" id="11" language="" name="NPC" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <number default="0.0" desc="" dropdown="" fullname="Vertical Region Offset" hidden="false" id="17" name="_VerticalRegionOffset" order="8"/>
+        <number default="0.0" desc="" dropdown="" fullname="Horizontal Region Offset" hidden="false" id="16" name="_HorizontalRegionOffset" order="7"/>
+        <actor default="" desc="" dropdown="" fullname="Player Actor" hidden="true" id="19" name="_PlayerActor" order="10"/>
+        <actortype default="" desc="" dropdown="" fullname="Player Actor Type" hidden="false" id="18" name="_PlayerActorType" order="9"/>
+        <list default="list" desc="Enter text on each line to set up dialog for a character. After the dialog box finishes displaying one line of text, it will go to the next one. You can have a character say one or more different things." dropdown="" fullname="DialogList" hidden="false" id="4" name="DialogList" order="1">
+            <text order="0" value="Dialog Text #1"/>
+            <text order="1" value="Dialog Text #2 -- this box will display wrapping when the text gets to be longer than the window can fit."/>
+            <text order="2" value="Dialog Text #3"/>
+            <text order="3" value="Dialog Text #4"/>
+        </list>
+        <region default="" desc="" dropdown="" fullname="Dialog Region" hidden="false" id="21" name="_DialogRegion" order="2"/>
+        <boolean default="false" desc="" dropdown="" fullname="Can Trigger?" hidden="true" id="20" name="_CanTrigger" order="11"/>
+        <number default="100.0" desc="" dropdown="" fullname="Text Box Width" hidden="true" id="6" name="TextBoxWidth" order="4"/>
+        <number default="0.0" desc="" dropdown="" fullname="textIndex" hidden="true" id="11" name="textIndex" order="5"/>
+        <boolean default="false" desc="" dropdown="" fullname="Dialog Opened?" hidden="true" id="13" name="DialogOpened" order="6"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <blocks/>
+        <events>
+            <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
+            <event displayName="Updated" enabled="true" id="2" name="step" order="2" repeats="true"/>
+        </events>
+    </snippet>
 </pack>

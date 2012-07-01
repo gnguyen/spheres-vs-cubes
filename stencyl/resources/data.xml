@@ -1,5 +1,127 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <pack>
+    <custom-block blocktag="custom-24" blocktype="ACTION" code="~.say(&quot;Dialog Box UI&quot;, &quot;&quot;);" desc="" global="false" gui="Missing" id="24" message="" name="" oid="-1" return="VOID" shared="false" snippetID="10">
+        <blank name="Self" order="0" type="ACTOR"/>
+    </custom-block>
+    <custom-block blocktag="custom-25" blocktype="ACTION" code="~.say(&quot;Dialog Box UI&quot;, &quot;&quot;);" desc="" global="false" gui="Missing" id="25" message="" name="" oid="-1" return="VOID" shared="false" snippetID="10">
+        <blank name="Self" order="0" type="ACTOR"/>
+    </custom-block>
+    <custom-block blocktag="custom-19" blocktype="ACTION" code="~.say(&quot;Dialog Box UI&quot;, &quot;changeDBColor&quot;, ~);" desc="" global="false" gui="For %0 Change Dialog Box Color to %1" id="19" message="changeDBColor" name="changeDBColor" oid="-1" return="VOID" shared="false" snippetID="10">
+        <blank name="Self" order="0" type="ACTOR"/>
+        <blank name="NewColor" order="1" type="COLOR"/>
+    </custom-block>
+    <custom-block blocktag="custom-11" blocktype="ACTION" code="~.say(&quot;Dialog Box Core&quot;, &quot;changeDBColor&quot;, ~);" desc="" global="false" gui="For %0 Change Dialog Box Color to %1" id="11" message="changeDBColor" name="changeDBColor" oid="-1" return="VOID" shared="false" snippetID="9">
+        <blank name="Self" order="0" type="ACTOR"/>
+        <blank name="NewColor" order="1" type="COLOR"/>
+    </custom-block>
+    <custom-block blocktag="custom-16" blocktype="ACTION" code="~.say(&quot;Dialog Box UI&quot;, &quot;ChangeDialogImage&quot;, ~);" desc="" global="false" gui="For %0 Change Dialog Box Image to %1" id="16" message="ChangeDialogImage" name="ChangeDialogImage" oid="-1" return="VOID" shared="false" snippetID="10">
+        <blank name="Self" order="0" type="ACTOR"/>
+        <blank name="DialogImage" order="1" type="ACTORTYPE"/>
+    </custom-block>
+    <custom-block blocktag="custom-8" blocktype="ACTION" code="~.say(&quot;Dialog Box Core&quot;, &quot;ChangeDialogImage&quot;, ~);" desc="" global="false" gui="For %0 Change Dialog Box Image to %1" id="8" message="ChangeDialogImage" name="ChangeDialogImage" oid="-1" return="VOID" shared="false" snippetID="9">
+        <blank name="Self" order="0" type="ACTOR"/>
+        <blank name="DialogImage" order="1" type="ACTORTYPE"/>
+    </custom-block>
+    <custom-block blocktag="custom-18" blocktype="ACTION" code="~.say(&quot;Dialog Box UI&quot;, &quot;changeFont&quot;, ~);" desc="" global="false" gui="For %0 Change Font to %1" id="18" message="changeFont" name="changeFont" oid="-1" return="VOID" shared="false" snippetID="10">
+        <blank name="Self" order="0" type="ACTOR"/>
+        <blank name="newFont" order="1" type="FONT"/>
+    </custom-block>
+    <custom-block blocktag="custom-10" blocktype="ACTION" code="~.say(&quot;Dialog Box Core&quot;, &quot;changeFont&quot;, ~);" desc="" global="false" gui="For %0 Change Font to %1" id="10" message="changeFont" name="changeFont" oid="-1" return="VOID" shared="false" snippetID="9">
+        <blank name="Self" order="0" type="ACTOR"/>
+        <blank name="newFont" order="1" type="FONT"/>
+    </custom-block>
+    <custom-block blocktag="custom-17" blocktype="ACTION" code="~.say(&quot;Dialog Box UI&quot;, &quot;ChangePortrait&quot;, ~);" desc="" global="false" gui="For %0 Change Portrait to %1" id="17" message="ChangePortrait" name="ChangePortrait" oid="-1" return="VOID" shared="false" snippetID="10">
+        <blank name="Self" order="0" type="ACTOR"/>
+        <blank name="Portrait" order="1" type="ACTORTYPE"/>
+    </custom-block>
+    <custom-block blocktag="custom-9" blocktype="ACTION" code="~.say(&quot;Dialog Box Core&quot;, &quot;ChangePortrait&quot;, ~);" desc="" global="false" gui="For %0 Change Portrait to %1" id="9" message="ChangePortrait" name="ChangePortrait" oid="-1" return="VOID" shared="false" snippetID="9">
+        <blank name="Self" order="0" type="ACTOR"/>
+        <blank name="Portrait" order="1" type="ACTORTYPE"/>
+    </custom-block>
+    <sprite atlasID="0" default="0" desc="" height="64" id="7" name="Circle King" shared="false" width="32">
+        <anim across="1" atlasID="-1" down="1" durations="100" height="64" id="0" loop="true" name="Idle" numframes="1" originx="16" originy="32" width="32">
+            <poly data="4,2,34,30,34,30,62,2,62" density="0.1" fric="0.2" gid="-1000" id="0" name="Idle" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="1" continuous="true" desc="" eventsnippetid="7" fixedrot="false" fric="0.2" gid="4" id="6" ignoreg="false" inertia="1.0" ldamp="0.0" lw="false" mass="1.0" name="Circle King" oid="-1" pausable="true" rest="0.0" shared="false" sprite="7" static="false" touchable="true">
+        <snippets>
+            <s enabled="true" id="9">
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+            <s enabled="true" id="10">
+                <prop id="1" list="0" val=" 1"/>
+                <prop id="2" list="0" val="600.0"/>
+                <prop id="3" list="0" val="100.0"/>
+                <prop id="5" list="0" val="0.0"/>
+                <prop id="6" list="0" val="0.0"/>
+                <prop id="7" list="0" val=" 7"/>
+                <prop id="8" list="0" val="0.0"/>
+                <prop id="9" list="0" val="0.0"/>
+                <prop id="10" list="0" val="0.0"/>
+                <prop id="11" list="0" val="0.0"/>
+                <prop id="12" list="0" val="0"/>
+                <prop id="13" list="0" val="0"/>
+                <prop id="14" list="0" val="6"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="15" list="0" val="0.5"/>
+                <prop id="17" list="0" val="false"/>
+                <prop id="16" list="0" val="Dialog Box Core"/>
+                <prop id="19" list="0" val="2"/>
+                <prop id="18" list="0" val="0.15"/>
+                <prop id="21" list="0" val="0.0"/>
+                <prop id="20" list="0" val="0.0"/>
+                <prop id="23" list="0" val="0.0"/>
+                <prop id="22" list="0" val="6"/>
+                <prop id="25" list="0" val="No Sound"/>
+                <prop id="24" list="0" val="0.0"/>
+                <prop id="27" list="0" val="255,255,255,255"/>
+                <prop id="26" list="0" val="Default Font"/>
+                <prop id="29" list="0" val="No Sound"/>
+                <prop id="28" list="0" val="100.0"/>
+                <prop id="31" list="0" val="No Sound"/>
+                <prop id="30" list="0" val="No Sound"/>
+                <prop id="32" list="0" val="Default Font"/>
+            </s>
+            <s enabled="true" id="11">
+                <prop id="4" list="1" val="">
+                    <text order="0" value="Dialog Text #1"/>
+                    <text order="1" value="Dialog Text #2 -- this box will display wrapping when the text gets to be longer than the window can fit."/>
+                    <text order="2" value="Dialog Text #3"/>
+                    <text order="3" value="Dialog Text #4"/>
+                </prop>
+                <prop id="6" list="0" val="100.0"/>
+                <prop id="9" list="0" val="left"/>
+                <prop id="11" list="0" val="0"/>
+                <prop id="13" list="0" val="false"/>
+                <prop id="14" list="0" val="32.0"/>
+                <prop id="15" list="0" val=""/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="17" list="0" val="0.0"/>
+                <prop id="16" list="0" val="0.0"/>
+                <prop id="19" list="0" val=""/>
+                <prop id="18" list="0" val="2"/>
+                <prop id="21" list="0" val=""/>
+                <prop id="20" list="0" val="false"/>
+            </s>
+        </snippets>
+    </actor>
+    <custom-block blocktag="custom-27" blocktype="ACTION" code="~.say(&quot;Dialog Box UI&quot;, &quot;CloseDialog&quot;);" desc="" global="false" gui="For %0 Close Dialog" id="27" message="CloseDialog" name="CloseDialog" oid="-1" return="VOID" shared="false" snippetID="10">
+        <blank name="Self" order="0" type="ACTOR"/>
+    </custom-block>
+    <custom-block blocktag="custom-21" blocktype="NORMAL" code="Boolean((~.say(&quot;Dialog Box UI&quot;, &quot;DialogBoxTyping&quot;)))" desc="" global="false" gui="Dialog Box Is Typing for %0" id="21" message="DialogBoxTyping" name="DialogBoxTyping" oid="-1" return="BOOLEAN" shared="false" snippetID="10">
+        <blank name="Self" order="0" type="ACTOR"/>
+    </custom-block>
+    <custom-block blocktag="custom-13" blocktype="NORMAL" code="Boolean((~.say(&quot;Dialog Box Core&quot;, &quot;DialogBoxTyping&quot;)))" desc="" global="false" gui="Dialog Box Is Typing for %0" id="13" message="DialogBoxTyping" name="DialogBoxTyping" oid="-1" return="BOOLEAN" shared="false" snippetID="9">
+        <blank name="Self" order="0" type="ACTOR"/>
+    </custom-block>
+    <custom-block blocktag="custom-23" blocktype="ACTION" code="~.say(&quot;Dialog Box UI&quot;, &quot;DisplayDialog&quot;, ~);" desc="" global="false" gui="For %0 Display Dialog Using Text %1" id="23" message="DisplayDialog" name="DisplayDialog" oid="-1" return="VOID" shared="false" snippetID="10">
+        <blank name="Self" order="0" type="ACTOR"/>
+        <blank name="Text" order="1" type="TEXT"/>
+    </custom-block>
+    <custom-block blocktag="custom-15" blocktype="ACTION" code="~.say(&quot;Dialog Box Core&quot;, &quot;DisplayDialog&quot;, ~);" desc="" global="false" gui="For %0 Display Dialog Using Text %1" id="15" message="DisplayDialog" name="DisplayDialog" oid="-1" return="VOID" shared="false" snippetID="9">
+        <blank name="Self" order="0" type="ACTOR"/>
+        <blank name="Text" order="1" type="TEXT"/>
+    </custom-block>
     <tileset across="6" atlasID="0" desc="" down="13" id="1" name="Fortress" oid="-1" shared="false" th="32" tw="32">
         <tile collision="1" data="" durations="100" frames="0" id="0" order="-1"/>
         <tile collision="1" data="" durations="100" frames="1" id="1" order="-1"/>
@@ -195,6 +317,18 @@
         <tile collision="-1" data="" durations="100" frames="111" id="111" order="-1"/>
         <tile collision="-1" data="" durations="100" frames="112" id="112" order="-1"/>
     </tileset>
+    <custom-block blocktag="custom-20" blocktype="NORMAL" code="Boolean((~.say(&quot;Dialog Box UI&quot;, &quot;HasOverflow&quot;)))" desc="" global="false" gui="Dialog Box Has Overflow for %0" id="20" message="HasOverflow" name="HasOverflow" oid="-1" return="BOOLEAN" shared="false" snippetID="10">
+        <blank name="Self" order="0" type="ACTOR"/>
+    </custom-block>
+    <custom-block blocktag="custom-12" blocktype="NORMAL" code="Boolean((~.say(&quot;Dialog Box Core&quot;, &quot;HasOverflow&quot;)))" desc="" global="false" gui="Dialog Box Has Overflow for %0" id="12" message="HasOverflow" name="HasOverflow" oid="-1" return="BOOLEAN" shared="false" snippetID="9">
+        <blank name="Self" order="0" type="ACTOR"/>
+    </custom-block>
+    <custom-block blocktag="custom-22" blocktype="NORMAL" code="Boolean((~.say(&quot;Dialog Box UI&quot;, &quot;IsDisplaying&quot;)))" desc="" global="false" gui="Is Dialog Displaying for %0" id="22" message="IsDisplaying" name="IsDisplaying" oid="-1" return="BOOLEAN" shared="false" snippetID="10">
+        <blank name="Self" order="0" type="ACTOR"/>
+    </custom-block>
+    <custom-block blocktag="custom-14" blocktype="NORMAL" code="Boolean((~.say(&quot;Dialog Box Core&quot;, &quot;IsDisplaying&quot;)))" desc="" global="false" gui="Is Dialog Displaying for %0" id="14" message="IsDisplaying" name="IsDisplaying" oid="-1" return="BOOLEAN" shared="false" snippetID="9">
+        <blank name="Self" order="0" type="ACTOR"/>
+    </custom-block>
     <custom-block blocktag="custom-4" blocktype="ACTION" code="~.say(&quot;Tile Based Movement&quot;, &quot;moveActor&quot;, ~,~,~);" desc="" global="false" gui="move %0 by ( %1 , %2 ) over %3 seconds" id="4" message="moveActor" name="moveActor" oid="-1" return="VOID" shared="false" snippetID="3">
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="x" order="1" type="NUMBER"/>
@@ -218,9 +352,9 @@
             <poly data="4,2,2,30,2,30,30,2,30" density="0.1" fric="0.2" gid="-1000" id="0" name="Move Down" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
-    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="2" fixedrot="false" fric="0.2" gid="0" id="2" ignoreg="true" inertia="1.0" ldamp="0.0" lw="false" mass="1.0" name="Player" oid="-1" pausable="true" rest="0.0" shared="false" sprite="3" static="false" touchable="true">
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="2" fixedrot="true" fric="0.2" gid="0" id="2" ignoreg="true" inertia="1.0" ldamp="0.0" lw="false" mass="1.0" name="Player" oid="-1" pausable="true" rest="0.0" shared="false" sprite="3" static="false" touchable="true">
         <snippets>
-            <s enabled="true" id="3">
+            <s enabled="false" id="3">
                 <prop id="1" list="0" val="0.0"/>
                 <prop id="2" list="0" val="0.0"/>
                 <prop id="4" list="0" val="0.45"/>
@@ -236,6 +370,31 @@
             </s>
             <s enabled="true" id="6">
                 <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+            <s enabled="true" id="8">
+                <prop id="34" list="0" val="right"/>
+                <prop id="32" list="0" val="down"/>
+                <prop id="33" list="0" val="left"/>
+                <prop id="38" list="0" val="0.0"/>
+                <prop id="39" list="0" val="0.0"/>
+                <prop id="40" list="0" val="true"/>
+                <prop id="11" list="0" val="30.0"/>
+                <prop id="46" list="0" val="true"/>
+                <prop id="47" list="0" val="false"/>
+                <prop id="44" list="0" val="false"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="45" list="0" val="false"/>
+                <prop id="51" list="0" val="Move Up"/>
+                <prop id="50" list="0" val="Idle"/>
+                <prop id="49" list="0" val="false"/>
+                <prop id="55" list="0" val="Move Left"/>
+                <prop id="54" list="0" val="Idle"/>
+                <prop id="53" list="0" val="Move Down"/>
+                <prop id="52" list="0" val="Idle"/>
+                <prop id="58" list="0" val="true"/>
+                <prop id="57" list="0" val="Move Right"/>
+                <prop id="56" list="0" val="Idle"/>
+                <prop id="31" list="0" val="up"/>
             </s>
         </snippets>
     </actor>

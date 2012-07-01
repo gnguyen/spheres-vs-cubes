@@ -1,0 +1,766 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <dolater comment="false" x="26" y="40">
+                    <group eventID="-1" id="-1">
+                        <say-this comment="false" x="37" y="67">
+                            <int id="0" val="SetMode"/>
+                        </say-this>
+                        <say-this comment="false" x="37" y="87">
+                            <int id="0" val="SetPosition"/>
+                        </say-this>
+                        <say-this comment="false" x="37" y="107">
+                            <int id="0" val="SetProperties"/>
+                        </say-this>
+                    </group>
+                    <int id="0" val="0.1"/>
+                    <ACTOR eid="this" id="2"/>
+                </dolater>
+            </group>
+        </init>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <receive-message comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="-1" id="-1">
+                        <set-attribute comment="false" x="37" y="70">
+                            <ACTOR eid="this" id="0"/>
+                            <get-val-10-16 comment="false" id="1" x="0" y="0"/>
+                            <int id="2" val="useBgImage"/>
+                            <false comment="false" id="3" x="0" y="0"/>
+                        </set-attribute>
+                        <set-attribute comment="false" x="37" y="102">
+                            <ACTOR eid="this" id="0"/>
+                            <get-val-10-16 comment="false" id="1" x="0" y="0"/>
+                            <int id="2" val="useFixedSize"/>
+                            <true comment="false" id="3" x="0" y="0"/>
+                        </set-attribute>
+                        <set-attribute comment="false" x="37" y="134">
+                            <ACTOR eid="this" id="0"/>
+                            <get-val-10-16 comment="false" id="1" x="0" y="0"/>
+                            <int id="2" val="currentWidth"/>
+                            <roundnew comment="false" id="3" x="0" y="0">
+                                <int id="0" val="0"/>
+                                <get-val-10-2 comment="false" id="1" x="0" y="0"/>
+                            </roundnew>
+                        </set-attribute>
+                        <set-attribute comment="false" x="37" y="179">
+                            <ACTOR eid="this" id="0"/>
+                            <get-val-10-16 comment="false" id="1" x="0" y="0"/>
+                            <int id="2" val="currentHeight"/>
+                            <roundnew comment="false" id="3" x="0" y="0">
+                                <int id="0" val="0"/>
+                                <get-val-10-3 comment="false" id="1" x="0" y="0"/>
+                            </roundnew>
+                        </set-attribute>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-10-1 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="1"/>
+                    </eq>
+                </if>
+                <if comment="false" x="26" y="236">
+                    <group eventID="-1" id="-1">
+                        <set-attribute comment="false" x="37" y="266">
+                            <ACTOR eid="this" id="0"/>
+                            <get-val-10-16 comment="false" id="1" x="0" y="0"/>
+                            <int id="2" val="useBgImage"/>
+                            <false comment="false" id="3" x="0" y="0"/>
+                        </set-attribute>
+                        <set-attribute comment="false" x="37" y="298">
+                            <ACTOR eid="this" id="0"/>
+                            <get-val-10-16 comment="false" id="1" x="0" y="0"/>
+                            <int id="2" val="useFixedSize"/>
+                            <false comment="false" id="3" x="0" y="0"/>
+                        </set-attribute>
+                        <set-attribute comment="false" x="37" y="330">
+                            <ACTOR eid="this" id="0"/>
+                            <get-val-10-16 comment="false" id="1" x="0" y="0"/>
+                            <int id="2" val="currentWidth"/>
+                            <roundnew comment="false" id="3" x="0" y="0">
+                                <int id="0" val="0"/>
+                                <get-val-10-2 comment="false" id="1" x="0" y="0"/>
+                            </roundnew>
+                        </set-attribute>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-10-1 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="2"/>
+                    </eq>
+                </if>
+                <if comment="false" x="26" y="387">
+                    <group eventID="-1" id="-1">
+                        <set-attribute comment="false" x="37" y="417">
+                            <ACTOR eid="this" id="0"/>
+                            <get-val-10-16 comment="false" id="1" x="0" y="0"/>
+                            <int id="2" val="useBgImage"/>
+                            <true comment="false" id="3" x="0" y="0"/>
+                        </set-attribute>
+                        <set-attribute comment="false" x="37" y="449">
+                            <ACTOR eid="this" id="0"/>
+                            <get-val-10-16 comment="false" id="1" x="0" y="0"/>
+                            <int id="2" val="bgActorType"/>
+                            <get-val-10-14 comment="false" id="3" x="0" y="0"/>
+                        </set-attribute>
+                        <set-attribute comment="false" x="37" y="481">
+                            <ACTOR eid="this" id="0"/>
+                            <get-val-10-16 comment="false" id="1" x="0" y="0"/>
+                            <int id="2" val="useFixedSize"/>
+                            <true comment="false" id="3" x="0" y="0"/>
+                        </set-attribute>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-10-1 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="3"/>
+                    </eq>
+                </if>
+                <if comment="false" x="26" y="525">
+                    <group eventID="-1" id="-1">
+                        <set-attribute comment="false" x="37" y="555">
+                            <ACTOR eid="this" id="0"/>
+                            <get-val-10-16 comment="false" id="1" x="0" y="0"/>
+                            <int id="2" val="useBgImage"/>
+                            <true comment="false" id="3" x="0" y="0"/>
+                        </set-attribute>
+                        <set-attribute comment="false" x="37" y="587">
+                            <ACTOR eid="this" id="0"/>
+                            <get-val-10-16 comment="false" id="1" x="0" y="0"/>
+                            <int id="2" val="bgActorType"/>
+                            <get-val-10-14 comment="false" id="3" x="0" y="0"/>
+                        </set-attribute>
+                        <set-attribute comment="false" x="37" y="619">
+                            <ACTOR eid="this" id="0"/>
+                            <get-val-10-16 comment="false" id="1" x="0" y="0"/>
+                            <int id="2" val="useFixedSize"/>
+                            <false comment="false" id="3" x="0" y="0"/>
+                        </set-attribute>
+                        <set-attribute comment="false" x="37" y="651">
+                            <ACTOR eid="this" id="0"/>
+                            <get-val-10-16 comment="false" id="1" x="0" y="0"/>
+                            <int id="2" val="currentWidth"/>
+                            <roundnew comment="false" id="3" x="0" y="0">
+                                <int id="0" val="0"/>
+                                <get-val-10-2 comment="false" id="1" x="0" y="0"/>
+                            </roundnew>
+                        </set-attribute>
+                        <set-attribute comment="false" x="37" y="696">
+                            <ACTOR eid="this" id="0"/>
+                            <get-val-10-16 comment="false" id="1" x="0" y="0"/>
+                            <int id="2" val="currentHeight"/>
+                            <roundnew comment="false" id="3" x="0" y="0">
+                                <int id="0" val="0"/>
+                                <get-val-10-3 comment="false" id="1" x="0" y="0"/>
+                            </roundnew>
+                        </set-attribute>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-10-1 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="4"/>
+                    </eq>
+                </if>
+            </group>
+            <int id="0" val="SetMode"/>
+        </receive-message>
+    </group>
+    <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <receive-message comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <set-attribute comment="false" x="26" y="40">
+                    <ACTOR eid="this" id="0"/>
+                    <get-val-10-16 comment="false" id="1" x="0" y="0"/>
+                    <int id="2" val="alignment"/>
+                    <roundnew comment="false" id="3" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <get-val-10-7 comment="false" id="1" x="0" y="0"/>
+                    </roundnew>
+                </set-attribute>
+                <set-attribute comment="false" x="26" y="85">
+                    <ACTOR eid="this" id="0"/>
+                    <get-val-10-16 comment="false" id="1" x="0" y="0"/>
+                    <int id="2" val="currentXOffset"/>
+                    <roundnew comment="false" id="3" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <get-val-10-5 comment="false" id="1" x="0" y="0"/>
+                    </roundnew>
+                </set-attribute>
+                <set-attribute comment="false" x="26" y="130">
+                    <ACTOR eid="this" id="0"/>
+                    <get-val-10-16 comment="false" id="1" x="0" y="0"/>
+                    <int id="2" val="currentYOffset"/>
+                    <roundnew comment="false" id="3" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <get-val-10-6 comment="false" id="1" x="0" y="0"/>
+                    </roundnew>
+                </set-attribute>
+                <set-attribute comment="false" x="26" y="175">
+                    <ACTOR eid="this" id="0"/>
+                    <get-val-10-16 comment="false" id="1" x="0" y="0"/>
+                    <int id="2" val="txtLeftMargin"/>
+                    <roundnew comment="false" id="3" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <get-val-10-10 comment="false" id="1" x="0" y="0"/>
+                    </roundnew>
+                </set-attribute>
+                <set-attribute comment="false" x="26" y="220">
+                    <ACTOR eid="this" id="0"/>
+                    <get-val-10-16 comment="false" id="1" x="0" y="0"/>
+                    <int id="2" val="txtRightMargin"/>
+                    <roundnew comment="false" id="3" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <get-val-10-11 comment="false" id="1" x="0" y="0"/>
+                    </roundnew>
+                </set-attribute>
+                <set-attribute comment="false" x="26" y="265">
+                    <ACTOR eid="this" id="0"/>
+                    <get-val-10-16 comment="false" id="1" x="0" y="0"/>
+                    <int id="2" val="txtTopMargin"/>
+                    <roundnew comment="false" id="3" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <get-val-10-12 comment="false" id="1" x="0" y="0"/>
+                    </roundnew>
+                </set-attribute>
+                <set-attribute comment="false" x="26" y="310">
+                    <ACTOR eid="this" id="0"/>
+                    <get-val-10-16 comment="false" id="1" x="0" y="0"/>
+                    <int id="2" val="txtBottomMargin"/>
+                    <roundnew comment="false" id="3" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <get-val-10-13 comment="false" id="1" x="0" y="0"/>
+                    </roundnew>
+                </set-attribute>
+                <comment-short comment="false" x="26" y="355">
+                    <int id="0" val="Align on Actor"/>
+                </comment-short>
+                <if comment="false" x="26" y="375">
+                    <group eventID="-1" id="-1">
+                        <set-val-10-8 comment="false" x="37" y="405">
+                            <get-xy comment="false" id="0" x="0" y="0">
+                                <ACTOR eid="this" id="0"/>
+                                <int id="1" val="4"/>
+                            </get-xy>
+                        </set-val-10-8>
+                        <set-val-10-9 comment="false" x="37" y="438">
+                            <get-xy comment="false" id="0" x="0" y="0">
+                                <ACTOR eid="this" id="0"/>
+                                <int id="1" val="5"/>
+                            </get-xy>
+                        </set-val-10-9>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-10-7 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="1"/>
+                    </eq>
+                </if>
+                <comment-short comment="false" x="26" y="483">
+                    <int id="0" val="Align Top Left"/>
+                </comment-short>
+                <if comment="false" x="26" y="503">
+                    <group eventID="-1" id="-1">
+                        <set-val-10-8 comment="false" x="37" y="533">
+                            <int id="0" val="0"/>
+                        </set-val-10-8>
+                        <set-val-10-9 comment="false" x="37" y="553">
+                            <int id="0" val="0"/>
+                        </set-val-10-9>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-10-7 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="2"/>
+                    </eq>
+                </if>
+                <comment-short comment="false" x="26" y="585">
+                    <int id="0" val="Align Top Right"/>
+                </comment-short>
+                <if comment="false" x="26" y="605">
+                    <group eventID="-1" id="-1">
+                        <set-val-10-8 comment="false" x="37" y="635">
+                            <screen-wh comment="false" id="0" x="0" y="0">
+                                <int id="0" val="0"/>
+                            </screen-wh>
+                        </set-val-10-8>
+                        <set-val-10-9 comment="false" x="37" y="668">
+                            <int id="0" val="0"/>
+                        </set-val-10-9>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-10-7 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="3"/>
+                    </eq>
+                </if>
+                <comment-short comment="false" x="26" y="700">
+                    <int id="0" val="Align Bottom Left"/>
+                </comment-short>
+                <if comment="false" x="26" y="720">
+                    <group eventID="-1" id="-1">
+                        <set-val-10-8 comment="false" x="37" y="750">
+                            <int id="0" val="0"/>
+                        </set-val-10-8>
+                        <set-val-10-9 comment="false" x="37" y="770">
+                            <screen-wh comment="false" id="0" x="0" y="0">
+                                <int id="0" val="1"/>
+                            </screen-wh>
+                        </set-val-10-9>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-10-7 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="4"/>
+                    </eq>
+                </if>
+                <comment-short comment="false" x="26" y="815">
+                    <int id="0" val="Align Bottom Right"/>
+                </comment-short>
+                <if comment="false" x="26" y="835">
+                    <group eventID="-1" id="-1">
+                        <set-val-10-8 comment="false" x="37" y="865">
+                            <screen-wh comment="false" id="0" x="0" y="0">
+                                <int id="0" val="0"/>
+                            </screen-wh>
+                        </set-val-10-8>
+                        <set-val-10-9 comment="false" x="37" y="898">
+                            <screen-wh comment="false" id="0" x="0" y="0">
+                                <int id="0" val="1"/>
+                            </screen-wh>
+                        </set-val-10-9>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-10-7 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="5"/>
+                    </eq>
+                </if>
+                <comment-short comment="false" x="26" y="943">
+                    <int id="0" val="Align Center"/>
+                </comment-short>
+                <if comment="false" x="26" y="963">
+                    <group eventID="-1" id="-1">
+                        <set-val-10-8 comment="false" x="37" y="993">
+                            <div comment="false" id="0" x="0" y="0">
+                                <screen-wh comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="0"/>
+                                </screen-wh>
+                                <int id="1" val="2"/>
+                            </div>
+                        </set-val-10-8>
+                        <set-val-10-9 comment="false" x="37" y="1031">
+                            <div comment="false" id="0" x="0" y="0">
+                                <screen-wh comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="1"/>
+                                </screen-wh>
+                                <int id="1" val="2"/>
+                            </div>
+                        </set-val-10-9>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-10-7 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="6"/>
+                    </eq>
+                </if>
+                <comment-short comment="false" x="26" y="1081">
+                    <int id="0" val="Align Top Center"/>
+                </comment-short>
+                <if comment="false" x="26" y="1101">
+                    <group eventID="-1" id="-1">
+                        <set-val-10-8 comment="false" x="37" y="1131">
+                            <div comment="false" id="0" x="0" y="0">
+                                <screen-wh comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="0"/>
+                                </screen-wh>
+                                <int id="1" val="2"/>
+                            </div>
+                        </set-val-10-8>
+                        <set-val-10-9 comment="false" x="37" y="1169">
+                            <int id="0" val="0"/>
+                        </set-val-10-9>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-10-7 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="7"/>
+                    </eq>
+                </if>
+                <comment-short comment="false" x="26" y="1201">
+                    <int id="0" val="Align Bottom Center"/>
+                </comment-short>
+                <if comment="false" x="26" y="1221">
+                    <group eventID="-1" id="-1">
+                        <set-val-10-8 comment="false" x="37" y="1251">
+                            <div comment="false" id="0" x="0" y="0">
+                                <screen-wh comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="0"/>
+                                </screen-wh>
+                                <int id="1" val="2"/>
+                            </div>
+                        </set-val-10-8>
+                        <set-val-10-9 comment="false" x="37" y="1289">
+                            <screen-wh comment="false" id="0" x="0" y="0">
+                                <int id="0" val="1"/>
+                            </screen-wh>
+                        </set-val-10-9>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-10-7 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="8"/>
+                    </eq>
+                </if>
+                <set-attribute comment="false" x="26" y="1334">
+                    <ACTOR eid="this" id="0"/>
+                    <get-val-10-16 comment="false" id="1" x="0" y="0"/>
+                    <int id="2" val="xPos"/>
+                    <roundnew comment="false" id="3" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <get-val-10-8 comment="false" id="1" x="0" y="0"/>
+                    </roundnew>
+                </set-attribute>
+                <set-attribute comment="false" x="26" y="1379">
+                    <ACTOR eid="this" id="0"/>
+                    <get-val-10-16 comment="false" id="1" x="0" y="0"/>
+                    <int id="2" val="yPos"/>
+                    <roundnew comment="false" id="3" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <get-val-10-9 comment="false" id="1" x="0" y="0"/>
+                    </roundnew>
+                </set-attribute>
+            </group>
+            <int id="0" val="SetPosition"/>
+        </receive-message>
+    </group>
+    <group eventID="3" id="-1"/>
+    <group eventID="4" id="0">
+        <receive-message comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <set-attribute comment="false" x="26" y="40">
+                    <ACTOR eid="this" id="0"/>
+                    <get-val-10-16 comment="false" id="1" x="0" y="0"/>
+                    <int id="2" val="currentFont"/>
+                    <get-val-10-26 comment="false" id="3" x="0" y="0"/>
+                </set-attribute>
+                <set-attribute comment="false" x="26" y="72">
+                    <ACTOR eid="this" id="0"/>
+                    <get-val-10-16 comment="false" id="1" x="0" y="0"/>
+                    <int id="2" val="keywordFont"/>
+                    <get-val-10-32 comment="false" id="3" x="0" y="0"/>
+                </set-attribute>
+                <set-attribute comment="false" x="26" y="104">
+                    <ACTOR eid="this" id="0"/>
+                    <get-val-10-16 comment="false" id="1" x="0" y="0"/>
+                    <int id="2" val="fadeTime"/>
+                    <get-val-10-15 comment="false" id="3" x="0" y="0"/>
+                </set-attribute>
+                <set-attribute comment="false" x="26" y="136">
+                    <ACTOR eid="this" id="0"/>
+                    <get-val-10-16 comment="false" id="1" x="0" y="0"/>
+                    <int id="2" val="useTypingEffect"/>
+                    <get-val-10-17 comment="false" id="3" x="0" y="0"/>
+                </set-attribute>
+                <set-attribute comment="false" x="26" y="168">
+                    <ACTOR eid="this" id="0"/>
+                    <get-val-10-16 comment="false" id="1" x="0" y="0"/>
+                    <int id="2" val="typeDelay"/>
+                    <get-val-10-18 comment="false" id="3" x="0" y="0"/>
+                </set-attribute>
+                <set-attribute comment="false" x="26" y="200">
+                    <ACTOR eid="this" id="0"/>
+                    <get-val-10-16 comment="false" id="1" x="0" y="0"/>
+                    <int id="2" val="dialogBoxColor"/>
+                    <get-val-10-27 comment="false" id="3" x="0" y="0"/>
+                </set-attribute>
+                <set-attribute comment="false" x="26" y="232">
+                    <ACTOR eid="this" id="0"/>
+                    <get-val-10-16 comment="false" id="1" x="0" y="0"/>
+                    <int id="2" val="dialogBoxAlpha"/>
+                    <div comment="false" id="3" x="0" y="0">
+                        <get-val-10-28 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="100"/>
+                    </div>
+                </set-attribute>
+                <if comment="false" x="26" y="269">
+                    <group eventID="-1" id="-1">
+                        <set-attribute comment="false" x="37" y="302">
+                            <ACTOR eid="this" id="0"/>
+                            <get-val-10-16 comment="false" id="1" x="0" y="0"/>
+                            <int id="2" val="typingSound"/>
+                            <get-val-10-25 comment="false" id="3" x="0" y="0"/>
+                        </set-attribute>
+                    </group>
+                    <value comment="false" id="0" x="0" y="0">
+                        <int id="0" val="25"/>
+                        <int id="1" val="0"/>
+                    </value>
+                </if>
+                <if comment="false" x="26" y="346">
+                    <group eventID="-1" id="-1">
+                        <set-attribute comment="false" x="37" y="379">
+                            <ACTOR eid="this" id="0"/>
+                            <get-val-10-16 comment="false" id="1" x="0" y="0"/>
+                            <int id="2" val="openSound"/>
+                            <get-val-10-29 comment="false" id="3" x="0" y="0"/>
+                        </set-attribute>
+                    </group>
+                    <value comment="false" id="0" x="0" y="0">
+                        <int id="0" val="29"/>
+                        <int id="1" val="0"/>
+                    </value>
+                </if>
+                <if comment="false" x="26" y="423">
+                    <group eventID="-1" id="-1">
+                        <set-attribute comment="false" x="37" y="456">
+                            <ACTOR eid="this" id="0"/>
+                            <get-val-10-16 comment="false" id="1" x="0" y="0"/>
+                            <int id="2" val="nextSound"/>
+                            <get-val-10-30 comment="false" id="3" x="0" y="0"/>
+                        </set-attribute>
+                    </group>
+                    <value comment="false" id="0" x="0" y="0">
+                        <int id="0" val="30"/>
+                        <int id="1" val="0"/>
+                    </value>
+                </if>
+                <if comment="false" x="26" y="500">
+                    <group eventID="-1" id="-1">
+                        <set-attribute comment="false" x="37" y="533">
+                            <ACTOR eid="this" id="0"/>
+                            <get-val-10-16 comment="false" id="1" x="0" y="0"/>
+                            <int id="2" val="closeSound"/>
+                            <get-val-10-31 comment="false" id="3" x="0" y="0"/>
+                        </set-attribute>
+                    </group>
+                    <value comment="false" id="0" x="0" y="0">
+                        <int id="0" val="31"/>
+                        <int id="1" val="0"/>
+                    </value>
+                </if>
+                <if comment="false" x="26" y="577">
+                    <group eventID="-1" id="-1">
+                        <set-attribute comment="false" x="37" y="610">
+                            <ACTOR eid="this" id="0"/>
+                            <get-val-10-16 comment="false" id="1" x="0" y="0"/>
+                            <int id="2" val="overflowActorType"/>
+                            <get-val-10-19 comment="false" id="3" x="0" y="0"/>
+                        </set-attribute>
+                        <set-attribute comment="false" x="37" y="642">
+                            <ACTOR eid="this" id="0"/>
+                            <get-val-10-16 comment="false" id="1" x="0" y="0"/>
+                            <int id="2" val="overflowXOffset"/>
+                            <roundnew comment="false" id="3" x="0" y="0">
+                                <int id="0" val="0"/>
+                                <get-val-10-20 comment="false" id="1" x="0" y="0"/>
+                            </roundnew>
+                        </set-attribute>
+                        <set-attribute comment="false" x="37" y="687">
+                            <ACTOR eid="this" id="0"/>
+                            <get-val-10-16 comment="false" id="1" x="0" y="0"/>
+                            <int id="2" val="overflowYOffset"/>
+                            <roundnew comment="false" id="3" x="0" y="0">
+                                <int id="0" val="0"/>
+                                <get-val-10-21 comment="false" id="1" x="0" y="0"/>
+                            </roundnew>
+                        </set-attribute>
+                    </group>
+                    <value comment="false" id="0" x="0" y="0">
+                        <int id="0" val="19"/>
+                        <int id="1" val="0"/>
+                    </value>
+                </if>
+                <if comment="false" x="26" y="744">
+                    <group eventID="-1" id="-1">
+                        <set-attribute comment="false" x="37" y="777">
+                            <ACTOR eid="this" id="0"/>
+                            <get-val-10-16 comment="false" id="1" x="0" y="0"/>
+                            <int id="2" val="portraitActorType"/>
+                            <get-val-10-22 comment="false" id="3" x="0" y="0"/>
+                        </set-attribute>
+                        <set-attribute comment="false" x="37" y="809">
+                            <ACTOR eid="this" id="0"/>
+                            <get-val-10-16 comment="false" id="1" x="0" y="0"/>
+                            <int id="2" val="portraitXOffset"/>
+                            <roundnew comment="false" id="3" x="0" y="0">
+                                <int id="0" val="0"/>
+                                <get-val-10-23 comment="false" id="1" x="0" y="0"/>
+                            </roundnew>
+                        </set-attribute>
+                        <set-attribute comment="false" x="37" y="854">
+                            <ACTOR eid="this" id="0"/>
+                            <get-val-10-16 comment="false" id="1" x="0" y="0"/>
+                            <int id="2" val="portraitYOffset"/>
+                            <roundnew comment="false" id="3" x="0" y="0">
+                                <int id="0" val="0"/>
+                                <get-val-10-24 comment="false" id="1" x="0" y="0"/>
+                            </roundnew>
+                        </set-attribute>
+                    </group>
+                    <value comment="false" id="0" x="0" y="0">
+                        <int id="0" val="22"/>
+                        <int id="1" val="0"/>
+                    </value>
+                </if>
+            </group>
+            <int id="0" val="SetProperties"/>
+        </receive-message>
+    </group>
+    <group eventID="4" id="-1"/>
+    <group eventID="5" id="0">
+        <receiver-3-23 comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <if comment="false" x="26" y="45">
+                    <group eventID="-1" id="-1">
+                        <say-this comment="false" x="37" y="93">
+                            <int id="0" val="SetPosition"/>
+                        </say-this>
+                    </group>
+                    <not comment="false" id="0" x="0" y="0">
+                        <as-boolean comment="false" id="0" x="0" y="0">
+                            <get-attribute comment="false" id="0" x="0" y="0">
+                                <ACTOR eid="this" id="0"/>
+                                <get-val-10-16 comment="false" id="1" x="0" y="0"/>
+                                <int id="2" val="isDisplaying"/>
+                            </get-attribute>
+                        </as-boolean>
+                    </not>
+                </if>
+                <set-attribute comment="false" x="26" y="125">
+                    <ACTOR eid="this" id="0"/>
+                    <get-val-10-16 comment="false" id="1" x="0" y="0"/>
+                    <int id="2" val="currentText"/>
+                    <get-byobval-10-41-1 comment="false" id="3" x="0" y="0"/>
+                </set-attribute>
+                <say comment="false" x="26" y="157">
+                    <ACTOR eid="this" id="0"/>
+                    <get-val-10-16 comment="false" id="1" x="0" y="0"/>
+                    <int id="2" val="requestDialog"/>
+                </say>
+            </group>
+            <get-byobval-10-41-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-10-41-1 comment="false" id="1" x="0" y="0"/>
+        </receiver-3-23>
+    </group>
+    <group eventID="5" id="-1"/>
+    <group eventID="6" id="0">
+        <receiver-4-17 comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <set-attribute comment="false" x="26" y="45">
+                    <ACTOR eid="this" id="0"/>
+                    <get-val-10-16 comment="false" id="1" x="0" y="0"/>
+                    <int id="2" val="portraitActorType"/>
+                    <get-byobval-10-42-1 comment="false" id="3" x="0" y="0"/>
+                </set-attribute>
+            </group>
+            <get-byobval-10-42-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-10-42-1 comment="false" id="1" x="0" y="0"/>
+        </receiver-4-17>
+    </group>
+    <group eventID="6" id="-1"/>
+    <group eventID="7" id="0">
+        <receiver-5-16 comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <set-attribute comment="false" x="26" y="45">
+                    <ACTOR eid="this" id="0"/>
+                    <get-val-10-16 comment="false" id="1" x="0" y="0"/>
+                    <int id="2" val="bgActorType"/>
+                    <get-byobval-10-43-1 comment="false" id="3" x="0" y="0"/>
+                </set-attribute>
+            </group>
+            <get-byobval-10-43-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-10-43-1 comment="false" id="1" x="0" y="0"/>
+        </receiver-5-16>
+    </group>
+    <group eventID="7" id="-1"/>
+    <group eventID="8" id="0">
+        <receiver-6-22 comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <return comment="false" x="26" y="45">
+                    <as-boolean comment="false" id="0" x="0" y="0">
+                        <get-attribute comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <get-val-10-16 comment="false" id="1" x="0" y="0"/>
+                            <int id="2" val="isDisplaying"/>
+                        </get-attribute>
+                    </as-boolean>
+                </return>
+            </group>
+            <get-byobval-10-46-0 comment="false" id="0" x="0" y="0"/>
+        </receiver-6-22>
+    </group>
+    <group eventID="8" id="-1"/>
+    <group eventID="9" id="0">
+        <receiver-7-18 comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <set-attribute comment="false" x="26" y="45">
+                    <ACTOR eid="this" id="0"/>
+                    <get-val-10-16 comment="false" id="1" x="0" y="0"/>
+                    <int id="2" val="currentFont"/>
+                    <get-byobval-10-48-1 comment="false" id="3" x="0" y="0"/>
+                </set-attribute>
+            </group>
+            <get-byobval-10-48-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-10-48-1 comment="false" id="1" x="0" y="0"/>
+        </receiver-7-18>
+    </group>
+    <group eventID="9" id="-1"/>
+    <group eventID="10" id="0">
+        <receiver-8-19 comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <set-attribute comment="false" x="26" y="45">
+                    <ACTOR eid="this" id="0"/>
+                    <get-val-10-16 comment="false" id="1" x="0" y="0"/>
+                    <int id="2" val="dialogBoxColor"/>
+                    <get-byobval-10-49-1 comment="false" id="3" x="0" y="0"/>
+                </set-attribute>
+            </group>
+            <get-byobval-10-49-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-10-49-1 comment="false" id="1" x="0" y="0"/>
+        </receiver-8-19>
+    </group>
+    <group eventID="10" id="-1"/>
+    <group eventID="11" id="0">
+        <receiver-9-20 comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <return comment="false" x="26" y="45">
+                    <as-boolean comment="false" id="0" x="0" y="0">
+                        <get-attribute comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <get-val-10-16 comment="false" id="1" x="0" y="0"/>
+                            <int id="2" val="hasOverflow"/>
+                        </get-attribute>
+                    </as-boolean>
+                </return>
+            </group>
+            <get-byobval-10-28-0 comment="false" id="0" x="0" y="0"/>
+        </receiver-9-20>
+    </group>
+    <group eventID="11" id="-1"/>
+    <group eventID="12" id="0">
+        <receiver-10-21 comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <return comment="false" x="26" y="45">
+                    <as-boolean comment="false" id="0" x="0" y="0">
+                        <get-attribute comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <get-val-10-16 comment="false" id="1" x="0" y="0"/>
+                            <int id="2" val="isTyping"/>
+                        </get-attribute>
+                    </as-boolean>
+                </return>
+            </group>
+            <get-byobval-10-29-0 comment="false" id="0" x="0" y="0"/>
+        </receiver-10-21>
+    </group>
+    <group eventID="12" id="-1"/>
+    <group eventID="13" id="0">
+        <receiver-12-27 comment="false" x="15" y="15">
+            <group eventID="13" id="-1">
+                <say comment="false" x="26" y="45">
+                    <ACTOR eid="this" id="0"/>
+                    <get-val-10-16 comment="false" id="1" x="0" y="0"/>
+                    <int id="2" val="closeDialog"/>
+                </say>
+            </group>
+            <get-byobval-10-27-0 comment="false" id="0" x="0" y="0"/>
+        </receiver-12-27>
+    </group>
+    <group eventID="13" id="-1">
+        <get-byobval-10-27-0 comment="false" x="0" y="0"/>
+    </group>
+</groups>
