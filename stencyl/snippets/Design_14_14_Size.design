@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <event-collide-actortogroup comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <if comment="false" x="26" y="47">
+                    <group eventID="1" id="-1">
+                        <die comment="false" x="37" y="77">
+                            <ACTOR eid="this" id="0"/>
+                        </die>
+                        <set-game-val-3 comment="false" x="37" y="104">
+                            <plus comment="false" id="0" x="0" y="0">
+                                <get-game-val-3 comment="false" id="0" x="0" y="0"/>
+                                <get-val-14-2 comment="false" id="1" x="0" y="0"/>
+                            </plus>
+                        </set-game-val-3>
+                        <say comment="false" x="37" y="134">
+                            <ACTOR eid="lastcollided" id="0"/>
+                            <int id="1" val="Player Size"/>
+                            <int id="2" val="PointsIncreased"/>
+                        </say>
+                    </group>
+                    <moreeq comment="false" id="0" x="0" y="0">
+                        <get-game-val-2 comment="false" id="0" x="0" y="0"/>
+                        <get-val-14-1 comment="false" id="1" x="0" y="0"/>
+                    </moreeq>
+                </if>
+            </group>
+            <ACTOR eid="this" id="0"/>
+            <GROUP eid="0" id="1"/>
+        </event-collide-actortogroup>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="2" id="-1">
+                        <scaleTo comment="false" x="37" y="70">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="60"/>
+                            <int id="2" val="60"/>
+                            <int id="3" val="0.1"/>
+                            <int id="4" val="0"/>
+                        </scaleTo>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-14-1 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="1"/>
+                    </eq>
+                </if>
+                <else-if comment="false" x="26" y="109">
+                    <group eventID="2" id="-1">
+                        <scaleTo comment="false" x="37" y="139">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="80"/>
+                            <int id="2" val="80"/>
+                            <int id="3" val="0.1"/>
+                            <int id="4" val="0"/>
+                        </scaleTo>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-14-1 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="2"/>
+                    </eq>
+                </else-if>
+                <else-if comment="false" x="26" y="178">
+                    <group eventID="2" id="-1">
+                        <scaleTo comment="false" x="37" y="208">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="100"/>
+                            <int id="2" val="100"/>
+                            <int id="3" val="0.1"/>
+                            <int id="4" val="0"/>
+                        </scaleTo>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-14-1 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="3"/>
+                    </eq>
+                </else-if>
+                <else-if comment="false" x="26" y="247">
+                    <group eventID="2" id="-1">
+                        <scaleTo comment="false" x="37" y="277">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="150"/>
+                            <int id="2" val="150"/>
+                            <int id="3" val="0.1"/>
+                            <int id="4" val="0"/>
+                        </scaleTo>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-14-1 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="4"/>
+                    </eq>
+                </else-if>
+            </group>
+        </init>
+    </group>
+    <group eventID="2" id="-1"/>
+</groups>

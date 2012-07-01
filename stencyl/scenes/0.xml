@@ -8,13 +8,13 @@
     <foregrounds/>
     <joints/>
     <regions>
-        <region b="64" g="64" h="24" id="0" name="Right Exit" pts="4,-12.0,12.0,12.0,12.0,12.0,-12.0,-12.0,-12.0" r="64" type="box" w="24" x="612" y="228"/>
-        <region b="64" g="64" h="24" id="1" name="Circle King Dialogue" pts="4,-12.0,12.0,12.0,12.0,12.0,-12.0,-12.0,-12.0" r="64" type="box" w="24" x="324" y="228"/>
+        <region b="64" g="64" h="24" id="0" name="Right Exit" pts="4,-12.0,-12.0,12.0,-12.0,12.0,12.0,-12.0,12.0" r="64" type="box" w="24" x="612" y="228"/>
+        <region b="64" g="64" h="24" id="1" name="Circle King Dialogue" pts="4,-12.0,-12.0,12.0,-12.0,12.0,12.0,-12.0,12.0" r="64" type="box" w="24" x="324" y="228"/>
     </regions>
     <terrainRegions/>
     <actors>
         <actor a="0.0" aid="1" c="false" group="0" id="2" name="Player 1" sx="1.0" sy="1.0" x="608" y="224" z="0"/>
-        <actor a="0.0" aid="2" c="true" group="4" id="6" name="Circle King 2" sx="1.0" sy="1.0" x="288" y="192" z="0">
+        <actor a="0.0" aid="2" c="true" group="3" id="6" name="Circle King 2" sx="1.0" sy="1.0" x="288" y="192" z="0">
             <snippets>
                 <s enabled="true" id="7"/>
                 <s enabled="true" id="9">
@@ -35,7 +35,7 @@
                     <prop id="13" list="0" val="0"/>
                     <prop id="14" list="0" val="6"/>
                     <prop id="2147483647" list="0" val="thisactor"/>
-                    <prop id="15" list="0" val="0.0"/>
+                    <prop id="15" list="0" val="0.5"/>
                     <prop id="17" list="0" val="false"/>
                     <prop id="16" list="0" val="Dialog Box Core"/>
                     <prop id="19" list="0" val="2"/>
@@ -59,17 +59,22 @@
                     <prop id="16" list="0" val="0.0"/>
                     <prop id="19" list="0" val=""/>
                     <prop id="18" list="0" val="2"/>
-                    <prop id="21" list="0" val="1"/>
                     <prop id="4" list="1" val="">
                         <text order="0" value="Dialog Text #1"/>
                         <text order="1" value="Dialog Text #2 -- this box will display wrapping when the text gets to be longer than the window can fit."/>
                         <text order="2" value="Dialog Text #3"/>
                         <text order="3" value="Dialog Text #4"/>
                     </prop>
+                    <prop id="21" list="0" val="1"/>
                     <prop id="20" list="0" val="false"/>
                     <prop id="6" list="0" val="100.0"/>
                     <prop id="11" list="0" val="0"/>
                     <prop id="13" list="0" val="false"/>
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                </s>
+                <s enabled="true" id="14">
+                    <prop id="1" list="0" val="2"/>
+                    <prop id="2" list="0" val="500"/>
                     <prop id="2147483647" list="0" val="thisactor"/>
                 </s>
             </snippets>

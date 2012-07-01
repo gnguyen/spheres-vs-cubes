@@ -99,4 +99,24 @@
         </step>
     </group>
     <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <event-actor-create-kill comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <if comment="false" x="26" y="42">
+                    <group eventID="3" id="-1">
+                        <set-val-11-13 comment="false" x="37" y="67">
+                            <false comment="false" id="0" x="0" y="0"/>
+                        </set-val-11-13>
+                        <custom-27 comment="false" x="37" y="92">
+                            <ACTOR eid="this" id="0"/>
+                        </custom-27>
+                    </group>
+                    <get-val-11-13 comment="false" id="0" x="0" y="0"/>
+                </if>
+            </group>
+            <int id="0" val="1"/>
+            <ACTOR eid="this" id="1"/>
+        </event-actor-create-kill>
+    </group>
+    <group eventID="3" id="-1"/>
 </groups>
