@@ -4,6 +4,8 @@
     <packs/>
     <groups/>
     <cgroups>
+        <cgroup g1="1" g2="0"/>
+        <cgroup g1="1" g2="3"/>
         <cgroup g1="3" g2="3"/>
     </cgroups>
     <input>
@@ -16,7 +18,10 @@
         <cat id="-1" name="Default"/>
     </attcats>
     <props/>
-    <attributes/>
+    <attributes>
+        <bool cid="-1" id="0" name="Just Entered Scene" save="true" value="true"/>
+        <bool cid="-1" id="1" name="Moving Right" save="true" value="false"/>
+    </attributes>
     <collisions>
         <poly id="1" name="Square" pts="0.0,0.0#0.0,1.0#1.0,1.0#1.0,0.0"/>
         <poly id="2" name="Tri 45R" pts="0.0,0.0#0.0,1.0#1.0,1.0"/>

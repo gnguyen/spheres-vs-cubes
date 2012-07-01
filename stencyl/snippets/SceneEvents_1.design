@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <create-actor3 comment="false" x="26" y="40">
+                    <ACTORTYPE eid="2" id="0"/>
+                    <get-region-pos comment="false" id="1" x="0" y="0">
+                        <REGION eid="0" id="0"/>
+                        <int id="1" val="0"/>
+                    </get-region-pos>
+                    <get-region-pos comment="false" id="2" x="0" y="0">
+                        <REGION eid="0" id="0"/>
+                        <int id="1" val="1"/>
+                    </get-region-pos>
+                    <int id="3" val="0"/>
+                </create-actor3>
+                <set-val-4-1 comment="false" x="26" y="80">
+                    <ACTOR eid="lastcreated" id="0"/>
+                </set-val-4-1>
+            </group>
+        </init>
+    </group>
+    <group eventID="1" id="-1"/>
+</groups>
