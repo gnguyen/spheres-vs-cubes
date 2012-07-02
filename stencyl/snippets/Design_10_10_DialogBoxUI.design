@@ -760,7 +760,5 @@
             <get-byobval-10-27-0 comment="false" id="0" x="0" y="0"/>
         </receiver-12-27>
     </group>
-    <group eventID="13" id="-1">
-        <get-byobval-10-27-0 comment="false" x="0" y="0"/>
-    </group>
+    <group eventID="13" id="-1"/>
 </groups>
