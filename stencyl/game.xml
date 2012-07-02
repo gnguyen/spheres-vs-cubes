@@ -4,8 +4,9 @@
     <packs/>
     <groups/>
     <cgroups>
-        <cgroup g1="3" g2="0"/>
         <cgroup g1="3" g2="3"/>
+        <cgroup g1="3" g2="0"/>
+        <cgroup g1="1" g2="0"/>
     </cgroups>
     <input>
         <key id="0" keyname="UP" name="up" vk="38" vks="38"/>
@@ -19,8 +20,9 @@
     <props/>
     <attributes>
         <bool cid="-1" id="0" name="Just Entered Scene" save="true" value="true"/>
-        <number cid="-1" id="3" name="Player Points" save="true" value="0.0"/>
+        <number cid="-1" id="3" name="Player Points" save="true" value="100.0"/>
         <bool cid="-1" id="1" name="Moving Right" save="true" value="false"/>
+        <bool cid="-1" id="4" name="Boss 1 Killed" save="true" value="false"/>
         <number cid="-1" id="2" name="Player Size" save="true" value="1.0"/>
     </attributes>
     <collisions>
@@ -47,7 +49,7 @@
         <poly id="20" name="Tri 60-2R Inv" pts="0.0,0.0#0.5,1.0#1.0,1.0#1.0,0.0"/>
     </collisions>
     <atlases>
-        <atlas dirty="true" id="0" members="2,6,28,0,1" name="Main Atlas (Default)" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="0" members="6,28,30,32,34,0,1" name="Main Atlas (Default)" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="true" id="1" members="" name="Atlas 2" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="true" id="2" members="" name="Atlas 3" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="true" id="3" members="" name="Atlas 4" pvr="false" resize="0" start="true" target="0"/>
