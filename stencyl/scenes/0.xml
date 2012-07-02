@@ -77,16 +77,23 @@
                 </s>
             </snippets>
         </actor>
+        <actor a="0.0" aid="2" c="false" group="3" id="40" name="Circle Prince 2" sx="1.0" sy="1.0" x="417" y="81" z="0"/>
+        <actor a="0.0" aid="3" c="false" group="3" id="40" name="Circle Prince 3" sx="1.0" sy="1.0" x="320" y="81" z="0"/>
+        <actor a="0.0" aid="4" c="false" group="3" id="40" name="Circle Prince 4" sx="1.0" sy="1.0" x="416" y="298" z="0"/>
+        <actor a="0.0" aid="5" c="false" group="3" id="40" name="Circle Prince 5" sx="1.0" sy="1.0" x="320" y="298" z="0"/>
     </actors>
     <snippets>
         <s enabled="true" id="1">
-            <prop id="1" list="0" val="0"/>
-            <prop id="2" list="0" val="1"/>
-            <prop id="4" list="0" val="-1"/>
+            <prop id="1" list="0" val="-1"/>
+            <prop id="2" list="0" val="-1"/>
             <prop id="5" list="0" val="0.5"/>
             <prop id="6" list="0" val="0.5"/>
             <prop id="7" list="0" val="0"/>
-            <prop id="8" list="0" val="true"/>
+            <prop id="8" list="0" val="false"/>
+            <prop id="9" list="0" val="-1"/>
+            <prop id="10" list="0" val="0"/>
+            <prop id="11" list="0" val="-1"/>
+            <prop id="12" list="0" val="1"/>
         </s>
         <s enabled="true" id="18">
             <prop id="1" list="0" val="0"/>

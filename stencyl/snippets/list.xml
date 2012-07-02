@@ -4,15 +4,16 @@
         <blocks/>
         <events>
             <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
+            <event displayName="Actor Created" enabled="true" id="2" name="event-actor-create-kill" order="2" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_1_1_SwitchSceneonEnterRegion" desc="Switch scene when an actor enters a region." description="Switch scene when an actor enters a region." design="true" drawOrder="0" id="1" language="" name="Switch Scene on Enter Region" oid="-1" package="scripts" scenespecific="false" shared="false" type="scene">
-        <region default="" desc="The region which will trigger the scene switch." dropdown="" fullname="Region" hidden="false" id="1" name="_Region" order="1"/>
-        <scene default="" desc="The scene to switch to." dropdown="" fullname="Next Scene" hidden="false" id="2" name="_NextScene" order="2"/>
-        <number default="0.5" desc="The time to fade out, in seconds." dropdown="" fullname="Fade Out Time" hidden="false" id="5" name="_FadeOutTime" order="3"/>
-        <number default="0.5" desc="The time to fade in, in seconds." dropdown="" fullname="Fade In Time" hidden="false" id="6" name="_FadeInTime" order="4"/>
-        <actorgroup default="" desc="" dropdown="" fullname="Player Group" hidden="false" id="7" name="_PlayerGroup" order="5"/>
-        <boolean default="false" desc="" dropdown="" fullname="Right Exit?" hidden="false" id="8" name="_RightExit" order="6"/>
+        <number default="0.5" desc="The time to fade out, in seconds." dropdown="" fullname="Fade Out Time" hidden="false" id="5" name="_FadeOutTime" order="4"/>
+        <number default="0.5" desc="The time to fade in, in seconds." dropdown="" fullname="Fade In Time" hidden="false" id="6" name="_FadeInTime" order="5"/>
+        <region default="" desc="" dropdown="" fullname="Left Region" hidden="false" id="9" name="_LeftRegion" order="0"/>
+        <region default="" desc="" dropdown="" fullname="Right Region" hidden="false" id="10" name="_RightRegion" order="2"/>
+        <scene default="" desc="" dropdown="" fullname="Left Scene" hidden="false" id="11" name="_LeftScene" order="1"/>
+        <scene default="" desc="" dropdown="" fullname="Right Scene" hidden="false" id="12" name="_RightScene" order="3"/>
         <blocks/>
         <events>
             <event displayName="Updated" enabled="true" id="1" name="step" order="1" repeats="true"/>
@@ -257,11 +258,23 @@
         <blocks/>
         <events/>
     </snippet>
+    <snippet attachedevent="true" class="scripts.ActorEvents_40" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="25" language="" name="ActorEvents_40" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
     <snippet attachedevent="false" class="scripts.Design_24_24_BringForward" desc="" description="" design="true" drawOrder="0" id="24" language="" name="Bring Forward" oid="-1" package="" scenespecific="false" shared="false" type="actor">
         <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
         <blocks/>
         <events>
             <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
         </events>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.ActorEvents_42" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="27" language="" name="ActorEvents_42" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.SceneEvents_2" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="26" language="" name="SceneEvents_2" oid="-1" package="scripts." sceneid="2" scenespecific="true" shared="false" type="scene">
+        <blocks/>
+        <events/>
     </snippet>
 </pack>
