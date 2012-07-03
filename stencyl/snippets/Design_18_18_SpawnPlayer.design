@@ -31,9 +31,37 @@
                         <int id="1" val="2"/>
                     </eq>
                 </else-if>
-                <if comment="false" x="26" y="218">
+                <else-if comment="false" x="26" y="218">
                     <group eventID="1" id="-1">
-                        <create-actor3 comment="false" x="37" y="243">
+                        <set-val-18-3 comment="false" x="37" y="248">
+                            <int id="0" val="36"/>
+                        </set-val-18-3>
+                        <set-val-18-4 comment="false" x="37" y="275">
+                            <int id="0" val="51"/>
+                        </set-val-18-4>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-game-val-2 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="3"/>
+                    </eq>
+                </else-if>
+                <else-if comment="false" x="26" y="307">
+                    <group eventID="1" id="-1">
+                        <set-val-18-3 comment="false" x="37" y="337">
+                            <int id="0" val="38"/>
+                        </set-val-18-3>
+                        <set-val-18-4 comment="false" x="37" y="364">
+                            <int id="0" val="64"/>
+                        </set-val-18-4>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-game-val-2 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="4"/>
+                    </eq>
+                </else-if>
+                <if comment="false" x="26" y="396">
+                    <group eventID="1" id="-1">
+                        <create-actor3 comment="false" x="37" y="421">
                             <ACTORTYPE eid="var" id="0" vid="3"/>
                             <plus comment="false" id="1" x="0" y="0">
                                 <plus comment="false" id="0" x="0" y="0">
@@ -63,9 +91,9 @@
                     </group>
                     <get-game-val-1 comment="false" id="0" x="0" y="0"/>
                 </if>
-                <else comment="false" x="26" y="305">
+                <else comment="false" x="26" y="483">
                     <group eventID="1" id="-1">
-                        <create-actor3 comment="false" x="37" y="325">
+                        <create-actor3 comment="false" x="37" y="503">
                             <ACTORTYPE eid="var" id="0" vid="3"/>
                             <minus comment="false" id="1" x="0" y="0">
                                 <get-region-pos comment="false" id="0" x="0" y="0">

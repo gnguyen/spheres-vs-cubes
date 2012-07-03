@@ -121,7 +121,7 @@
             <s enabled="true" id="6">
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
-            <s enabled="false" id="13">
+            <s enabled="true" id="13">
                 <prop id="1" list="0" val="1.0"/>
                 <prop id="2" list="0" val="2.0"/>
                 <prop id="3" list="0" val="0.5"/>
@@ -148,8 +148,8 @@
         <blank name="Self" order="0" type="ACTOR"/>
     </custom-block>
     <sprite atlasID="0" default="0" desc="" height="16" id="45" name="Collision Block" shared="false" width="16">
-        <anim across="1" atlasID="-1" down="1" durations="100" height="1" id="0" loop="true" name="Idle" numframes="1" originx="0" originy="0" width="1">
-            <poly data="4,0,0,16,0,16,16,0,16" density="0.1" fric="0.2" gid="-1000" id="0" name="default" rest="0.0" sensor="false"/>
+        <anim across="1" atlasID="-1" down="1" durations="100" height="16" id="0" loop="true" name="Idle" numframes="1" originx="0" originy="0" width="16">
+            <poly data="4,0,0,16,0,16,16,0,16" density="0.1" fric="0.2" gid="-1000" id="0" name="Idle" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="30" fixedrot="false" fric="0.2" gid="3" id="44" ignoreg="false" inertia="1.0" ldamp="0.0" lw="false" mass="1.0" name="Collision Block" oid="-1" pausable="true" rest="0.0" shared="false" sprite="45" static="true" touchable="true">
@@ -645,15 +645,15 @@
                 <prop id="20" list="0" val="0.0"/>
                 <prop id="23" list="0" val="-64.0"/>
                 <prop id="22" list="0" val="30"/>
-                <prop id="25" list="0" val="No Sound"/>
+                <prop id="25" list="0" val="-1"/>
                 <prop id="24" list="0" val="0.0"/>
                 <prop id="27" list="0" val="0,0,0,255"/>
-                <prop id="26" list="0" val="Default Font"/>
-                <prop id="29" list="0" val="No Sound"/>
+                <prop id="26" list="0" val="-1"/>
+                <prop id="29" list="0" val="-1"/>
                 <prop id="28" list="0" val="100.0"/>
-                <prop id="31" list="0" val="No Sound"/>
-                <prop id="30" list="0" val="No Sound"/>
-                <prop id="32" list="0" val="Default Font"/>
+                <prop id="31" list="0" val="-1"/>
+                <prop id="30" list="0" val="-1"/>
+                <prop id="32" list="0" val="-1"/>
             </s>
             <s enabled="true" id="11">
                 <prop id="19" list="0" val=""/>
@@ -678,6 +678,138 @@
             </s>
         </snippets>
     </actor>
+    <sprite atlasID="0" default="0" desc="" height="51" id="47" name="Square Boss Size 3" shared="false" width="51">
+        <anim across="1" atlasID="-1" down="1" durations="100" height="51" id="0" loop="true" name="Idle" numframes="1" originx="25" originy="25" width="51">
+            <poly data="4,0,0,51,0,51,51,0,51" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="1" continuous="true" desc="" eventsnippetid="31" fixedrot="true" fric="0.2" gid="3" id="46" ignoreg="false" inertia="1.0" ldamp="0.0" lw="false" mass="1.0" name="Square Boss Size 3" oid="-1" pausable="true" rest="0.0" shared="false" sprite="47" static="false" touchable="true">
+        <snippets>
+            <s enabled="true" id="9">
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+            <s enabled="true" id="10">
+                <prop id="1" list="0" val=" 1"/>
+                <prop id="2" list="0" val="400.0"/>
+                <prop id="3" list="0" val="10.0"/>
+                <prop id="5" list="0" val="0.0"/>
+                <prop id="6" list="0" val="0.0"/>
+                <prop id="7" list="0" val=" 7"/>
+                <prop id="8" list="0" val="0.0"/>
+                <prop id="9" list="0" val="0.0"/>
+                <prop id="10" list="0" val="15"/>
+                <prop id="11" list="0" val="15"/>
+                <prop id="12" list="0" val="15"/>
+                <prop id="13" list="0" val="15"/>
+                <prop id="14" list="0" val="-1"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="15" list="0" val="0.0"/>
+                <prop id="17" list="0" val="false"/>
+                <prop id="16" list="0" val="Dialog Box Core"/>
+                <prop id="19" list="0" val="-1"/>
+                <prop id="18" list="0" val="0.15"/>
+                <prop id="21" list="0" val="0.0"/>
+                <prop id="20" list="0" val="0.0"/>
+                <prop id="23" list="0" val="-64.0"/>
+                <prop id="22" list="0" val="46"/>
+                <prop id="25" list="0" val="-1"/>
+                <prop id="24" list="0" val="0.0"/>
+                <prop id="27" list="0" val="255,255,255,255"/>
+                <prop id="26" list="0" val="-1"/>
+                <prop id="29" list="0" val="-1"/>
+                <prop id="28" list="0" val="100.0"/>
+                <prop id="31" list="0" val="-1"/>
+                <prop id="30" list="0" val="-1"/>
+                <prop id="32" list="0" val="-1"/>
+            </s>
+            <s enabled="true" id="11">
+                <prop id="19" list="0" val=""/>
+                <prop id="4" list="1" val="">
+                    <text order="0" value="Dialog Text #1"/>
+                    <text order="1" value="Dialog Text #2 -- this box will display wrapping when the text gets to be longer than the window can fit."/>
+                    <text order="2" value="Dialog Text #3"/>
+                    <text order="3" value="Dialog Text #4"/>
+                </prop>
+                <prop id="20" list="0" val="false"/>
+                <prop id="6" list="0" val="100.0"/>
+                <prop id="11" list="0" val="0.0"/>
+                <prop id="13" list="0" val="false"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+            <s enabled="true" id="14">
+                <prop id="1" list="0" val="3"/>
+                <prop id="2" list="0" val="100"/>
+                <prop id="3" list="0" val="Boss 2 Count"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+        </snippets>
+    </actor>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="1" continuous="true" desc="" eventsnippetid="32" fixedrot="true" fric="0.2" gid="3" id="48" ignoreg="false" inertia="1.0" ldamp="0.0" lw="false" mass="1.0" name="Square Boss Size 4" oid="-1" pausable="true" rest="0.0" shared="false" sprite="49" static="false" touchable="true">
+        <snippets>
+            <s enabled="true" id="9">
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+            <s enabled="true" id="10">
+                <prop id="1" list="0" val=" 1"/>
+                <prop id="2" list="0" val="400.0"/>
+                <prop id="3" list="0" val="100.0"/>
+                <prop id="5" list="0" val="0.0"/>
+                <prop id="6" list="0" val="0.0"/>
+                <prop id="7" list="0" val=" 7"/>
+                <prop id="8" list="0" val="0.0"/>
+                <prop id="9" list="0" val="0.0"/>
+                <prop id="10" list="0" val="15"/>
+                <prop id="11" list="0" val="15"/>
+                <prop id="12" list="0" val="15"/>
+                <prop id="13" list="0" val="15"/>
+                <prop id="14" list="0" val="-1"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="15" list="0" val="0.0"/>
+                <prop id="17" list="0" val="false"/>
+                <prop id="16" list="0" val="Dialog Box Core"/>
+                <prop id="19" list="0" val="-1"/>
+                <prop id="18" list="0" val="0.15"/>
+                <prop id="21" list="0" val="0.0"/>
+                <prop id="20" list="0" val="0.0"/>
+                <prop id="23" list="0" val="-64.0"/>
+                <prop id="22" list="0" val="48"/>
+                <prop id="25" list="0" val="-1"/>
+                <prop id="24" list="0" val="0.0"/>
+                <prop id="27" list="0" val="255,255,255,255"/>
+                <prop id="26" list="0" val="-1"/>
+                <prop id="29" list="0" val="-1"/>
+                <prop id="28" list="0" val="100.0"/>
+                <prop id="31" list="0" val="-1"/>
+                <prop id="30" list="0" val="-1"/>
+                <prop id="32" list="0" val="-1"/>
+            </s>
+            <s enabled="true" id="11">
+                <prop id="19" list="0" val=""/>
+                <prop id="4" list="1" val="">
+                    <text order="0" value="Dialog Text #1"/>
+                    <text order="1" value="Dialog Text #2 -- this box will display wrapping when the text gets to be longer than the window can fit."/>
+                    <text order="2" value="Dialog Text #3"/>
+                    <text order="3" value="Dialog Text #4"/>
+                </prop>
+                <prop id="20" list="0" val="false"/>
+                <prop id="6" list="0" val="100.0"/>
+                <prop id="11" list="0" val="0.0"/>
+                <prop id="13" list="0" val="false"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+            <s enabled="true" id="14">
+                <prop id="1" list="0" val="4"/>
+                <prop id="2" list="0" val="0"/>
+                <prop id="3" list="0" val="Boss 3 Count"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+        </snippets>
+    </actor>
+    <sprite atlasID="0" default="0" desc="" height="64" id="49" name="Square Boss Size 4" shared="false" width="64">
+        <anim across="1" atlasID="-1" down="1" durations="100" height="64" id="0" loop="true" name="Idle" numframes="1" originx="32" originy="32" width="64">
+            <poly data="4,0,0,64,0,64,64,0,64" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="12" fixedrot="true" fric="0.2" gid="3" id="28" ignoreg="true" inertia="1.0" ldamp="0.0" lw="false" mass="1.0" name="Square Size 1" oid="-1" pausable="true" rest="0.0" shared="false" sprite="29" static="false" touchable="true">
         <snippets>
             <s enabled="true" id="6">
