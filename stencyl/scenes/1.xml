@@ -10,9 +10,76 @@
     <regions>
         <region b="64" g="64" h="96" id="0" name="Left Exit" pts="4,-5.0,-48.0,5.0,-48.0,5.0,48.0,-5.0,48.0" r="64" type="box" w="10" x="0" y="192"/>
         <region b="64" g="64" h="96" id="1" name="Right Exit" pts="4,-5.0,-48.0,5.0,-48.0,5.0,48.0,-5.0,48.0" r="64" type="box" w="10" x="630" y="192"/>
+        <region b="64" g="64" h="96" id="2" name="Boss 1 Dialog" pts="4,-16.0,48.0,16.0,48.0,16.0,-48.0,-16.0,-48.0" r="64" type="box" w="32" x="544" y="192"/>
     </regions>
     <terrainRegions/>
-    <actors/>
+    <actors>
+        <actor a="0.0" aid="2" c="true" group="3" id="30" name="Square Boss Size 2 2" sx="1.0" sy="1.0" x="589" y="221" z="0">
+            <snippets>
+                <s enabled="true" id="16"/>
+                <s enabled="true" id="9">
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                </s>
+                <s enabled="true" id="10">
+                    <prop id="1" list="0" val=" 1"/>
+                    <prop id="2" list="0" val="400.0"/>
+                    <prop id="3" list="0" val="100.0"/>
+                    <prop id="5" list="0" val="0.0"/>
+                    <prop id="6" list="0" val="0.0"/>
+                    <prop id="7" list="0" val=" 7"/>
+                    <prop id="8" list="0" val="0.0"/>
+                    <prop id="9" list="0" val="0.0"/>
+                    <prop id="10" list="0" val="15"/>
+                    <prop id="11" list="0" val="15"/>
+                    <prop id="12" list="0" val="15"/>
+                    <prop id="13" list="0" val="15"/>
+                    <prop id="14" list="0" val="-1"/>
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                    <prop id="15" list="0" val="0.5"/>
+                    <prop id="17" list="0" val="false"/>
+                    <prop id="16" list="0" val="Dialog Box Core"/>
+                    <prop id="19" list="0" val="-1"/>
+                    <prop id="18" list="0" val="0.15"/>
+                    <prop id="21" list="0" val="0.0"/>
+                    <prop id="20" list="0" val="0.0"/>
+                    <prop id="23" list="0" val="-64.0"/>
+                    <prop id="22" list="0" val="30"/>
+                    <prop id="25" list="0" val="No Sound"/>
+                    <prop id="24" list="0" val="0.0"/>
+                    <prop id="27" list="0" val="255,255,255,255"/>
+                    <prop id="26" list="0" val="Default Font"/>
+                    <prop id="29" list="0" val="No Sound"/>
+                    <prop id="28" list="0" val="100.0"/>
+                    <prop id="31" list="0" val="No Sound"/>
+                    <prop id="30" list="0" val="No Sound"/>
+                    <prop id="32" list="0" val="Default Font"/>
+                </s>
+                <s enabled="true" id="11">
+                    <prop id="19" list="0" val=""/>
+                    <prop id="21" list="0" val="2"/>
+                    <prop id="4" list="1" val="">
+                        <text order="0" value="Dialog Text #1"/>
+                        <text order="1" value="Dialog Text #2 -- this box will display wrapping when the text gets to be longer than the window can fit."/>
+                        <text order="2" value="Dialog Text #3"/>
+                        <text order="3" value="Dialog Text #4"/>
+                    </prop>
+                    <prop id="20" list="0" val="false"/>
+                    <prop id="6" list="0" val="100.0"/>
+                    <prop id="11" list="0" val="0.0"/>
+                    <prop id="13" list="0" val="false"/>
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                </s>
+                <s enabled="true" id="14">
+                    <prop id="1" list="0" val="2"/>
+                    <prop id="2" list="0" val="100"/>
+                    <prop id="3" list="0" val="Boss 1 Count"/>
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                </s>
+            </snippets>
+        </actor>
+        <actor a="0.0" aid="3" c="false" group="3" id="44" name="Collision Block 3" sx="1.0" sy="1.0" x="596" y="195" z="0"/>
+        <actor a="0.0" aid="4" c="false" group="3" id="44" name="Collision Block 4" sx="1.0" sy="1.0" x="596" y="259" z="0"/>
+    </actors>
     <snippets>
         <s enabled="true" id="1">
             <prop id="1" list="0" val="0"/>
@@ -25,12 +92,6 @@
             <prop id="10" list="0" val="1"/>
             <prop id="11" list="0" val="0"/>
             <prop id="12" list="0" val="2"/>
-        </s>
-        <s enabled="true" id="19">
-            <prop id="1" list="0" val="30"/>
-            <prop id="2" list="0" val="Boss 1 Count"/>
-            <prop id="3" list="0" val="580"/>
-            <prop id="4" list="0" val="220"/>
         </s>
         <s enabled="true" id="18">
             <prop id="1" list="0" val="0"/>
@@ -47,6 +108,10 @@
             <prop id="8" list="0" val="0"/>
             <prop id="9" list="0" val="544"/>
             <prop id="10" list="0" val="448"/>
+        </s>
+        <s enabled="true" id="29">
+            <prop id="1" list="0" val="Boss 1 Count"/>
+            <prop id="2" list="0" val="2"/>
         </s>
     </snippets>
     <terrain>

@@ -5,19 +5,16 @@
             <group eventID="1" id="-1">
                 <if comment="false" x="26" y="40">
                     <group eventID="1" id="-1">
-                        <create-actor3 comment="false" x="37" y="75">
-                            <ACTORTYPE eid="var" id="0" vid="1"/>
-                            <get-val-19-3 comment="false" id="1" x="0" y="0"/>
-                            <get-val-19-4 comment="false" id="2" x="0" y="0"/>
-                            <int id="3" val="0"/>
-                        </create-actor3>
+                        <die comment="false" x="37" y="75">
+                            <get-val-29-2 comment="false" id="0" x="0" y="0"/>
+                        </die>
                     </group>
-                    <more comment="false" id="0" x="0" y="0">
+                    <eq comment="false" id="0" x="0" y="0">
                         <as-number comment="false" id="0" x="0" y="0">
-                            <get-val-19-2 comment="false" id="0" x="0" y="0"/>
+                            <get-val-29-1 comment="false" id="0" x="0" y="0"/>
                         </as-number>
                         <int id="1" val="0"/>
-                    </more>
+                    </eq>
                 </if>
             </group>
         </init>
