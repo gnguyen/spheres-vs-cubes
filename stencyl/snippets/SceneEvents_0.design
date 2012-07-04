@@ -43,6 +43,25 @@
                         </actors-of-type3>
                     </group>
                 </else>
+                <if comment="false" x="26" y="332">
+                    <group eventID="1" id="-1">
+                        <set-volume-channel comment="false" x="37" y="362">
+                            <int id="0" val="75"/>
+                            <int id="1" val="0"/>
+                        </set-volume-channel>
+                        <play-sound-channel comment="false" x="37" y="382">
+                            <int id="0" val="1"/>
+                            <SOUND eid="79" id="1"/>
+                            <int id="2" val="0"/>
+                        </play-sound-channel>
+                        <set-game-val-15 comment="false" x="37" y="409">
+                            <true comment="false" id="0" x="0" y="0"/>
+                        </set-game-val-15>
+                    </group>
+                    <not comment="false" id="0" x="0" y="0">
+                        <get-game-val-15 comment="false" id="0" x="0" y="0"/>
+                    </not>
+                </if>
             </group>
         </init>
     </group>
