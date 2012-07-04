@@ -625,7 +625,7 @@
             <poly data="4,0,0,38,0,38,38,0,38" density="0.1" fric="0.2" gid="-1000" id="0" name="Idle" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
-    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="34" fixedrot="false" fric="0.2" gid="3" id="52" ignoreg="false" inertia="1.0" ldamp="0.0" lw="false" mass="1.0" name="Square Boss Portrait" oid="-1" pausable="true" rest="0.0" shared="false" sprite="53" static="false" touchable="true">
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="34" fixedrot="false" fric="0.2" gid="3" id="52" ignoreg="false" inertia="1.0" ldamp="0.0" lw="false" mass="1.0" name="Square Boss Portrait" oid="-1" pausable="true" rest="0.0" shared="false" sprite="53" static="true" touchable="true">
         <snippets/>
     </actor>
     <sprite atlasID="0" default="0" desc="" height="64" id="53" name="Square Boss Portrait" shared="false" width="64">
@@ -674,13 +674,13 @@
             </s>
             <s enabled="true" id="11">
                 <prop id="19" list="0" val=""/>
+                <prop id="21" list="0" val=""/>
                 <prop id="4" list="1" val="">
                     <text order="0" value="Dialog Text #1"/>
                     <text order="1" value="Dialog Text #2 -- this box will display wrapping when the text gets to be longer than the window can fit."/>
                     <text order="2" value="Dialog Text #3"/>
                     <text order="3" value="Dialog Text #4"/>
                 </prop>
-                <prop id="21" list="0" val=""/>
                 <prop id="20" list="0" val="false"/>
                 <prop id="6" list="0" val="100.0"/>
                 <prop id="11" list="0" val="0.0"/>
@@ -741,13 +741,13 @@
             </s>
             <s enabled="true" id="11">
                 <prop id="19" list="0" val=""/>
+                <prop id="21" list="0" val=""/>
                 <prop id="4" list="1" val="">
                     <text order="0" value="Dialog Text #1"/>
                     <text order="1" value="Dialog Text #2 -- this box will display wrapping when the text gets to be longer than the window can fit."/>
                     <text order="2" value="Dialog Text #3"/>
                     <text order="3" value="Dialog Text #4"/>
                 </prop>
-                <prop id="21" list="0" val=""/>
                 <prop id="20" list="0" val="false"/>
                 <prop id="6" list="0" val="100.0"/>
                 <prop id="11" list="0" val="0.0"/>
@@ -803,13 +803,13 @@
             </s>
             <s enabled="true" id="11">
                 <prop id="19" list="0" val=""/>
+                <prop id="21" list="0" val=""/>
                 <prop id="4" list="1" val="">
                     <text order="0" value="Dialog Text #1"/>
                     <text order="1" value="Dialog Text #2 -- this box will display wrapping when the text gets to be longer than the window can fit."/>
                     <text order="2" value="Dialog Text #3"/>
                     <text order="3" value="Dialog Text #4"/>
                 </prop>
-                <prop id="21" list="0" val=""/>
                 <prop id="20" list="0" val="false"/>
                 <prop id="6" list="0" val="100.0"/>
                 <prop id="11" list="0" val="0.0"/>

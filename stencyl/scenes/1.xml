@@ -43,7 +43,7 @@
                     <prop id="21" list="0" val="0.0"/>
                     <prop id="20" list="0" val="0.0"/>
                     <prop id="23" list="0" val="-64.0"/>
-                    <prop id="22" list="0" val="30"/>
+                    <prop id="22" list="0" val="52"/>
                     <prop id="25" list="0" val="-1"/>
                     <prop id="24" list="0" val="0.0"/>
                     <prop id="27" list="0" val="255,255,255,255"/>
@@ -56,13 +56,13 @@
                 </s>
                 <s enabled="true" id="11">
                     <prop id="19" list="0" val=""/>
+                    <prop id="21" list="0" val="2"/>
                     <prop id="4" list="1" val="">
                         <text order="0" value="Dialog Text #1"/>
                         <text order="1" value="Dialog Text #2 -- this box will display wrapping when the text gets to be longer than the window can fit."/>
                         <text order="2" value="Dialog Text #3"/>
                         <text order="3" value="Dialog Text #4"/>
                     </prop>
-                    <prop id="21" list="0" val="2"/>
                     <prop id="20" list="0" val="false"/>
                     <prop id="6" list="0" val="100.0"/>
                     <prop id="11" list="0" val="0.0"/>

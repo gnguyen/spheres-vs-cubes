@@ -19,14 +19,14 @@
     <props/>
     <attributes>
         <number cid="-1" id="12" name="Scene -1 Enemies Count" save="true" value="10.0"/>
-        <bool cid="-1" id="0" name="Just Entered Scene" save="true" value="true"/>
         <number cid="-1" id="11" name="Boss 3 Count" save="true" value="1.0"/>
+        <bool cid="-1" id="0" name="Just Entered Scene" save="true" value="true"/>
         <number cid="-1" id="7" name="Circle King Count" save="true" value="1.0"/>
-        <number cid="-1" id="9" name="Scene 2 Enemies Count" save="true" value="9.0"/>
         <number cid="-1" id="3" name="Player Points" save="true" value="100.0"/>
+        <number cid="-1" id="9" name="Scene 2 Enemies Count" save="true" value="9.0"/>
         <bool cid="-1" id="1" name="Moving Right" save="true" value="false"/>
-        <number cid="-1" id="6" name="Boss 1 Count" save="true" value="1.0"/>
         <number cid="-1" id="10" name="Boss 2 Count" save="true" value="1.0"/>
+        <number cid="-1" id="6" name="Boss 1 Count" save="true" value="1.0"/>
         <number cid="-1" id="5" name="Scene 1 Enemies Count" save="true" value="9.0"/>
         <number cid="-1" id="8" name="Circle Princes Count" save="true" value="4.0"/>
         <number cid="-1" id="2" name="Player Size" save="true" value="1.0"/>
