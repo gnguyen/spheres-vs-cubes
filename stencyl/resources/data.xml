@@ -71,16 +71,16 @@
                 <prop id="21" list="0" val="0.0"/>
                 <prop id="20" list="0" val="0.0"/>
                 <prop id="23" list="0" val="-64.0"/>
-                <prop id="22" list="0" val="6"/>
-                <prop id="25" list="0" val="No Sound"/>
+                <prop id="22" list="0" val="50"/>
+                <prop id="25" list="0" val="-1"/>
                 <prop id="24" list="0" val="0.0"/>
                 <prop id="27" list="0" val="255,255,255,255"/>
-                <prop id="26" list="0" val="Default Font"/>
-                <prop id="29" list="0" val="No Sound"/>
+                <prop id="26" list="0" val="-1"/>
+                <prop id="29" list="0" val="-1"/>
                 <prop id="28" list="0" val="100.0"/>
-                <prop id="31" list="0" val="No Sound"/>
-                <prop id="30" list="0" val="No Sound"/>
-                <prop id="32" list="0" val="Default Font"/>
+                <prop id="31" list="0" val="-1"/>
+                <prop id="30" list="0" val="-1"/>
+                <prop id="32" list="0" val="-1"/>
             </s>
             <s enabled="true" id="11">
                 <prop id="4" list="1" val="">
@@ -111,6 +111,14 @@
             </s>
         </snippets>
     </actor>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="33" fixedrot="false" fric="0.2" gid="3" id="50" ignoreg="false" inertia="1.0" ldamp="0.0" lw="false" mass="1.0" name="Circle King Portrait" oid="-1" pausable="true" rest="0.0" shared="false" sprite="51" static="false" touchable="true">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" desc="" height="96" id="51" name="Circle King Portrait" shared="false" width="64">
+        <anim across="1" atlasID="-1" down="1" durations="100" height="96" id="0" loop="true" name="Idle" numframes="1" originx="32" originy="48" width="64">
+            <poly data="4,0,0,64,0,64,96,0,96" density="0.1" fric="0.2" gid="-1000" id="0" name="Idle" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
     <sprite atlasID="0" default="0" desc="" height="77" id="41" name="Circle Prince" shared="false" width="51">
         <anim across="1" atlasID="-1" down="1" durations="100" height="77" id="0" loop="true" name="Idle" numframes="1" originx="25" originy="38" width="51">
             <poly data="4,0,26,51,26,51,77,0,77" density="0.1" fric="0.2" gid="-1000" id="0" name="Idle" rest="0.0" sensor="false"/>
@@ -615,6 +623,14 @@
     <sprite atlasID="0" default="0" desc="" height="38" id="31" name="Square Boss" shared="false" width="38">
         <anim across="1" atlasID="-1" down="1" durations="100" height="38" id="0" loop="true" name="Idle" numframes="1" originx="19" originy="19" width="38">
             <poly data="4,0,0,38,0,38,38,0,38" density="0.1" fric="0.2" gid="-1000" id="0" name="Idle" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="34" fixedrot="false" fric="0.2" gid="3" id="52" ignoreg="false" inertia="1.0" ldamp="0.0" lw="false" mass="1.0" name="Square Boss Portrait" oid="-1" pausable="true" rest="0.0" shared="false" sprite="53" static="false" touchable="true">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" desc="" height="64" id="53" name="Square Boss Portrait" shared="false" width="64">
+        <anim across="1" atlasID="-1" down="1" durations="100" height="64" id="0" loop="true" name="Idle" numframes="1" originx="32" originy="32" width="64">
+            <poly data="4,0,0,64,0,64,64,0,64" density="0.1" fric="0.2" gid="-1000" id="0" name="Idle" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="1" continuous="true" desc="" eventsnippetid="16" fixedrot="true" fric="0.2" gid="3" id="30" ignoreg="true" inertia="1.0" ldamp="0.0" lw="false" mass="1.0" name="Square Boss Size 2" oid="-1" pausable="true" rest="0.0" shared="false" sprite="31" static="false" touchable="true">

@@ -5,11 +5,15 @@
             <group eventID="1" id="-1">
                 <if comment="false" x="26" y="40">
                     <group eventID="1" id="-1">
-                        <dolater comment="false" x="37" y="70">
+                        <scene-enabledisable-snippet comment="false" x="37" y="70">
+                            <int id="0" val="1"/>
+                            <int id="1" val="Spawn Enemies"/>
+                        </scene-enabledisable-snippet>
+                        <dolater comment="false" x="37" y="97">
                             <group eventID="1" id="-1">
-                                <actors-of-type3 comment="false" x="48" y="97">
+                                <actors-of-type3 comment="false" x="48" y="124">
                                     <group eventID="1" id="-1">
-                                        <actor-enabledisable-snippet comment="false" x="59" y="129">
+                                        <actor-enabledisable-snippet comment="false" x="59" y="156">
                                             <actor-of-type comment="false" id="0" x="0" y="0"/>
                                             <int id="1" val="1"/>
                                             <int id="2" val="Wander"/>
@@ -27,6 +31,18 @@
                         <int id="1" val="0"/>
                     </more>
                 </if>
+                <else comment="false" x="26" y="224">
+                    <group eventID="1" id="-1">
+                        <actors-of-type3 comment="false" x="37" y="244">
+                            <group eventID="1" id="-1">
+                                <die comment="false" x="48" y="276">
+                                    <actor-of-type comment="false" id="0" x="0" y="0"/>
+                                </die>
+                            </group>
+                            <ACTORTYPE eid="40" id="0"/>
+                        </actors-of-type3>
+                    </group>
+                </else>
             </group>
         </init>
     </group>

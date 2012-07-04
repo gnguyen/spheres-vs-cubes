@@ -8,9 +8,9 @@
     <foregrounds/>
     <joints/>
     <regions>
-        <region b="64" g="64" h="96" id="0" name="Left Exit" pts="4,-5.0,48.0,5.0,48.0,5.0,-48.0,-5.0,-48.0" r="64" type="box" w="10" x="0" y="192"/>
-        <region b="64" g="64" h="96" id="1" name="Right Exit" pts="4,-5.0,48.0,5.0,48.0,5.0,-48.0,-5.0,-48.0" r="64" type="box" w="10" x="630" y="192"/>
-        <region b="64" g="64" h="96" id="2" name="Boss 1 Dialog" pts="4,-16.0,-48.0,16.0,-48.0,16.0,48.0,-16.0,48.0" r="64" type="box" w="32" x="544" y="192"/>
+        <region b="64" g="64" h="96" id="0" name="Left Exit" pts="4,-5.0,-48.0,5.0,-48.0,5.0,48.0,-5.0,48.0" r="64" type="box" w="10" x="0" y="192"/>
+        <region b="64" g="64" h="96" id="1" name="Right Exit" pts="4,-5.0,-48.0,5.0,-48.0,5.0,48.0,-5.0,48.0" r="64" type="box" w="10" x="630" y="192"/>
+        <region b="64" g="64" h="96" id="2" name="Boss 1 Dialog" pts="4,-16.0,48.0,16.0,48.0,16.0,-48.0,-16.0,-48.0" r="64" type="box" w="32" x="544" y="192"/>
     </regions>
     <terrainRegions/>
     <actors>
