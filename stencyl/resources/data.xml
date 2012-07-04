@@ -72,15 +72,15 @@
                 <prop id="20" list="0" val="0.0"/>
                 <prop id="23" list="0" val="-64.0"/>
                 <prop id="22" list="0" val="6"/>
-                <prop id="25" list="0" val="-1"/>
+                <prop id="25" list="0" val="No Sound"/>
                 <prop id="24" list="0" val="0.0"/>
                 <prop id="27" list="0" val="255,255,255,255"/>
-                <prop id="26" list="0" val="-1"/>
-                <prop id="29" list="0" val="-1"/>
+                <prop id="26" list="0" val="Default Font"/>
+                <prop id="29" list="0" val="No Sound"/>
                 <prop id="28" list="0" val="100.0"/>
-                <prop id="31" list="0" val="-1"/>
-                <prop id="30" list="0" val="-1"/>
-                <prop id="32" list="0" val="-1"/>
+                <prop id="31" list="0" val="No Sound"/>
+                <prop id="30" list="0" val="No Sound"/>
+                <prop id="32" list="0" val="Default Font"/>
             </s>
             <s enabled="true" id="11">
                 <prop id="4" list="1" val="">
@@ -126,7 +126,7 @@
                 <prop id="2" list="0" val="2.0"/>
                 <prop id="3" list="0" val="0.5"/>
                 <prop id="4" list="0" val="1.0"/>
-                <prop id="5" list="0" val="false"/>
+                <prop id="5" list="0" val="true"/>
                 <prop id="6" list="0" val="15.0"/>
                 <prop id="9" list="0" val="false"/>
                 <prop id="10" list="0" val="false"/>
@@ -135,6 +135,7 @@
                 <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="21" list="0" val="0"/>
                 <prop id="20" list="0" val="0"/>
+                <prop id="22" list="0" val="false"/>
             </s>
             <s enabled="true" id="14">
                 <prop id="1" list="0" val="2"/>
@@ -636,7 +637,7 @@
                 <prop id="13" list="0" val="15"/>
                 <prop id="14" list="0" val="-1"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
-                <prop id="15" list="0" val="0.5"/>
+                <prop id="15" list="0" val="0"/>
                 <prop id="17" list="0" val="false"/>
                 <prop id="16" list="0" val="Dialog Box Core"/>
                 <prop id="19" list="0" val="-1"/>
@@ -657,13 +658,13 @@
             </s>
             <s enabled="true" id="11">
                 <prop id="19" list="0" val=""/>
-                <prop id="21" list="0" val=""/>
                 <prop id="4" list="1" val="">
                     <text order="0" value="Dialog Text #1"/>
                     <text order="1" value="Dialog Text #2 -- this box will display wrapping when the text gets to be longer than the window can fit."/>
                     <text order="2" value="Dialog Text #3"/>
                     <text order="3" value="Dialog Text #4"/>
                 </prop>
+                <prop id="21" list="0" val=""/>
                 <prop id="20" list="0" val="false"/>
                 <prop id="6" list="0" val="100.0"/>
                 <prop id="11" list="0" val="0.0"/>
@@ -730,6 +731,7 @@
                     <text order="2" value="Dialog Text #3"/>
                     <text order="3" value="Dialog Text #4"/>
                 </prop>
+                <prop id="21" list="0" val=""/>
                 <prop id="20" list="0" val="false"/>
                 <prop id="6" list="0" val="100.0"/>
                 <prop id="11" list="0" val="0.0"/>
@@ -791,6 +793,7 @@
                     <text order="2" value="Dialog Text #3"/>
                     <text order="3" value="Dialog Text #4"/>
                 </prop>
+                <prop id="21" list="0" val=""/>
                 <prop id="20" list="0" val="false"/>
                 <prop id="6" list="0" val="100.0"/>
                 <prop id="11" list="0" val="0.0"/>
@@ -829,6 +832,7 @@
                 <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="21" list="0" val="0"/>
                 <prop id="20" list="0" val="0"/>
+                <prop id="22" list="0" val="false"/>
             </s>
             <s enabled="true" id="14">
                 <prop id="1" list="0" val="1"/>
@@ -862,6 +866,7 @@
                 <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="21" list="0" val="0"/>
                 <prop id="20" list="0" val="0"/>
+                <prop id="22" list="0" val="false"/>
             </s>
             <s enabled="true" id="14">
                 <prop id="1" list="0" val="2"/>
