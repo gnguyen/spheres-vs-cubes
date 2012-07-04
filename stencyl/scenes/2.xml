@@ -8,9 +8,10 @@
     <foregrounds/>
     <joints/>
     <regions>
-        <region b="64" g="64" h="96" id="0" name="Left Exit" pts="4,-5.0,48.0,5.0,48.0,5.0,-48.0,-5.0,-48.0" r="64" type="box" w="10" x="0" y="192"/>
-        <region b="64" g="64" h="96" id="1" name="Right Exit" pts="4,-5.0,48.0,5.0,48.0,5.0,-48.0,-5.0,-48.0" r="64" type="box" w="10" x="630" y="192"/>
-        <region b="64" g="64" h="96" id="2" name="Boss 2 Dialog" pts="4,-16.0,-48.0,16.0,-48.0,16.0,48.0,-16.0,48.0" r="64" type="box" w="32" x="544" y="192"/>
+        <region b="64" g="64" h="96" id="0" name="Left Exit" pts="4,-5.0,-48.0,5.0,-48.0,5.0,48.0,-5.0,48.0" r="64" type="box" w="10" x="0" y="192"/>
+        <region b="64" g="64" h="96" id="1" name="Right Exit" pts="4,-5.0,-48.0,5.0,-48.0,5.0,48.0,-5.0,48.0" r="64" type="box" w="10" x="630" y="192"/>
+        <region b="64" g="64" h="96" id="2" name="Boss 2 Dialog" pts="4,-16.0,48.0,16.0,48.0,16.0,-48.0,-16.0,-48.0" r="64" type="box" w="32" x="544" y="192"/>
+        <region b="64" g="64" h="32" id="3" name="HUD" pts="4,-64.0,16.0,64.0,16.0,64.0,-16.0,-64.0,-16.0" r="64" type="box" w="128" x="512" y="448"/>
     </regions>
     <terrainRegions/>
     <actors>
@@ -55,30 +56,33 @@
                 </s>
                 <s enabled="true" id="11">
                     <prop id="19" list="0" val=""/>
-                    <prop id="21" list="0" val="2"/>
                     <prop id="4" list="1" val="">
                         <text order="0" value="Dialog Text #1"/>
                         <text order="1" value="Dialog Text #2 -- this box will display wrapping when the text gets to be longer than the window can fit."/>
                         <text order="2" value="Dialog Text #3"/>
                         <text order="3" value="Dialog Text #4"/>
                     </prop>
+                    <prop id="21" list="0" val="2"/>
                     <prop id="20" list="0" val="false"/>
                     <prop id="6" list="0" val="100.0"/>
                     <prop id="11" list="0" val="0.0"/>
                     <prop id="13" list="0" val="false"/>
                     <prop id="2147483647" list="0" val="thisactor"/>
                 </s>
+                <s enabled="true" id="31"/>
                 <s enabled="true" id="14">
                     <prop id="1" list="0" val="3"/>
                     <prop id="2" list="0" val="100"/>
                     <prop id="3" list="0" val="Boss 2 Count"/>
                     <prop id="2147483647" list="0" val="thisactor"/>
                 </s>
-                <s enabled="true" id="31"/>
             </snippets>
         </actor>
     </actors>
     <snippets>
+        <s enabled="true" id="35">
+            <prop id="1" list="0" val="3"/>
+        </s>
         <s enabled="true" id="1">
             <prop id="5" list="0" val="0.5"/>
             <prop id="6" list="0" val="0.5"/>

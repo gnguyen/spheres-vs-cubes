@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <set-color comment="false" x="26" y="40">
+                    <color b="255" g="204" id="0" r="102"/>
+                </set-color>
+                <drawfill-roundrect comment="false" x="26" y="67">
+                    <int id="0" val="1"/>
+                    <get-region-pos comment="false" id="1" x="0" y="0">
+                        <REGION eid="var" id="0" vid="1"/>
+                        <int id="1" val="0"/>
+                    </get-region-pos>
+                    <get-region-pos comment="false" id="2" x="0" y="0">
+                        <REGION eid="var" id="0" vid="1"/>
+                        <int id="1" val="1"/>
+                    </get-region-pos>
+                    <get-region-size comment="false" id="3" x="0" y="0">
+                        <REGION eid="var" id="0" vid="1"/>
+                        <int id="1" val="0"/>
+                    </get-region-size>
+                    <get-region-size comment="false" id="4" x="0" y="0">
+                        <REGION eid="var" id="0" vid="1"/>
+                        <int id="1" val="1"/>
+                    </get-region-size>
+                    <int id="5" val="10"/>
+                </drawfill-roundrect>
+                <set-font-new comment="false" x="26" y="107">
+                    <FONT eid="54" id="0"/>
+                </set-font-new>
+                <draw-text comment="false" x="26" y="134">
+                    <str-combine comment="false" id="0" x="0" y="0">
+                        <int id="0" val="Size                      "/>
+                        <tostring comment="false" id="1" x="0" y="0">
+                            <get-game-val-2 comment="false" id="0" x="0" y="0"/>
+                        </tostring>
+                    </str-combine>
+                    <get-region-pos comment="false" id="1" x="0" y="0">
+                        <REGION eid="var" id="0" vid="1"/>
+                        <int id="1" val="0"/>
+                    </get-region-pos>
+                    <get-region-pos comment="false" id="2" x="0" y="0">
+                        <REGION eid="var" id="0" vid="1"/>
+                        <int id="1" val="1"/>
+                    </get-region-pos>
+                </draw-text>
+                <if comment="false" x="26" y="169">
+                    <group eventID="1" id="-1">
+                        <draw-text comment="false" x="37" y="199">
+                            <str-combine comment="false" id="0" x="0" y="0">
+                                <int id="0" val="Points     "/>
+                                <tostring comment="false" id="1" x="0" y="0">
+                                    <get-game-val-3 comment="false" id="0" x="0" y="0"/>
+                                </tostring>
+                            </str-combine>
+                            <get-region-pos comment="false" id="1" x="0" y="0">
+                                <REGION eid="var" id="0" vid="1"/>
+                                <int id="1" val="0"/>
+                            </get-region-pos>
+                            <plus comment="false" id="2" x="0" y="0">
+                                <get-region-pos comment="false" id="0" x="0" y="0">
+                                    <REGION eid="var" id="0" vid="1"/>
+                                    <int id="1" val="1"/>
+                                </get-region-pos>
+                                <int id="1" val="16"/>
+                            </plus>
+                        </draw-text>
+                    </group>
+                    <less comment="false" id="0" x="0" y="0">
+                        <get-game-val-3 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="1000"/>
+                    </less>
+                </if>
+                <else comment="false" x="26" y="249">
+                    <group eventID="1" id="-1">
+                        <draw-text comment="false" x="37" y="269">
+                            <str-combine comment="false" id="0" x="0" y="0">
+                                <int id="0" val="Points "/>
+                                <tostring comment="false" id="1" x="0" y="0">
+                                    <get-game-val-3 comment="false" id="0" x="0" y="0"/>
+                                </tostring>
+                            </str-combine>
+                            <get-region-pos comment="false" id="1" x="0" y="0">
+                                <REGION eid="var" id="0" vid="1"/>
+                                <int id="1" val="0"/>
+                            </get-region-pos>
+                            <plus comment="false" id="2" x="0" y="0">
+                                <get-region-pos comment="false" id="0" x="0" y="0">
+                                    <REGION eid="var" id="0" vid="1"/>
+                                    <int id="1" val="1"/>
+                                </get-region-pos>
+                                <int id="1" val="16"/>
+                            </plus>
+                        </draw-text>
+                    </group>
+                </else>
+            </group>
+        </draw>
+    </group>
+    <group eventID="1" id="-1"/>
+</groups>
