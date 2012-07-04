@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<scene depth="1" desc="" eventsnippetid="28" extheight="544" extwidth="704" extx="-32" exty="-32" format="2.1" gravx="-0.0" gravy="0.0" height="480" id="3" name="Scene 3" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="640">
+<scene depth="1" desc="" eventsnippetid="37" extheight="544" extwidth="704" extx="-32" exty="-32" format="2.1" gravx="-0.0" gravy="0.0" height="480" id="4" name="Scene 4" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="640">
     <layers>
         <layer color="100,168,234" id="0" name="Layer 0" order="0"/>
     </layers>
@@ -9,15 +9,14 @@
     <joints/>
     <regions>
         <region b="64" g="64" h="96" id="0" name="Left Exit" pts="4,-5.0,-48.0,5.0,-48.0,5.0,48.0,-5.0,48.0" r="64" type="box" w="10" x="0" y="192"/>
-        <region b="64" g="64" h="96" id="1" name="Right Exit" pts="4,-5.0,-48.0,5.0,-48.0,5.0,48.0,-5.0,48.0" r="64" type="box" w="10" x="630" y="192"/>
-        <region b="64" g="64" h="96" id="2" name="Boss 3 Dialog" pts="4,-8.0,48.0,8.0,48.0,8.0,-48.0,-8.0,-48.0" r="64" type="box" w="16" x="544" y="192"/>
-        <region b="64" g="64" h="32" id="3" name="HUD" pts="4,-64.0,16.0,64.0,16.0,64.0,-16.0,-64.0,-16.0" r="64" type="box" w="128" x="512" y="448"/>
+        <region b="64" g="64" h="32" id="1" name="HUD" pts="4,-64.0,-16.0,64.0,-16.0,64.0,16.0,-64.0,16.0" r="64" type="box" w="128" x="512" y="448"/>
+        <region b="64" g="64" h="416" id="2" name="Square King Dialog" pts="4,-144.0,208.0,144.0,208.0,144.0,-208.0,-144.0,-208.0" r="64" type="box" w="288" x="320" y="32"/>
     </regions>
     <terrainRegions/>
     <actors>
-        <actor a="0.0" aid="1" c="true" group="3" id="48" name="Square Boss Size 4 1" sx="1.0" sy="1.0" x="563" y="208" z="0">
+        <actor a="0.0" aid="1" c="true" group="3" id="57" name="Square King 1" sx="1.0" sy="1.0" x="544" y="176" z="0">
             <snippets>
-                <s enabled="true" id="32"/>
+                <s enabled="true" id="38"/>
                 <s enabled="true" id="9">
                     <prop id="2147483647" list="0" val="thisactor"/>
                 </s>
@@ -44,16 +43,16 @@
                     <prop id="21" list="0" val="0.0"/>
                     <prop id="20" list="0" val="0.0"/>
                     <prop id="23" list="0" val="-64.0"/>
-                    <prop id="22" list="0" val="52"/>
-                    <prop id="25" list="0" val="-1"/>
+                    <prop id="22" list="0" val="59"/>
+                    <prop id="25" list="0" val="No Sound"/>
                     <prop id="24" list="0" val="0.0"/>
                     <prop id="27" list="0" val="255,255,255,255"/>
-                    <prop id="26" list="0" val="-1"/>
-                    <prop id="29" list="0" val="-1"/>
+                    <prop id="26" list="0" val="Default Font"/>
+                    <prop id="29" list="0" val="No Sound"/>
                     <prop id="28" list="0" val="100.0"/>
-                    <prop id="31" list="0" val="-1"/>
-                    <prop id="30" list="0" val="-1"/>
-                    <prop id="32" list="0" val="-1"/>
+                    <prop id="31" list="0" val="No Sound"/>
+                    <prop id="30" list="0" val="No Sound"/>
+                    <prop id="32" list="0" val="Default Font"/>
                 </s>
                 <s enabled="true" id="11">
                     <prop id="19" list="0" val=""/>
@@ -73,37 +72,32 @@
                 <s enabled="true" id="14">
                     <prop id="1" list="0" val="4"/>
                     <prop id="2" list="0" val="0"/>
-                    <prop id="3" list="0" val="Boss 3 Count"/>
+                    <prop id="3" list="0" val="Square King Count"/>
                     <prop id="2147483647" list="0" val="thisactor"/>
                 </s>
             </snippets>
         </actor>
     </actors>
     <snippets>
-        <s enabled="true" id="35">
-            <prop id="1" list="0" val="3"/>
-        </s>
         <s enabled="true" id="1">
             <prop id="5" list="0" val="0.5"/>
             <prop id="6" list="0" val="0.5"/>
             <prop id="9" list="0" val="0"/>
-            <prop id="10" list="0" val="1"/>
-            <prop id="11" list="0" val="2"/>
-            <prop id="12" list="0" val="4"/>
+            <prop id="10" list="0" val="-1"/>
+            <prop id="11" list="0" val="3"/>
+            <prop id="12" list="0" val="-1"/>
+        </s>
+        <s enabled="true" id="35">
+            <prop id="1" list="0" val="1"/>
         </s>
         <s enabled="true" id="18">
             <prop id="1" list="0" val="0"/>
-            <prop id="2" list="0" val="1"/>
+            <prop id="2" list="0" val="-1"/>
             <prop id="3" list="0" val="-1"/>
             <prop id="4" list="0" val="0"/>
         </s>
-        <s enabled="true" id="29">
-            <prop id="1" list="0" val="Boss 3 Count"/>
-            <prop id="2" list="0" val="1"/>
-        </s>
     </snippets>
     <terrain>
-        <p pts="10,608.0,190.0,608.0,32.0,544.0,32.0,544.0,0.0,640.0,0.0,640.0,192.0,0.0,192.0,0.0,0.0,32.0,0.0,32.0,190.0" x="0.0" y="288.0"/>
-        <p pts="10,608.0,160.0,608.0,2.0,32.0,2.0,32.0,192.0,0.0,192.0,0.0,0.0,640.0,0.0,640.0,192.0,544.0,192.0,544.0,160.0" x="0.0" y="0.0"/>
+        <p pts="24,160.0,448.0,608.0,448.0,608.0,32.0,160.0,32.0,160.0,160.0,320.0,160.0,320.0,192.0,128.0,192.0,128.0,32.0,32.0,32.0,32.0,192.0,0.0,192.0,0.0,0.0,640.0,0.0,640.0,480.0,0.0,480.0,0.0,288.0,32.0,288.0,32.0,448.0,128.0,448.0,128.0,288.0,320.0,288.0,320.0,320.0,160.0,320.0" x="0.0" y="0.0"/>
     </terrain>
 </scene>
