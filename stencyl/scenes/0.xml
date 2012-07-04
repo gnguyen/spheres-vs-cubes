@@ -8,9 +8,10 @@
     <foregrounds/>
     <joints/>
     <regions>
-        <region b="64" g="64" h="96" id="0" name="Right Exit" pts="4,-5.0,48.0,5.0,48.0,5.0,-48.0,-5.0,-48.0" r="64" type="box" w="10" x="630" y="192"/>
-        <region b="64" g="64" h="96" id="1" name="Circle King Dialogue" pts="4,-16.0,48.0,16.0,48.0,16.0,-48.0,-16.0,-48.0" r="64" type="box" w="32" x="352" y="192"/>
-        <region b="64" g="64" h="32" id="2" name="HUD" pts="4,-64.0,-16.0,64.0,-16.0,64.0,16.0,-64.0,16.0" r="64" type="box" w="128" x="512" y="448"/>
+        <region b="64" g="64" h="96" id="0" name="Right Exit" pts="4,-5.0,-48.0,5.0,-48.0,5.0,48.0,-5.0,48.0" r="64" type="box" w="10" x="630" y="192"/>
+        <region b="64" g="64" h="96" id="1" name="Circle King Dialogue" pts="4,-16.0,-48.0,16.0,-48.0,16.0,48.0,-16.0,48.0" r="64" type="box" w="32" x="352" y="192"/>
+        <region b="64" g="64" h="32" id="2" name="HUD" pts="4,-64.0,16.0,64.0,16.0,64.0,-16.0,-64.0,-16.0" r="64" type="box" w="128" x="512" y="448"/>
+        <region b="64" g="64" h="96" id="3" name="Left Exit" pts="4,-5.0,-48.0,5.0,-48.0,5.0,48.0,-5.0,48.0" r="64" type="box" w="10" x="0" y="192"/>
     </regions>
     <terrainRegions/>
     <actors>
@@ -57,13 +58,13 @@
                 <s enabled="true" id="11">
                     <prop id="19" list="0" val=""/>
                     <prop id="18" list="0" val="32"/>
-                    <prop id="21" list="0" val="1"/>
                     <prop id="4" list="1" val="">
                         <text order="0" value="Dialog Text #1"/>
                         <text order="1" value="Dialog Text #2 -- this box will display wrapping when the text gets to be longer than the window can fit."/>
                         <text order="2" value="Dialog Text #3"/>
                         <text order="3" value="Dialog Text #4"/>
                     </prop>
+                    <prop id="21" list="0" val="1"/>
                     <prop id="20" list="0" val="false"/>
                     <prop id="6" list="0" val="100.0"/>
                     <prop id="11" list="0" val="0"/>
@@ -72,7 +73,7 @@
                 </s>
                 <s enabled="true" id="14">
                     <prop id="1" list="0" val="3"/>
-                    <prop id="2" list="0" val="500"/>
+                    <prop id="2" list="0" val="400"/>
                     <prop id="3" list="0" val="Circle King Count"/>
                     <prop id="2147483647" list="0" val="thisactor"/>
                 </s>
@@ -84,6 +85,9 @@
         <actor a="0.0" aid="5" c="false" group="3" id="40" name="Circle Prince 5" sx="1.0" sy="1.0" x="320" y="298" z="0"/>
     </actors>
     <snippets>
+        <s enabled="true" id="35">
+            <prop id="1" list="0" val="2"/>
+        </s>
         <s enabled="true" id="1">
             <prop id="1" list="0" val="-1"/>
             <prop id="2" list="0" val="-1"/>
@@ -91,16 +95,13 @@
             <prop id="6" list="0" val="0.5"/>
             <prop id="7" list="0" val="0"/>
             <prop id="8" list="0" val="false"/>
-            <prop id="9" list="0" val="-1"/>
+            <prop id="9" list="0" val="3"/>
             <prop id="10" list="0" val="0"/>
-            <prop id="11" list="0" val="-1"/>
+            <prop id="11" list="0" val="5"/>
             <prop id="12" list="0" val="1"/>
         </s>
-        <s enabled="true" id="35">
-            <prop id="1" list="0" val="2"/>
-        </s>
         <s enabled="true" id="18">
-            <prop id="1" list="0" val="0"/>
+            <prop id="1" list="0" val="3"/>
             <prop id="2" list="0" val="0"/>
             <prop id="3" list="0" val="-1"/>
             <prop id="4" list="0" val="0"/>
@@ -121,6 +122,7 @@
         </s>
     </snippets>
     <terrain>
-        <p pts="24,640.0,480.0,0.0,480.0,0.0,0.0,640.0,0.0,640.0,192.0,608.0,192.0,608.0,32.0,512.0,32.0,512.0,192.0,320.0,192.0,320.0,160.0,480.0,160.0,480.0,32.0,32.0,32.0,32.0,448.0,480.0,448.0,480.0,320.0,320.0,320.0,320.0,288.0,512.0,288.0,512.0,448.0,608.0,448.0,608.0,288.0,640.0,288.0" x="0.0" y="0.0"/>
+        <p pts="14,640.0,0.0,640.0,192.0,608.0,192.0,608.0,32.0,512.0,32.0,512.0,192.0,320.0,192.0,320.0,160.0,480.0,160.0,480.0,32.0,32.0,32.0,32.0,192.0,0.0,192.0,0.0,0.0" x="0.0" y="0.0"/>
+        <p pts="14,640.0,192.0,0.0,192.0,0.0,0.0,32.0,0.0,32.0,160.0,480.0,160.0,480.0,32.0,320.0,32.0,320.0,0.0,512.0,0.0,512.0,160.0,608.0,160.0,608.0,0.0,640.0,0.0" x="0.0" y="288.0"/>
     </terrain>
 </scene>
