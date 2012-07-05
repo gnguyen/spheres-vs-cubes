@@ -39,6 +39,11 @@
                                         <get-val-11-11 comment="false" id="1" x="0" y="0"/>
                                     </get-item-text>
                                 </custom-23>
+                                <say comment="false" x="48" y="241">
+                                    <ACTOR eid="var" id="0" vid="19"/>
+                                    <int id="1" val="4 Way Movement"/>
+                                    <int id="2" val="TempDisable"/>
+                                </say>
                             </group>
                             <not comment="false" id="0" x="0" y="0">
                                 <get-val-11-13 comment="false" id="0" x="0" y="0"/>
@@ -50,17 +55,17 @@
                         <REGION eid="var" id="1" vid="21"/>
                     </is-in-region>
                 </if>
-                <else-if comment="false" x="26" y="265">
+                <else-if comment="false" x="26" y="292">
                     <group eventID="2" id="-1">
-                        <set-val-11-13 comment="false" x="37" y="290">
+                        <set-val-11-13 comment="false" x="37" y="317">
                             <false comment="false" id="0" x="0" y="0"/>
                         </set-val-11-13>
-                        <custom-27 comment="false" x="37" y="315">
+                        <custom-27 comment="false" x="37" y="342">
                             <ACTOR eid="this" id="0"/>
                         </custom-27>
-                        <if comment="false" x="37" y="342">
+                        <if comment="false" x="37" y="369">
                             <group eventID="-1" id="-1">
-                                <incdec comment="false" x="48" y="382">
+                                <incdec comment="false" x="48" y="409">
                                     <int id="0" val="11"/>
                                     <int id="1" val="0"/>
                                     <int id="2" val="1"/>

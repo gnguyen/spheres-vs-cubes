@@ -26,17 +26,17 @@
                         <draw-text comment="false" x="37" y="166">
                             <int id="0" val="Blue Sky font by Rhys"/>
                             <int id="1" val="220"/>
-                            <int id="2" val="200"/>
+                            <int id="2" val="230"/>
                         </draw-text>
                         <draw-text comment="false" x="37" y="186">
                             <int id="0" val="Music by MetalRenard Music"/>
                             <int id="1" val="180"/>
-                            <int id="2" val="240"/>
+                            <int id="2" val="270"/>
                         </draw-text>
                         <draw-text comment="false" x="37" y="206">
                             <int id="0" val="Tilesets by Ceric"/>
                             <int id="1" val="240"/>
-                            <int id="2" val="280"/>
+                            <int id="2" val="310"/>
                         </draw-text>
                     </group>
                     <get-val-37-1 comment="false" id="0" x="0" y="0"/>
