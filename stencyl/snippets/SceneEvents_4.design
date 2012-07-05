@@ -1,2 +1,66 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<groups/>
+<groups>
+    <group eventID="1" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="1" id="-1">
+                        <set-color comment="false" x="37" y="65">
+                            <color b="153" g="153" id="0" r="153"/>
+                        </set-color>
+                        <drawfill-rect comment="false" x="37" y="92">
+                            <int id="0" val="1"/>
+                            <int id="1" val="128"/>
+                            <int id="2" val="96"/>
+                            <int id="3" val="384"/>
+                            <int id="4" val="256"/>
+                        </drawfill-rect>
+                        <set-font-new comment="false" x="37" y="119">
+                            <FONT eid="54" id="0"/>
+                        </set-font-new>
+                        <draw-text comment="false" x="37" y="146">
+                            <int id="0" val="THE END"/>
+                            <int id="1" val="280"/>
+                            <int id="2" val="100"/>
+                        </draw-text>
+                        <draw-text comment="false" x="37" y="166">
+                            <int id="0" val="Blue Sky font by Rhys"/>
+                            <int id="1" val="220"/>
+                            <int id="2" val="200"/>
+                        </draw-text>
+                        <draw-text comment="false" x="37" y="186">
+                            <int id="0" val="Music by MetalRenard Music"/>
+                            <int id="1" val="180"/>
+                            <int id="2" val="240"/>
+                        </draw-text>
+                        <draw-text comment="false" x="37" y="206">
+                            <int id="0" val="Tilesets by Ceric"/>
+                            <int id="1" val="240"/>
+                            <int id="2" val="280"/>
+                        </draw-text>
+                    </group>
+                    <get-val-37-1 comment="false" id="0" x="0" y="0"/>
+                </if>
+            </group>
+        </draw>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <event-actor-create-kill comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <dolater comment="false" x="26" y="42">
+                    <group eventID="2" id="-1">
+                        <set-val-37-1 comment="false" x="37" y="69">
+                            <true comment="false" id="0" x="0" y="0"/>
+                        </set-val-37-1>
+                    </group>
+                    <int id="0" val="5"/>
+                    <ACTOR eid="lastcreated" id="2"/>
+                </dolater>
+            </group>
+            <int id="0" val="1"/>
+            <ACTOR eid="1" id="1"/>
+        </event-actor-create-kill>
+    </group>
+    <group eventID="2" id="-1"/>
+</groups>
