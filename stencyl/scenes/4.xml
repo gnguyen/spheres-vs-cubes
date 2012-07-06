@@ -56,10 +56,10 @@
                 </s>
                 <s enabled="true" id="11">
                     <prop id="19" list="0" val=""/>
+                    <prop id="21" list="0" val="2"/>
                     <prop id="4" list="1" val="">
                         <text order="0" value="Enjoy your victory..."/>
                     </prop>
-                    <prop id="21" list="0" val="2"/>
                     <prop id="20" list="0" val="false"/>
                     <prop id="6" list="0" val="100.0"/>
                     <prop id="11" list="0" val="0.0"/>
@@ -92,6 +92,19 @@
             <prop id="2" list="0" val="-1"/>
             <prop id="3" list="0" val="-1"/>
             <prop id="4" list="0" val="0"/>
+        </s>
+        <s enabled="true" id="43">
+            <prop id="1" list="0" val="0"/>
+            <prop id="2" list="0" val="0"/>
+            <prop id="3" list="0" val="false"/>
+            <prop id="4" list="0" val="0"/>
+            <prop id="5" list="0" val="0"/>
+            <prop id="6" list="0" val="false"/>
+        </s>
+        <s enabled="true" id="44">
+            <prop id="1" list="0" val="0"/>
+            <prop id="2" list="0" val="0"/>
+            <prop id="3" list="0" val="false"/>
         </s>
     </snippets>
     <terrain>

@@ -5,7 +5,12 @@
             <group eventID="1" id="-1">
                 <if comment="false" x="26" y="40">
                     <group eventID="1" id="-1">
-                        <die comment="false" x="37" y="75">
+                        <scene-set-attribute comment="false" x="37" y="75">
+                            <int id="0" val="Show Points"/>
+                            <int id="1" val="_Disabled"/>
+                            <true comment="false" id="2" x="0" y="0"/>
+                        </scene-set-attribute>
+                        <die comment="false" x="37" y="100">
                             <get-val-29-2 comment="false" id="0" x="0" y="0"/>
                         </die>
                     </group>

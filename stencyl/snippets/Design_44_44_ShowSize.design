@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <event-group-create-kill comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <set-val-44-1 comment="false" x="26" y="47">
+                    <get-xy comment="false" id="0" x="0" y="0">
+                        <actor-created-killed comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
+                    </get-xy>
+                </set-val-44-1>
+                <set-val-44-2 comment="false" x="26" y="85">
+                    <get-xy comment="false" id="0" x="0" y="0">
+                        <actor-created-killed comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="1"/>
+                    </get-xy>
+                </set-val-44-2>
+                <set-val-44-3 comment="false" x="26" y="123">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-val-44-3>
+                <dolater comment="false" x="26" y="148">
+                    <group eventID="1" id="-1">
+                        <set-val-44-3 comment="false" x="37" y="175">
+                            <false comment="false" id="0" x="0" y="0"/>
+                        </set-val-44-3>
+                    </group>
+                    <int id="0" val="2"/>
+                    <ACTOR eid="lastcreated" id="2"/>
+                </dolater>
+            </group>
+            <int id="0" val="1"/>
+            <GROUP eid="0" id="1"/>
+        </event-group-create-kill>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="2" id="-1">
+                        <set-font-new comment="false" x="37" y="65">
+                            <FONT eid="85" id="0"/>
+                        </set-font-new>
+                        <draw-text comment="false" x="37" y="92">
+                            <int id="0" val="SIZE UP!"/>
+                            <get-val-44-1 comment="false" id="1" x="0" y="0"/>
+                            <get-val-44-2 comment="false" id="2" x="0" y="0"/>
+                        </draw-text>
+                    </group>
+                    <get-val-44-3 comment="false" id="0" x="0" y="0"/>
+                </if>
+            </group>
+        </draw>
+    </group>
+    <group eventID="2" id="-1"/>
+</groups>

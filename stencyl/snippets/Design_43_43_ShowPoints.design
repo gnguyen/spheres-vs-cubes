@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <event-group-create-kill comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <if comment="false" x="26" y="47">
+                    <group eventID="1" id="-1">
+                        <stop comment="false" x="37" y="72"/>
+                    </group>
+                    <get-val-43-6 comment="false" id="0" x="0" y="0"/>
+                </if>
+                <set-val-43-1 comment="false" x="26" y="104">
+                    <get-xy comment="false" id="0" x="0" y="0">
+                        <actor-created-killed comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
+                    </get-xy>
+                </set-val-43-1>
+                <set-val-43-2 comment="false" x="26" y="142">
+                    <get-xy comment="false" id="0" x="0" y="0">
+                        <actor-created-killed comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="1"/>
+                    </get-xy>
+                </set-val-43-2>
+                <set-val-43-5 comment="false" x="26" y="180">
+                    <get-attribute comment="false" id="0" x="0" y="0">
+                        <actor-created-killed comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="Enemy Size"/>
+                        <int id="2" val="_Points"/>
+                    </get-attribute>
+                </set-val-43-5>
+                <set-val-43-3 comment="false" x="26" y="218">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-val-43-3>
+                <set-val-43-4 comment="false" x="26" y="243">
+                    <plus comment="false" id="0" x="0" y="0">
+                        <get-val-43-4 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="1"/>
+                    </plus>
+                </set-val-43-4>
+                <dolater comment="false" x="26" y="273">
+                    <group eventID="1" id="-1">
+                        <set-val-43-4 comment="false" x="37" y="300">
+                            <minus comment="false" id="0" x="0" y="0">
+                                <get-val-43-4 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="1"/>
+                            </minus>
+                        </set-val-43-4>
+                        <if comment="false" x="37" y="330">
+                            <group eventID="1" id="-1">
+                                <set-val-43-3 comment="false" x="48" y="360">
+                                    <false comment="false" id="0" x="0" y="0"/>
+                                </set-val-43-3>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-val-43-4 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="0"/>
+                            </eq>
+                        </if>
+                    </group>
+                    <int id="0" val="1"/>
+                    <ACTOR eid="lastcreated" id="2"/>
+                </dolater>
+            </group>
+            <int id="0" val="1"/>
+            <GROUP eid="3" id="1"/>
+        </event-group-create-kill>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="2" id="-1">
+                        <set-font-new comment="false" x="37" y="65">
+                            <FONT eid="85" id="0"/>
+                        </set-font-new>
+                        <draw-text comment="false" x="37" y="92">
+                            <str-combine comment="false" id="0" x="0" y="0">
+                                <int id="0" val="+"/>
+                                <get-val-43-5 comment="false" id="1" x="0" y="0"/>
+                            </str-combine>
+                            <get-val-43-1 comment="false" id="1" x="0" y="0"/>
+                            <get-val-43-2 comment="false" id="2" x="0" y="0"/>
+                        </draw-text>
+                    </group>
+                    <get-val-43-3 comment="false" id="0" x="0" y="0"/>
+                </if>
+            </group>
+        </draw>
+    </group>
+    <group eventID="2" id="-1"/>
+</groups>
