@@ -1,38 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <groups>
-    <group eventID="1" id="0">
-        <event-group-create-kill comment="false" x="15" y="15">
-            <group eventID="1" id="-1">
-                <set-val-44-1 comment="false" x="26" y="47">
-                    <get-xy comment="false" id="0" x="0" y="0">
-                        <actor-created-killed comment="false" id="0" x="0" y="0"/>
-                        <int id="1" val="0"/>
-                    </get-xy>
-                </set-val-44-1>
-                <set-val-44-2 comment="false" x="26" y="85">
-                    <get-xy comment="false" id="0" x="0" y="0">
-                        <actor-created-killed comment="false" id="0" x="0" y="0"/>
-                        <int id="1" val="1"/>
-                    </get-xy>
-                </set-val-44-2>
-                <set-val-44-3 comment="false" x="26" y="123">
-                    <true comment="false" id="0" x="0" y="0"/>
-                </set-val-44-3>
-                <dolater comment="false" x="26" y="148">
-                    <group eventID="1" id="-1">
-                        <set-val-44-3 comment="false" x="37" y="175">
-                            <false comment="false" id="0" x="0" y="0"/>
-                        </set-val-44-3>
-                    </group>
-                    <int id="0" val="2"/>
-                    <ACTOR eid="lastcreated" id="2"/>
-                </dolater>
-            </group>
-            <int id="0" val="1"/>
-            <GROUP eid="0" id="1"/>
-        </event-group-create-kill>
-    </group>
-    <group eventID="1" id="-1"/>
     <group eventID="2" id="0">
         <draw comment="false" x="15" y="15">
             <group eventID="2" id="-1">
@@ -53,4 +20,44 @@
         </draw>
     </group>
     <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <event-custom comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <actors-in-group comment="false" x="26" y="40">
+                    <group eventID="1" id="-1">
+                        <set-val-44-4 comment="false" x="37" y="72">
+                            <actor-in-group comment="false" id="0" x="0" y="0"/>
+                        </set-val-44-4>
+                    </group>
+                    <GROUP eid="0" id="0"/>
+                </actors-in-group>
+                <set-val-44-1 comment="false" x="26" y="116">
+                    <get-xy comment="false" id="0" x="0" y="0">
+                        <get-val-44-4 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
+                    </get-xy>
+                </set-val-44-1>
+                <set-val-44-2 comment="false" x="26" y="154">
+                    <get-xy comment="false" id="0" x="0" y="0">
+                        <get-val-44-4 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="1"/>
+                    </get-xy>
+                </set-val-44-2>
+                <set-val-44-3 comment="false" x="26" y="192">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-val-44-3>
+                <dolater comment="false" x="26" y="217">
+                    <group eventID="1" id="-1">
+                        <set-val-44-3 comment="false" x="37" y="244">
+                            <false comment="false" id="0" x="0" y="0"/>
+                        </set-val-44-3>
+                    </group>
+                    <int id="0" val="2"/>
+                    <ACTOR eid="lastcreated" id="2"/>
+                </dolater>
+            </group>
+            <int id="0" val="SizeIncreased"/>
+        </event-custom>
+    </group>
+    <group eventID="3" id="-1"/>
 </groups>

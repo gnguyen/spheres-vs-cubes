@@ -97,6 +97,10 @@
                                     <get-val-15-3 comment="false" id="2" x="0" y="0"/>
                                     <int id="3" val="0"/>
                                 </create-actor3>
+                                <scene-say comment="false" x="48" y="645">
+                                    <int id="0" val="Show Size"/>
+                                    <int id="1" val="SizeIncreased"/>
+                                </scene-say>
                             </group>
                             <int id="0" val="1"/>
                             <ACTOR eid="this" id="2"/>

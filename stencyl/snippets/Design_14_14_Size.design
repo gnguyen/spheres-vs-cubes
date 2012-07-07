@@ -38,6 +38,17 @@
                         <get-val-14-1 comment="false" id="1" x="0" y="0"/>
                     </moreeq>
                 </if>
+                <else comment="false" x="26" y="235">
+                    <group eventID="1" id="-1">
+                        <die comment="false" x="37" y="255">
+                            <collide-member-of-group comment="false" id="0" x="0" y="0"/>
+                        </die>
+                        <scene-say comment="false" x="37" y="287">
+                            <int id="0" val="Spawn Player"/>
+                            <int id="1" val="Spawn"/>
+                        </scene-say>
+                    </group>
+                </else>
             </group>
             <ACTOR eid="this" id="0"/>
             <GROUP eid="0" id="1"/>

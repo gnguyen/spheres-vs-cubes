@@ -3,6 +3,17 @@
     <group eventID="1" id="0">
         <init comment="false" x="15" y="15">
             <group eventID="1" id="-1">
+                <scene-say comment="false" x="26" y="40">
+                    <int id="0" val="Spawn Player"/>
+                    <int id="1" val="Spawn"/>
+                </scene-say>
+            </group>
+        </init>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <event-custom comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
                 <if comment="false" x="26" y="40">
                     <group eventID="1" id="-1">
                         <set-val-18-3 comment="false" x="37" y="70">
@@ -120,7 +131,8 @@
                     </group>
                 </else>
             </group>
-        </init>
+            <int id="0" val="Spawn"/>
+        </event-custom>
     </group>
-    <group eventID="1" id="-1"/>
+    <group eventID="2" id="-1"/>
 </groups>
