@@ -3,31 +3,34 @@
     <group eventID="1" id="0">
         <step comment="false" x="15" y="15">
             <group eventID="-1" id="-1">
-                <if comment="false" x="26" y="40">
+                <actors-in-group comment="false" x="26" y="40">
                     <group eventID="1" id="-1">
-                        <actors-in-group comment="false" x="37" y="83">
-                            <group eventID="1" id="-1">
-                                <if comment="false" x="48" y="115">
-                                    <group eventID="-1" id="-1">
-                                        <scene-change-new comment="false" x="59" y="153">
-                                            <SCENE eid="var" id="0" vid="11"/>
-                                            <int id="1" val="0"/>
-                                            <get-val-1-5 comment="false" id="2" x="0" y="0"/>
-                                            <int id="3" val="0"/>
-                                            <get-val-1-6 comment="false" id="4" x="0" y="0"/>
-                                        </scene-change-new>
-                                        <set-game-val-1 comment="false" x="59" y="185">
-                                            <false comment="false" id="0" x="0" y="0"/>
-                                        </set-game-val-1>
-                                    </group>
-                                    <is-in-region comment="false" id="0" x="0" y="0">
-                                        <actor-in-group comment="false" id="0" x="0" y="0"/>
-                                        <REGION eid="var" id="1" vid="9"/>
-                                    </is-in-region>
-                                </if>
+                        <set-val-1-17 comment="false" x="37" y="72">
+                            <actor-in-group comment="false" id="0" x="0" y="0"/>
+                        </set-val-1-17>
+                    </group>
+                    <GROUP eid="0" id="0"/>
+                </actors-in-group>
+                <if comment="false" x="26" y="116">
+                    <group eventID="1" id="-1">
+                        <if comment="false" x="37" y="159">
+                            <group eventID="-1" id="-1">
+                                <scene-change-new comment="false" x="48" y="197">
+                                    <SCENE eid="var" id="0" vid="11"/>
+                                    <int id="1" val="0"/>
+                                    <get-val-1-5 comment="false" id="2" x="0" y="0"/>
+                                    <int id="3" val="0"/>
+                                    <get-val-1-6 comment="false" id="4" x="0" y="0"/>
+                                </scene-change-new>
+                                <set-game-val-16 comment="false" x="48" y="229">
+                                    <int id="0" val="3"/>
+                                </set-game-val-16>
                             </group>
-                            <GROUP eid="0" id="0"/>
-                        </actors-in-group>
+                            <is-in-region comment="false" id="0" x="0" y="0">
+                                <get-val-1-17 comment="false" id="0" x="0" y="0"/>
+                                <REGION eid="var" id="1" vid="9"/>
+                            </is-in-region>
+                        </if>
                     </group>
                     <and comment="false" id="0" x="0" y="0">
                         <and comment="false" id="0" x="0" y="0">
@@ -45,31 +48,26 @@
                         </not>
                     </and>
                 </if>
-                <if comment="false" x="26" y="246">
+                <if comment="false" x="26" y="273">
                     <group eventID="1" id="-1">
-                        <actors-in-group comment="false" x="37" y="289">
-                            <group eventID="1" id="-1">
-                                <if comment="false" x="48" y="321">
-                                    <group eventID="1" id="-1">
-                                        <scene-change-new comment="false" x="59" y="359">
-                                            <SCENE eid="var" id="0" vid="12"/>
-                                            <int id="1" val="0"/>
-                                            <get-val-1-5 comment="false" id="2" x="0" y="0"/>
-                                            <int id="3" val="0"/>
-                                            <get-val-1-6 comment="false" id="4" x="0" y="0"/>
-                                        </scene-change-new>
-                                        <set-game-val-1 comment="false" x="59" y="391">
-                                            <true comment="false" id="0" x="0" y="0"/>
-                                        </set-game-val-1>
-                                    </group>
-                                    <is-in-region comment="false" id="0" x="0" y="0">
-                                        <actor-in-group comment="false" id="0" x="0" y="0"/>
-                                        <REGION eid="var" id="1" vid="10"/>
-                                    </is-in-region>
-                                </if>
+                        <if comment="false" x="37" y="316">
+                            <group eventID="-1" id="-1">
+                                <scene-change-new comment="false" x="48" y="354">
+                                    <SCENE eid="var" id="0" vid="12"/>
+                                    <int id="1" val="0"/>
+                                    <get-val-1-5 comment="false" id="2" x="0" y="0"/>
+                                    <int id="3" val="0"/>
+                                    <get-val-1-6 comment="false" id="4" x="0" y="0"/>
+                                </scene-change-new>
+                                <set-game-val-16 comment="false" x="48" y="386">
+                                    <int id="0" val="1"/>
+                                </set-game-val-16>
                             </group>
-                            <GROUP eid="0" id="0"/>
-                        </actors-in-group>
+                            <is-in-region comment="false" id="0" x="0" y="0">
+                                <get-val-1-17 comment="false" id="0" x="0" y="0"/>
+                                <REGION eid="var" id="1" vid="10"/>
+                            </is-in-region>
+                        </if>
                     </group>
                     <and comment="false" id="0" x="0" y="0">
                         <and comment="false" id="0" x="0" y="0">
@@ -79,6 +77,80 @@
                             </value>
                             <value comment="false" id="1" x="0" y="0">
                                 <int id="0" val="12"/>
+                                <int id="1" val="0"/>
+                            </value>
+                        </and>
+                        <not comment="false" id="1" x="0" y="0">
+                            <is-transitioning comment="false" id="0" x="0" y="0"/>
+                        </not>
+                    </and>
+                </if>
+                <if comment="false" x="26" y="430">
+                    <group eventID="1" id="-1">
+                        <if comment="false" x="37" y="473">
+                            <group eventID="-1" id="-1">
+                                <scene-change-new comment="false" x="48" y="511">
+                                    <SCENE eid="var" id="0" vid="14"/>
+                                    <int id="1" val="0"/>
+                                    <get-val-1-5 comment="false" id="2" x="0" y="0"/>
+                                    <int id="3" val="0"/>
+                                    <get-val-1-6 comment="false" id="4" x="0" y="0"/>
+                                </scene-change-new>
+                                <set-game-val-16 comment="false" x="48" y="543">
+                                    <int id="0" val="2"/>
+                                </set-game-val-16>
+                            </group>
+                            <is-in-region comment="false" id="0" x="0" y="0">
+                                <get-val-1-17 comment="false" id="0" x="0" y="0"/>
+                                <REGION eid="var" id="1" vid="13"/>
+                            </is-in-region>
+                        </if>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <and comment="false" id="0" x="0" y="0">
+                            <value comment="false" id="0" x="0" y="0">
+                                <int id="0" val="13"/>
+                                <int id="1" val="0"/>
+                            </value>
+                            <value comment="false" id="1" x="0" y="0">
+                                <int id="0" val="14"/>
+                                <int id="1" val="0"/>
+                            </value>
+                        </and>
+                        <not comment="false" id="1" x="0" y="0">
+                            <is-transitioning comment="false" id="0" x="0" y="0"/>
+                        </not>
+                    </and>
+                </if>
+                <if comment="false" x="26" y="587">
+                    <group eventID="1" id="-1">
+                        <if comment="false" x="37" y="630">
+                            <group eventID="-1" id="-1">
+                                <scene-change-new comment="false" x="48" y="668">
+                                    <SCENE eid="var" id="0" vid="18"/>
+                                    <int id="1" val="0"/>
+                                    <get-val-1-5 comment="false" id="2" x="0" y="0"/>
+                                    <int id="3" val="0"/>
+                                    <get-val-1-6 comment="false" id="4" x="0" y="0"/>
+                                </scene-change-new>
+                                <set-game-val-16 comment="false" x="48" y="700">
+                                    <int id="0" val="0"/>
+                                </set-game-val-16>
+                            </group>
+                            <is-in-region comment="false" id="0" x="0" y="0">
+                                <get-val-1-17 comment="false" id="0" x="0" y="0"/>
+                                <REGION eid="var" id="1" vid="15"/>
+                            </is-in-region>
+                        </if>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <and comment="false" id="0" x="0" y="0">
+                            <value comment="false" id="0" x="0" y="0">
+                                <int id="0" val="15"/>
+                                <int id="1" val="0"/>
+                            </value>
+                            <value comment="false" id="1" x="0" y="0">
+                                <int id="0" val="16"/>
                                 <int id="1" val="0"/>
                             </value>
                         </and>

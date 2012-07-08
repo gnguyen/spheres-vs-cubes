@@ -46,6 +46,49 @@
                         </as-number>
                     </less>
                 </while>
+                <set-val-23-5 comment="false" x="26" y="184">
+                    <int id="0" val="0"/>
+                </set-val-23-5>
+                <while comment="false" x="26" y="204">
+                    <group eventID="1" id="-1">
+                        <create-actor3 comment="false" x="37" y="239">
+                            <get-val-23-13 comment="false" id="0" x="0" y="0"/>
+                            <plus comment="false" id="1" x="0" y="0">
+                                <times comment="false" id="0" x="0" y="0">
+                                    <random comment="false" id="0" x="0" y="0"/>
+                                    <minus comment="false" id="1" x="0" y="0">
+                                        <get-val-23-9 comment="false" id="0" x="0" y="0"/>
+                                        <get-val-23-7 comment="false" id="1" x="0" y="0"/>
+                                    </minus>
+                                </times>
+                                <get-val-23-7 comment="false" id="1" x="0" y="0"/>
+                            </plus>
+                            <plus comment="false" id="2" x="0" y="0">
+                                <times comment="false" id="0" x="0" y="0">
+                                    <random comment="false" id="0" x="0" y="0"/>
+                                    <minus comment="false" id="1" x="0" y="0">
+                                        <get-val-23-10 comment="false" id="0" x="0" y="0"/>
+                                        <get-val-23-8 comment="false" id="1" x="0" y="0"/>
+                                    </minus>
+                                </times>
+                                <get-val-23-8 comment="false" id="1" x="0" y="0"/>
+                            </plus>
+                            <int id="3" val="0"/>
+                        </create-actor3>
+                        <set-val-23-5 comment="false" x="37" y="286">
+                            <plus comment="false" id="0" x="0" y="0">
+                                <get-val-23-5 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="1"/>
+                            </plus>
+                        </set-val-23-5>
+                    </group>
+                    <less comment="false" id="0" x="0" y="0">
+                        <get-val-23-5 comment="false" id="0" x="0" y="0"/>
+                        <as-number comment="false" id="1" x="0" y="0">
+                            <get-val-23-12 comment="false" id="0" x="0" y="0"/>
+                        </as-number>
+                    </less>
+                </while>
             </group>
         </init>
     </group>

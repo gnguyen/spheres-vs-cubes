@@ -20,22 +20,22 @@
                         </set-font-new>
                         <draw-text comment="false" x="37" y="146">
                             <int id="0" val="THE END"/>
-                            <int id="1" val="275"/>
+                            <int id="1" val="260"/>
                             <int id="2" val="100"/>
                         </draw-text>
                         <draw-text comment="false" x="37" y="166">
                             <int id="0" val="Blue Sky font by Rhys"/>
-                            <int id="1" val="210"/>
+                            <int id="1" val="200"/>
                             <int id="2" val="230"/>
                         </draw-text>
                         <draw-text comment="false" x="37" y="186">
                             <int id="0" val="Music by MetalRenard Music"/>
-                            <int id="1" val="165"/>
+                            <int id="1" val="140"/>
                             <int id="2" val="270"/>
                         </draw-text>
                         <draw-text comment="false" x="37" y="206">
                             <int id="0" val="Tilesets by Ceric"/>
-                            <int id="1" val="230"/>
+                            <int id="1" val="210"/>
                             <int id="2" val="310"/>
                         </draw-text>
                     </group>

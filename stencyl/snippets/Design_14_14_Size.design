@@ -45,7 +45,7 @@
                         </die>
                         <scene-say comment="false" x="37" y="287">
                             <int id="0" val="Spawn Player"/>
-                            <int id="1" val="Spawn"/>
+                            <int id="1" val="Respawn"/>
                         </scene-say>
                     </group>
                 </else>

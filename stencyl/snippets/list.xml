@@ -8,12 +8,17 @@
         </events>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_1_1_SwitchSceneonEnterRegion" desc="Switch scene when an actor enters a region." description="Switch scene when an actor enters a region." design="true" drawOrder="0" id="1" language="" name="Switch Scene on Enter Region" oid="-1" package="scripts" scenespecific="false" shared="false" type="scene">
-        <number default="0.5" desc="The time to fade out, in seconds." dropdown="" fullname="Fade Out Time" hidden="false" id="5" name="_FadeOutTime" order="4"/>
-        <number default="0.5" desc="The time to fade in, in seconds." dropdown="" fullname="Fade In Time" hidden="false" id="6" name="_FadeInTime" order="5"/>
+        <actor default="" desc="" dropdown="" fullname="Player" hidden="true" id="17" name="_Player" order="10"/>
+        <scene default="" desc="" dropdown="" fullname="Up Scene" hidden="false" id="18" name="_UpScene" order="7"/>
+        <number default="0.5" desc="The time to fade out, in seconds." dropdown="" fullname="Fade Out Time" hidden="false" id="5" name="_FadeOutTime" order="8"/>
+        <number default="0.5" desc="The time to fade in, in seconds." dropdown="" fullname="Fade In Time" hidden="false" id="6" name="_FadeInTime" order="9"/>
         <region default="" desc="" dropdown="" fullname="Left Region" hidden="false" id="9" name="_LeftRegion" order="0"/>
         <region default="" desc="" dropdown="" fullname="Right Region" hidden="false" id="10" name="_RightRegion" order="2"/>
         <scene default="" desc="" dropdown="" fullname="Left Scene" hidden="false" id="11" name="_LeftScene" order="1"/>
         <scene default="" desc="" dropdown="" fullname="Right Scene" hidden="false" id="12" name="_RightScene" order="3"/>
+        <region default="" desc="" dropdown="" fullname="Down Region" hidden="false" id="13" name="_DownRegion" order="4"/>
+        <scene default="" desc="" dropdown="" fullname="Down Scene" hidden="false" id="14" name="_DownScene" order="5"/>
+        <region default="" desc="" dropdown="" fullname="Up Region" hidden="false" id="15" name="_UpRegion" order="6"/>
         <blocks/>
         <events>
             <event displayName="Updated" enabled="true" id="1" name="step" order="1" repeats="true"/>
@@ -21,9 +26,7 @@
     </snippet>
     <snippet attachedevent="true" class="scripts.SceneEvents_1" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="4" language="" name="SceneEvents_1" oid="-1" package="scripts." sceneid="1" scenespecific="true" shared="false" type="scene">
         <blocks/>
-        <events>
-            <event displayName="Actor Created" enabled="true" id="1" name="event-actor-create-kill" order="1" repeats="true"/>
-        </events>
+        <events/>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_6_6_CannotExitScreen" desc="Prevent the actor from leaving the screen." description="Prevent the actor from leaving the screen." design="true" drawOrder="0" id="6" language="" name="Cannot Exit Screen" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
         <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
@@ -220,10 +223,15 @@
         <region default="" desc="" dropdown="" fullname="Right Exit" hidden="false" id="2" name="_RightExit" order="1"/>
         <actortype default="" desc="" dropdown="" fullname="Player Type" hidden="true" id="3" name="_PlayerType" order="2"/>
         <number default="0" desc="" dropdown="" fullname="Player Width" hidden="true" id="4" name="_PlayerWidth" order="3"/>
+        <region default="" desc="" dropdown="" fullname="Down Exit" hidden="false" id="5" name="_DownExit" order="4"/>
+        <region default="" desc="" dropdown="" fullname="Up Exit" hidden="false" id="6" name="_UpExit" order="5"/>
+        <actor default="" desc="" dropdown="" fullname="Player" hidden="true" id="7" name="_Player" order="6"/>
         <blocks/>
         <events>
             <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
             <event displayName="Spawn" enabled="true" id="2" name="event-custom" order="2" repeats="true"/>
+            <event displayName="Respawn" enabled="true" id="3" name="event-custom" order="3" repeats="true"/>
+            <event displayName="Blink" enabled="true" id="4" name="event-custom" order="4" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="true" class="scripts.ActorEvents_36" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="21" language="" name="ActorEvents_36" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
@@ -235,14 +243,17 @@
         <events/>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_23_23_SpawnEnemies" desc="" description="" design="true" drawOrder="0" id="23" language="" name="Spawn Enemies" oid="-1" package="scripts" scenespecific="false" shared="false" type="scene">
-        <number default="0" desc="" dropdown="" fullname="Enemy Width" hidden="false" id="3" name="_EnemyWidth" order="0"/>
-        <game-attribute default="" desc="" dropdown="" fullname="Enemy Count" hidden="false" id="4" name="_EnemyCount" order="1"/>
-        <number default="0" desc="" dropdown="" fullname="Enemy Index" hidden="true" id="5" name="_EnemyIndex" order="2"/>
-        <actortype default="" desc="" dropdown="" fullname="Enemy Type" hidden="false" id="6" name="_EnemyType" order="3"/>
-        <number default="0" desc="" dropdown="" fullname="Min Area X Coordinate" hidden="false" id="7" name="_MinAreaXCoordinate" order="4"/>
-        <number default="0" desc="" dropdown="" fullname="Min Area Y Coordinate" hidden="false" id="8" name="_MinAreaYCoordinate" order="5"/>
-        <number default="0" desc="" dropdown="" fullname="Max Area X Coordinate" hidden="false" id="9" name="_MaxAreaXCoordinate" order="6"/>
-        <number default="0" desc="" dropdown="" fullname="Max Area Y Coordinate" hidden="false" id="10" name="_MaxAreaYCoordinate" order="7"/>
+        <number default="0.0" desc="" dropdown="" fullname="Enemy Width A" hidden="false" id="3" name="_EnemyWidthA" order="2"/>
+        <game-attribute default="" desc="" dropdown="" fullname="Enemy Count A" hidden="false" id="4" name="_EnemyCountA" order="1"/>
+        <number default="0.0" desc="" dropdown="" fullname="Enemy Index" hidden="true" id="5" name="_EnemyIndex" order="6"/>
+        <actortype default="" desc="" dropdown="" fullname="Enemy Type A" hidden="false" id="6" name="_EnemyTypeA" order="0"/>
+        <number default="0" desc="" dropdown="" fullname="Min Area X Coordinate" hidden="false" id="7" name="_MinAreaXCoordinate" order="7"/>
+        <number default="0" desc="" dropdown="" fullname="Min Area Y Coordinate" hidden="false" id="8" name="_MinAreaYCoordinate" order="8"/>
+        <number default="0" desc="" dropdown="" fullname="Max Area X Coordinate" hidden="false" id="9" name="_MaxAreaXCoordinate" order="9"/>
+        <number default="0" desc="" dropdown="" fullname="Max Area Y Coordinate" hidden="false" id="10" name="_MaxAreaYCoordinate" order="10"/>
+        <game-attribute default="" desc="" dropdown="" fullname="Enemy Count B" hidden="false" id="12" name="_EnemyCountB" order="4"/>
+        <actortype default="" desc="" dropdown="" fullname="Enemy Type B" hidden="false" id="13" name="_EnemyTypeB" order="3"/>
+        <number default="0" desc="" dropdown="" fullname="Enemy Width B" hidden="false" id="14" name="_EnemyWidthB" order="5"/>
         <blocks/>
         <events>
             <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
@@ -264,10 +275,6 @@
         </events>
     </snippet>
     <snippet attachedevent="true" class="scripts.ActorEvents_42" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="27" language="" name="ActorEvents_42" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
-        <blocks/>
-        <events/>
-    </snippet>
-    <snippet attachedevent="true" class="scripts.SceneEvents_2" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="26" language="" name="SceneEvents_2" oid="-1" package="scripts." sceneid="2" scenespecific="true" shared="false" type="scene">
         <blocks/>
         <events/>
     </snippet>
@@ -355,6 +362,14 @@
         <blocks/>
         <events/>
     </snippet>
+    <snippet attachedevent="true" class="scripts.SceneEvents_7" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="46" language="" name="SceneEvents_7" oid="-1" package="scripts." sceneid="7" scenespecific="true" shared="false" type="scene">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.ActorEvents_86" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="47" language="" name="ActorEvents_86" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
     <snippet attachedevent="false" class="scripts.Design_44_44_ShowSize" desc="" description="" design="true" drawOrder="0" id="44" language="" name="Show Size" oid="-1" package="scripts" scenespecific="false" shared="false" type="scene">
         <number default="0.0" desc="" dropdown="" fullname="X" hidden="true" id="1" name="_X" order="0"/>
         <number default="0" desc="" dropdown="" fullname="Y" hidden="true" id="2" name="_Y" order="1"/>
@@ -365,5 +380,13 @@
             <event displayName="Drawing" enabled="true" id="2" name="draw" order="2" repeats="true"/>
             <event displayName="SizeIncreased" enabled="true" id="3" name="event-custom" order="3" repeats="true"/>
         </events>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.SceneEvents_6" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="45" language="" name="SceneEvents_6" oid="-1" package="scripts." sceneid="6" scenespecific="true" shared="false" type="scene">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.ActorEvents_88" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="48" language="" name="ActorEvents_88" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <blocks/>
+        <events/>
     </snippet>
 </pack>
