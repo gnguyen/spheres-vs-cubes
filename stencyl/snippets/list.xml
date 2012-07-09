@@ -182,6 +182,12 @@
         <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <number default="0" desc="" dropdown="" fullname="Speed Y" hidden="true" id="21" name="_SpeedY" order="4"/>
         <number default="0" desc="" dropdown="" fullname="Speed X" hidden="true" id="20" name="_SpeedX" order="3"/>
+        <animation default="" desc="" dropdown="" fullname="Idle Animation" hidden="false" id="23" name="_IdleAnimation" order="14"/>
+        <number default="0" desc="" dropdown="" fullname="Move Direction" hidden="true" id="22" name="_MoveDirection" order="13"/>
+        <animation default="" desc="" dropdown="" fullname="Left Animation" hidden="false" id="25" name="_LeftAnimation" order="16"/>
+        <animation default="" desc="" dropdown="" fullname="Down Animation" hidden="false" id="24" name="_DownAnimation" order="15"/>
+        <animation default="" desc="" dropdown="" fullname="Up Animation" hidden="false" id="27" name="_UpAnimation" order="18"/>
+        <animation default="" desc="" dropdown="" fullname="Right Animation" hidden="false" id="26" name="_RightAnimation" order="17"/>
         <blocks/>
         <events>
             <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>

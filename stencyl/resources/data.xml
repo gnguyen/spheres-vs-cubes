@@ -142,7 +142,12 @@
                 <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="21" list="0" val="0"/>
                 <prop id="20" list="0" val="0"/>
+                <prop id="23" list="0" val="Idle"/>
                 <prop id="22" list="0" val="false"/>
+                <prop id="25" list="0" val="Idle"/>
+                <prop id="24" list="0" val="Idle"/>
+                <prop id="27" list="0" val="Idle"/>
+                <prop id="26" list="0" val="Idle"/>
             </s>
             <s enabled="true" id="14">
                 <prop id="1" list="0" val="2"/>
@@ -171,11 +176,17 @@
                 <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="21" list="0" val="0"/>
                 <prop id="20" list="0" val="0"/>
+                <prop id="23" list="0" val="Idle"/>
+                <prop id="22" list="0" val="0"/>
+                <prop id="25" list="0" val="Idle"/>
+                <prop id="24" list="0" val="Idle"/>
+                <prop id="27" list="0" val="Idle"/>
+                <prop id="26" list="0" val="Idle"/>
             </s>
             <s enabled="true" id="14">
                 <prop id="1" list="0" val="1"/>
                 <prop id="2" list="0" val="10"/>
-                <prop id="3" list="0" val="Scene A Enemies Count"/>
+                <prop id="3" list="0" val="Scene 2A Enemy 1 Count"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
         </snippets>
@@ -737,7 +748,12 @@
                 <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="21" list="0" val="0"/>
                 <prop id="20" list="0" val="0"/>
+                <prop id="23" list="0" val="Idle"/>
                 <prop id="22" list="0" val="false"/>
+                <prop id="25" list="0" val="Idle"/>
+                <prop id="24" list="0" val="Idle"/>
+                <prop id="27" list="0" val="Idle"/>
+                <prop id="26" list="0" val="Idle"/>
             </s>
             <s enabled="true" id="14">
                 <prop id="1" list="0" val="1"/>
@@ -766,7 +782,12 @@
                 <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="21" list="0" val="0"/>
                 <prop id="20" list="0" val="0"/>
+                <prop id="23" list="0" val="Idle"/>
                 <prop id="22" list="0" val="false"/>
+                <prop id="25" list="0" val="Idle"/>
+                <prop id="24" list="0" val="Idle"/>
+                <prop id="27" list="0" val="Idle"/>
+                <prop id="26" list="0" val="Idle"/>
             </s>
             <s enabled="true" id="14">
                 <prop id="1" list="0" val="2"/>
@@ -795,7 +816,12 @@
                 <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="21" list="0" val="0"/>
                 <prop id="20" list="0" val="0"/>
+                <prop id="23" list="0" val="Idle"/>
                 <prop id="22" list="0" val="false"/>
+                <prop id="25" list="0" val="Idle"/>
+                <prop id="24" list="0" val="Idle"/>
+                <prop id="27" list="0" val="Idle"/>
+                <prop id="26" list="0" val="Idle"/>
             </s>
             <s enabled="true" id="14">
                 <prop id="1" list="0" val="1"/>
@@ -824,7 +850,12 @@
                 <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="21" list="0" val="0"/>
                 <prop id="20" list="0" val="0"/>
+                <prop id="23" list="0" val="Idle"/>
                 <prop id="22" list="0" val="false"/>
+                <prop id="25" list="0" val="Idle"/>
+                <prop id="24" list="0" val="Idle"/>
+                <prop id="27" list="0" val="Idle"/>
+                <prop id="26" list="0" val="Idle"/>
             </s>
             <s enabled="true" id="14">
                 <prop id="1" list="0" val="2"/>
