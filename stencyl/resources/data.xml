@@ -750,10 +750,10 @@
                 <prop id="20" list="0" val="0"/>
                 <prop id="23" list="0" val="Idle"/>
                 <prop id="22" list="0" val="false"/>
-                <prop id="25" list="0" val="Idle"/>
-                <prop id="24" list="0" val="Idle"/>
-                <prop id="27" list="0" val="Idle"/>
-                <prop id="26" list="0" val="Idle"/>
+                <prop id="25" list="0" val="Move Left"/>
+                <prop id="24" list="0" val="Move Down"/>
+                <prop id="27" list="0" val="Move Up"/>
+                <prop id="26" list="0" val="Move Right"/>
             </s>
             <s enabled="true" id="14">
                 <prop id="1" list="0" val="1"/>
@@ -784,10 +784,10 @@
                 <prop id="20" list="0" val="0"/>
                 <prop id="23" list="0" val="Idle"/>
                 <prop id="22" list="0" val="false"/>
-                <prop id="25" list="0" val="Idle"/>
-                <prop id="24" list="0" val="Idle"/>
-                <prop id="27" list="0" val="Idle"/>
-                <prop id="26" list="0" val="Idle"/>
+                <prop id="25" list="0" val="Move Left"/>
+                <prop id="24" list="0" val="Move Down"/>
+                <prop id="27" list="0" val="Move Up"/>
+                <prop id="26" list="0" val="Move Right"/>
             </s>
             <s enabled="true" id="14">
                 <prop id="1" list="0" val="2"/>
@@ -818,10 +818,10 @@
                 <prop id="20" list="0" val="0"/>
                 <prop id="23" list="0" val="Idle"/>
                 <prop id="22" list="0" val="false"/>
-                <prop id="25" list="0" val="Idle"/>
-                <prop id="24" list="0" val="Idle"/>
-                <prop id="27" list="0" val="Idle"/>
-                <prop id="26" list="0" val="Idle"/>
+                <prop id="25" list="0" val="Move Left"/>
+                <prop id="24" list="0" val="Move Down"/>
+                <prop id="27" list="0" val="Move Up"/>
+                <prop id="26" list="0" val="Move Right"/>
             </s>
             <s enabled="true" id="14">
                 <prop id="1" list="0" val="1"/>
@@ -852,10 +852,10 @@
                 <prop id="20" list="0" val="0"/>
                 <prop id="23" list="0" val="Idle"/>
                 <prop id="22" list="0" val="false"/>
-                <prop id="25" list="0" val="Idle"/>
-                <prop id="24" list="0" val="Idle"/>
-                <prop id="27" list="0" val="Idle"/>
-                <prop id="26" list="0" val="Idle"/>
+                <prop id="25" list="0" val="Move Left"/>
+                <prop id="24" list="0" val="Move Down"/>
+                <prop id="27" list="0" val="Move Up"/>
+                <prop id="26" list="0" val="Move Right"/>
             </s>
             <s enabled="true" id="14">
                 <prop id="1" list="0" val="2"/>
@@ -869,10 +869,34 @@
         <anim across="1" atlasID="-1" down="1" durations="100" height="26" id="0" loop="true" name="Idle" numframes="1" originx="13" originy="13" width="26">
             <poly data="4,0,0,26,0,26,26,0,26" density="0.1" fric="0.2" gid="-1000" id="0" name="Idle" rest="0.0" sensor="false"/>
         </anim>
+        <anim across="6" atlasID="-1" down="1" durations="100,100,100,100,100,100" height="26" id="1" loop="true" name="Move Down" numframes="6" originx="13" originy="13" width="156">
+            <poly data="4,0,0,26,0,26,26,0,26" density="0.1" fric="0.2" gid="-1000" id="0" name="Move Down" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="6" atlasID="-1" down="1" durations="100,100,100,100,100,100" height="26" id="2" loop="true" name="Move Left" numframes="6" originx="13" originy="13" width="156">
+            <poly data="4,0,0,26,0,26,26,0,26" density="0.1" fric="0.2" gid="-1000" id="0" name="Move Left" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="6" atlasID="-1" down="1" durations="100,100,100,100,100,100" height="26" id="3" loop="true" name="Move Right" numframes="6" originx="13" originy="13" width="156">
+            <poly data="4,0,0,26,0,26,26,0,26" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 3" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="6" atlasID="-1" down="1" durations="100,100,100,100,100,100" height="26" id="4" loop="true" name="Move Up" numframes="6" originx="13" originy="13" width="156">
+            <poly data="4,0,0,26,0,26,26,0,26" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 4" rest="0.0" sensor="false"/>
+        </anim>
     </sprite>
     <sprite atlasID="0" default="0" desc="" height="26" id="29" name="Square" shared="false" width="26">
         <anim across="1" atlasID="-1" down="1" durations="100" height="26" id="0" loop="true" name="Idle" numframes="1" originx="13" originy="13" width="26">
             <poly data="4,0,0,26,0,26,26,0,26" density="0.1" fric="0.2" gid="-1000" id="0" name="Idle" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="6" atlasID="-1" down="1" durations="100,100,100,100,100,100" height="26" id="1" loop="true" name="Move Down" numframes="6" originx="13" originy="13" width="156">
+            <poly data="4,0,0,26,0,26,26,0,26" density="0.1" fric="0.2" gid="-1000" id="0" name="Move Down" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="6" atlasID="-1" down="1" durations="100,100,100,100,100,100" height="26" id="2" loop="true" name="Move Left" numframes="6" originx="13" originy="13" width="156">
+            <poly data="4,0,0,26,0,26,26,0,26" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 2" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="6" atlasID="-1" down="1" durations="100,100,100,100,100,100" height="26" id="3" loop="true" name="Move Right" numframes="6" originx="13" originy="13" width="156">
+            <poly data="4,0,0,26,0,26,26,0,26" density="0.1" fric="0.2" gid="-1000" id="0" name="Move Right" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="6" atlasID="-1" down="1" durations="100,100,100,100,100,100" height="26" id="4" loop="true" name="Move Up" numframes="6" originx="13" originy="13" width="156">
+            <poly data="4,0,0,26,0,26,26,0,26" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 4" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
     <sprite atlasID="0" default="0" desc="" height="38" id="31" name="Square Boss" shared="false" width="38">
@@ -929,10 +953,10 @@
             </s>
             <s enabled="true" id="11">
                 <prop id="19" list="0" val=""/>
+                <prop id="21" list="0" val=""/>
                 <prop id="4" list="1" val="">
                     <text order="0" value="You cannot defeat me!"/>
                 </prop>
-                <prop id="21" list="0" val=""/>
                 <prop id="20" list="0" val="false"/>
                 <prop id="6" list="0" val="100.0"/>
                 <prop id="11" list="0" val="0.0"/>
@@ -993,10 +1017,10 @@
             </s>
             <s enabled="true" id="11">
                 <prop id="19" list="0" val=""/>
+                <prop id="21" list="0" val=""/>
                 <prop id="4" list="1" val="">
                     <text order="0" value="Turn around. This is the end for you!"/>
                 </prop>
-                <prop id="21" list="0" val=""/>
                 <prop id="20" list="0" val="false"/>
                 <prop id="6" list="0" val="100.0"/>
                 <prop id="11" list="0" val="0.0"/>
@@ -1052,10 +1076,10 @@
             </s>
             <s enabled="true" id="11">
                 <prop id="19" list="0" val=""/>
+                <prop id="21" list="0" val=""/>
                 <prop id="4" list="1" val="">
                     <text order="0" value="You cannot win!"/>
                 </prop>
-                <prop id="21" list="0" val=""/>
                 <prop id="20" list="0" val="false"/>
                 <prop id="6" list="0" val="100.0"/>
                 <prop id="11" list="0" val="0.0"/>
@@ -1116,10 +1140,10 @@
             </s>
             <s enabled="true" id="11">
                 <prop id="19" list="0" val=""/>
+                <prop id="21" list="0" val=""/>
                 <prop id="4" list="1" val="">
                     <text order="0" value="What have you accomplished?"/>
                 </prop>
-                <prop id="21" list="0" val=""/>
                 <prop id="20" list="0" val="false"/>
                 <prop id="6" list="0" val="100.0"/>
                 <prop id="11" list="0" val="0.0"/>
@@ -1151,10 +1175,34 @@
         <anim across="1" atlasID="-1" down="1" durations="100" height="38" id="0" loop="true" name="Idle" numframes="1" originx="19" originy="19" width="38">
             <poly data="4,0,0,38,0,38,38,0,38" density="0.1" fric="0.2" gid="-1000" id="0" name="Idle" rest="0.0" sensor="false"/>
         </anim>
+        <anim across="6" atlasID="-1" down="1" durations="100,100,100,100,100,100" height="38" id="1" loop="true" name="Move Down" numframes="6" originx="19" originy="19" width="228">
+            <poly data="4,0,0,38,0,38,38,0,38" density="0.1" fric="0.2" gid="-1000" id="0" name="Move Down" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="6" atlasID="-1" down="1" durations="100,100,100,100,100,100" height="38" id="2" loop="true" name="Move Left" numframes="6" originx="19" originy="19" width="228">
+            <poly data="4,0,0,38,0,38,38,0,38" density="0.1" fric="0.2" gid="-1000" id="0" name="Move Left" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="6" atlasID="-1" down="1" durations="100,100,100,100,100,100" height="38" id="3" loop="true" name="Move Right" numframes="6" originx="19" originy="19" width="228">
+            <poly data="4,0,0,38,0,38,38,0,38" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 3" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="6" atlasID="-1" down="1" durations="100,100,100,100,100,100" height="38" id="4" loop="true" name="Move Up" numframes="6" originx="19" originy="19" width="228">
+            <poly data="4,0,0,38,0,38,38,0,38" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 4" rest="0.0" sensor="false"/>
+        </anim>
     </sprite>
     <sprite atlasID="0" default="0" desc="" height="38" id="43" name="Square Size 2" shared="false" width="38">
         <anim across="1" atlasID="-1" down="1" durations="100" height="38" id="0" loop="true" name="Idle" numframes="1" originx="19" originy="19" width="38">
             <poly data="4,0,0,38,0,38,38,0,38" density="0.1" fric="0.2" gid="-1000" id="0" name="Idle" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="6" atlasID="-1" down="1" durations="100,100,100,100,100,100" height="38" id="1" loop="true" name="Move Down" numframes="6" originx="19" originy="19" width="228">
+            <poly data="4,0,0,38,0,38,38,0,38" density="0.1" fric="0.2" gid="-1000" id="0" name="Move Down" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="6" atlasID="-1" down="1" durations="100,100,100,100,100,100" height="38" id="2" loop="true" name="Move Left" numframes="6" originx="19" originy="19" width="228">
+            <poly data="4,0,0,38,0,38,38,0,38" density="0.1" fric="0.2" gid="-1000" id="0" name="Move Left" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="6" atlasID="-1" down="1" durations="100,100,100,100,100,100" height="38" id="3" loop="true" name="Move Right" numframes="6" originx="19" originy="19" width="228">
+            <poly data="4,0,0,38,0,38,38,0,38" density="0.1" fric="0.2" gid="-1000" id="0" name="Move Right" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="6" atlasID="-1" down="1" durations="100,100,100,100,100,100" height="38" id="4" loop="true" name="Move Up" numframes="6" originx="19" originy="19" width="228">
+            <poly data="4,0,0,38,0,38,38,0,38" density="0.1" fric="0.2" gid="-1000" id="0" name="Move Up" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
     <custom-block blocktag="custom-5" blocktype="NORMAL" code="Boolean((scripts.Design_3_3_TileBasedMovement.tileHasCollision(~,~)))" desc="" global="true" gui="( %0 , %1 ) has collision" id="5" message="tileHasCollision" name="tileHasCollision" oid="-1" return="BOOLEAN" shared="false" snippetID="-1">
