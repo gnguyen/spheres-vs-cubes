@@ -40,9 +40,9 @@
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="Portrait" order="1" type="ACTORTYPE"/>
     </custom-block>
-    <sprite atlasID="0" default="0" desc="" height="96" id="7" name="Circle King" shared="false" width="64">
-        <anim across="1" atlasID="-1" down="1" durations="100" height="96" id="0" loop="true" name="Idle" numframes="1" originx="32" originy="48" width="64">
-            <poly data="4,0,32,64,32,64,96,0,96" density="0.1" fric="0.2" gid="-1000" id="0" name="Idle" rest="0.0" sensor="false"/>
+    <sprite atlasID="0" default="0" desc="" height="77" id="7" name="Circle King" shared="false" width="51">
+        <anim across="1" atlasID="-1" down="1" durations="100" height="77" id="0" loop="true" name="Idle" numframes="1" originx="25" originy="38" width="51">
+            <poly data="4,0,26,51,26,51,77,0,77" density="0.1" fric="0.2" gid="-1000" id="0" name="Idle" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="1" continuous="true" desc="" eventsnippetid="7" fixedrot="false" fric="0.2" gid="3" id="6" ignoreg="false" inertia="1.0" ldamp="0.0" lw="false" mass="1.0" name="Circle King" oid="-1" pausable="true" rest="0.0" shared="false" sprite="7" static="false" touchable="true">
@@ -118,9 +118,9 @@
             <poly data="4,0,0,64,0,64,96,0,96" density="0.1" fric="0.2" gid="-1000" id="0" name="Idle" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
-    <sprite atlasID="0" default="0" desc="" height="77" id="41" name="Circle Prince" shared="false" width="51">
-        <anim across="1" atlasID="-1" down="1" durations="100" height="77" id="0" loop="true" name="Idle" numframes="1" originx="25" originy="38" width="51">
-            <poly data="4,0,26,51,26,51,77,0,77" density="0.1" fric="0.2" gid="-1000" id="0" name="Idle" rest="0.0" sensor="false"/>
+    <sprite atlasID="0" default="0" desc="" height="57" id="41" name="Circle Prince" shared="false" width="38">
+        <anim across="1" atlasID="-1" down="1" durations="100" height="57" id="0" loop="true" name="Idle" numframes="1" originx="19" originy="28" width="38">
+            <poly data="4,0,19,38,19,38,57,0,57" density="0.1" fric="0.2" gid="-1000" id="0" name="Idle" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="25" fixedrot="false" fric="0.2" gid="3" id="40" ignoreg="false" inertia="1.0" ldamp="0.0" lw="false" mass="1.0" name="Circle Prince" oid="-1" pausable="true" rest="0.0" shared="false" sprite="41" static="false" touchable="true">
@@ -178,10 +178,10 @@
                 <prop id="20" list="0" val="0"/>
                 <prop id="23" list="0" val="Idle"/>
                 <prop id="22" list="0" val="0"/>
-                <prop id="25" list="0" val="Idle"/>
-                <prop id="24" list="0" val="Idle"/>
-                <prop id="27" list="0" val="Idle"/>
-                <prop id="26" list="0" val="Idle"/>
+                <prop id="25" list="0" val="Move Left"/>
+                <prop id="24" list="0" val="Move Down"/>
+                <prop id="27" list="0" val="Move Up"/>
+                <prop id="26" list="0" val="Move Right"/>
             </s>
             <s enabled="true" id="14">
                 <prop id="1" list="0" val="1"/>
@@ -195,18 +195,22 @@
         <anim across="1" atlasID="-1" down="1" durations="100" height="26" id="0" loop="true" name="Idle" numframes="1" originx="13" originy="13" width="26">
             <poly data="4,0,0,26,0,26,26,0,26" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
+        <anim across="6" atlasID="-1" down="1" durations="100,100,100,100,100,100" height="26" id="1" loop="true" name="Move Down" numframes="6" originx="13" originy="13" width="156">
+            <poly data="4,0,0,26,0,26,26,0,26" density="0.1" fric="0.2" gid="-1000" id="0" name="Move Down" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="6" atlasID="-1" down="1" durations="100,100,100,100,100,100" height="26" id="2" loop="true" name="Move Left" numframes="6" originx="13" originy="13" width="156">
+            <poly data="4,0,0,26,0,26,26,0,26" density="0.1" fric="0.2" gid="-1000" id="0" name="Move Left" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="6" atlasID="-1" down="1" durations="100,100,100,100,100,100" height="26" id="3" loop="true" name="Move Right" numframes="6" originx="13" originy="13" width="156">
+            <poly data="4,0,0,26,0,26,26,0,26" density="0.1" fric="0.2" gid="-1000" id="0" name="Move Right" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="6" atlasID="-1" down="1" durations="100,100,100,100,100,100" height="26" id="4" loop="true" name="Move Up" numframes="6" originx="13" originy="13" width="156">
+            <poly data="4,0,0,26,0,26,26,0,26" density="0.1" fric="0.2" gid="-1000" id="0" name="Move Up" rest="0.0" sensor="false"/>
+        </anim>
     </sprite>
     <custom-block blocktag="custom-27" blocktype="ACTION" code="~.say(&quot;Dialog Box UI&quot;, &quot;CloseDialog&quot;);" desc="" global="false" gui="For %0 Close Dialog" id="27" message="CloseDialog" name="CloseDialog" oid="-1" return="VOID" shared="false" snippetID="10">
         <blank name="Self" order="0" type="ACTOR"/>
     </custom-block>
-    <sprite atlasID="0" default="0" desc="" height="16" id="45" name="Collision Block" shared="false" width="16">
-        <anim across="1" atlasID="-1" down="1" durations="100" height="16" id="0" loop="true" name="Idle" numframes="1" originx="0" originy="0" width="16">
-            <poly data="4,0,0,16,0,16,16,0,16" density="0.1" fric="0.2" gid="-1000" id="0" name="Idle" rest="0.0" sensor="false"/>
-        </anim>
-    </sprite>
-    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="30" fixedrot="false" fric="0.2" gid="3" id="44" ignoreg="false" inertia="1.0" ldamp="0.0" lw="false" mass="1.0" name="Collision Block" oid="-1" pausable="true" rest="0.0" shared="false" sprite="45" static="true" touchable="true">
-        <snippets/>
-    </actor>
     <custom-block blocktag="custom-21" blocktype="NORMAL" code="Boolean((~.say(&quot;Dialog Box UI&quot;, &quot;DialogBoxTyping&quot;)))" desc="" global="false" gui="Dialog Box Is Typing for %0" id="21" message="DialogBoxTyping" name="DialogBoxTyping" oid="-1" return="BOOLEAN" shared="false" snippetID="10">
         <blank name="Self" order="0" type="ACTOR"/>
     </custom-block>
@@ -953,10 +957,10 @@
             </s>
             <s enabled="true" id="11">
                 <prop id="19" list="0" val=""/>
-                <prop id="21" list="0" val=""/>
                 <prop id="4" list="1" val="">
                     <text order="0" value="You cannot defeat me!"/>
                 </prop>
+                <prop id="21" list="0" val=""/>
                 <prop id="20" list="0" val="false"/>
                 <prop id="6" list="0" val="100.0"/>
                 <prop id="11" list="0" val="0.0"/>
@@ -1017,10 +1021,10 @@
             </s>
             <s enabled="true" id="11">
                 <prop id="19" list="0" val=""/>
-                <prop id="21" list="0" val=""/>
                 <prop id="4" list="1" val="">
                     <text order="0" value="Turn around. This is the end for you!"/>
                 </prop>
+                <prop id="21" list="0" val=""/>
                 <prop id="20" list="0" val="false"/>
                 <prop id="6" list="0" val="100.0"/>
                 <prop id="11" list="0" val="0.0"/>
@@ -1076,10 +1080,10 @@
             </s>
             <s enabled="true" id="11">
                 <prop id="19" list="0" val=""/>
-                <prop id="21" list="0" val=""/>
                 <prop id="4" list="1" val="">
                     <text order="0" value="You cannot win!"/>
                 </prop>
+                <prop id="21" list="0" val=""/>
                 <prop id="20" list="0" val="false"/>
                 <prop id="6" list="0" val="100.0"/>
                 <prop id="11" list="0" val="0.0"/>
@@ -1140,10 +1144,10 @@
             </s>
             <s enabled="true" id="11">
                 <prop id="19" list="0" val=""/>
-                <prop id="21" list="0" val=""/>
                 <prop id="4" list="1" val="">
                     <text order="0" value="What have you accomplished?"/>
                 </prop>
+                <prop id="21" list="0" val=""/>
                 <prop id="20" list="0" val="false"/>
                 <prop id="6" list="0" val="100.0"/>
                 <prop id="11" list="0" val="0.0"/>

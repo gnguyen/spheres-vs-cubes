@@ -15,7 +15,7 @@
     </regions>
     <terrainRegions/>
     <actors>
-        <actor a="0.0" aid="1" c="true" group="3" id="6" name="Circle King 1" sx="1.0" sy="1.0" x="288" y="176" z="0">
+        <actor a="0.0" aid="1" c="true" group="3" id="6" name="Circle King 1" sx="1.0" sy="1.0" x="288" y="186" z="0">
             <snippets>
                 <s enabled="true" id="7"/>
                 <s enabled="true" id="9">
@@ -75,10 +75,10 @@
                 </s>
             </snippets>
         </actor>
-        <actor a="0.0" aid="2" c="false" group="3" id="40" name="Circle Prince 2" sx="1.0" sy="1.0" x="417" y="81" z="0"/>
-        <actor a="0.0" aid="3" c="false" group="3" id="40" name="Circle Prince 3" sx="1.0" sy="1.0" x="320" y="81" z="0"/>
-        <actor a="0.0" aid="4" c="false" group="3" id="40" name="Circle Prince 4" sx="1.0" sy="1.0" x="416" y="298" z="0"/>
-        <actor a="0.0" aid="5" c="false" group="3" id="40" name="Circle Prince 5" sx="1.0" sy="1.0" x="320" y="298" z="0"/>
+        <actor a="0.0" aid="2" c="false" group="3" id="40" name="Circle Prince 2" sx="1.0" sy="1.0" x="417" y="100" z="0"/>
+        <actor a="0.0" aid="3" c="false" group="3" id="40" name="Circle Prince 3" sx="1.0" sy="1.0" x="320" y="100" z="0"/>
+        <actor a="0.0" aid="4" c="false" group="3" id="40" name="Circle Prince 4" sx="1.0" sy="1.0" x="416" y="317" z="0"/>
+        <actor a="0.0" aid="5" c="false" group="3" id="40" name="Circle Prince 5" sx="1.0" sy="1.0" x="320" y="317" z="0"/>
     </actors>
     <snippets>
         <s enabled="true" id="1">
