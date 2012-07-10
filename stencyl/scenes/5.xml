@@ -8,15 +8,12 @@
     <foregrounds/>
     <joints/>
     <regions>
-        <region b="64" g="64" h="96" id="0" name="Right Exit" pts="4,-5.0,48.0,5.0,48.0,5.0,-48.0,-5.0,-48.0" r="64" type="box" w="10" x="630" y="192"/>
-        <region b="64" g="64" h="32" id="1" name="HUD" pts="4,-64.0,16.0,64.0,16.0,64.0,-16.0,-64.0,-16.0" r="64" type="box" w="128" x="512" y="448"/>
+        <region b="64" g="64" h="96" id="0" name="Right Exit" pts="4,-5.0,-48.0,5.0,-48.0,5.0,48.0,-5.0,48.0" r="64" type="box" w="10" x="630" y="192"/>
+        <region b="64" g="64" h="32" id="1" name="HUD" pts="4,-64.0,-16.0,64.0,-16.0,64.0,16.0,-64.0,16.0" r="64" type="box" w="128" x="512" y="448"/>
     </regions>
     <terrainRegions/>
     <actors/>
     <snippets>
-        <s enabled="true" id="35">
-            <prop id="1" list="0" val="1"/>
-        </s>
         <s enabled="true" id="1">
             <prop id="17" list="0" val=""/>
             <prop id="18" list="0" val="-1"/>
@@ -29,6 +26,9 @@
             <prop id="13" list="0" val="0"/>
             <prop id="14" list="0" val="-1"/>
             <prop id="15" list="0" val="0"/>
+        </s>
+        <s enabled="true" id="35">
+            <prop id="1" list="0" val="1"/>
         </s>
         <s enabled="true" id="18">
             <prop id="1" list="0" val="-1"/>
