@@ -964,10 +964,10 @@
             </s>
             <s enabled="true" id="11">
                 <prop id="19" list="0" val=""/>
+                <prop id="21" list="0" val=""/>
                 <prop id="4" list="1" val="">
                     <text order="0" value="You cannot defeat me!"/>
                 </prop>
-                <prop id="21" list="0" val=""/>
                 <prop id="20" list="0" val="false"/>
                 <prop id="6" list="0" val="100.0"/>
                 <prop id="11" list="0" val="0.0"/>
@@ -1028,10 +1028,10 @@
             </s>
             <s enabled="true" id="11">
                 <prop id="19" list="0" val=""/>
+                <prop id="21" list="0" val=""/>
                 <prop id="4" list="1" val="">
                     <text order="0" value="Turn around. This is the end for you!"/>
                 </prop>
-                <prop id="21" list="0" val=""/>
                 <prop id="20" list="0" val="false"/>
                 <prop id="6" list="0" val="100.0"/>
                 <prop id="11" list="0" val="0.0"/>
@@ -1087,10 +1087,10 @@
             </s>
             <s enabled="true" id="11">
                 <prop id="19" list="0" val=""/>
+                <prop id="21" list="0" val=""/>
                 <prop id="4" list="1" val="">
                     <text order="0" value="You cannot win!"/>
                 </prop>
-                <prop id="21" list="0" val=""/>
                 <prop id="20" list="0" val="false"/>
                 <prop id="6" list="0" val="100.0"/>
                 <prop id="11" list="0" val="0.0"/>
@@ -1151,10 +1151,10 @@
             </s>
             <s enabled="true" id="11">
                 <prop id="19" list="0" val=""/>
+                <prop id="21" list="0" val=""/>
                 <prop id="4" list="1" val="">
                     <text order="0" value="What have you accomplished?"/>
                 </prop>
-                <prop id="21" list="0" val=""/>
                 <prop id="20" list="0" val="false"/>
                 <prop id="6" list="0" val="100.0"/>
                 <prop id="11" list="0" val="0.0"/>

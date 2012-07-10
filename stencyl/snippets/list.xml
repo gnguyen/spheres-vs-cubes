@@ -145,13 +145,13 @@
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_11_11_NPC" desc="Attach this to a non player character to allow the Actor to use dialog boxes" description="Attach this to a non player character to allow the Actor to use dialog boxes" design="true" drawOrder="0" id="11" language="" name="NPC" oid="-1" package="" scenespecific="false" shared="false" type="actor">
         <actor default="" desc="" dropdown="" fullname="Player Actor" hidden="true" id="19" name="_PlayerActor" order="10"/>
-        <region default="" desc="" dropdown="" fullname="Dialog Region" hidden="false" id="21" name="_DialogRegion" order="2"/>
         <list default="list" desc="Enter text on each line to set up dialog for a character. After the dialog box finishes displaying one line of text, it will go to the next one. You can have a character say one or more different things." dropdown="" fullname="DialogList" hidden="false" id="4" name="DialogList" order="1">
             <text order="0" value="Dialog Text #1"/>
             <text order="1" value="Dialog Text #2 -- this box will display wrapping when the text gets to be longer than the window can fit."/>
             <text order="2" value="Dialog Text #3"/>
             <text order="3" value="Dialog Text #4"/>
         </list>
+        <region default="" desc="" dropdown="" fullname="Dialog Region" hidden="false" id="21" name="_DialogRegion" order="2"/>
         <boolean default="false" desc="" dropdown="" fullname="Can Trigger?" hidden="true" id="20" name="_CanTrigger" order="11"/>
         <number default="100.0" desc="" dropdown="" fullname="Text Box Width" hidden="true" id="6" name="TextBoxWidth" order="4"/>
         <number default="0.0" desc="" dropdown="" fullname="textIndex" hidden="true" id="11" name="textIndex" order="5"/>
