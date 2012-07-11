@@ -214,6 +214,14 @@
     <custom-block blocktag="custom-27" blocktype="ACTION" code="~.say(&quot;Dialog Box UI&quot;, &quot;CloseDialog&quot;);" desc="" global="false" gui="For %0 Close Dialog" id="27" message="CloseDialog" name="CloseDialog" oid="-1" return="VOID" shared="false" snippetID="10">
         <blank name="Self" order="0" type="ACTOR"/>
     </custom-block>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="50" fixedrot="false" fric="0.2" gid="4" id="91" ignoreg="false" inertia="1.0" ldamp="0.0" lw="false" mass="1.0" name="Collision Block" oid="-1" pausable="true" rest="0.0" shared="false" sprite="92" static="true" touchable="true">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" desc="" height="32" id="92" name="Collision Block" shared="false" width="32">
+        <anim across="1" atlasID="-1" down="1" durations="100" height="32" id="0" loop="true" name="Idle" numframes="1" originx="16" originy="16" width="32">
+            <poly data="4,0,0,32,0,32,32,0,32" density="0.1" fric="0.2" gid="-1000" id="0" name="Idle" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
     <custom-block blocktag="custom-21" blocktype="NORMAL" code="Boolean((~.say(&quot;Dialog Box UI&quot;, &quot;DialogBoxTyping&quot;)))" desc="" global="false" gui="Dialog Box Is Typing for %0" id="21" message="DialogBoxTyping" name="DialogBoxTyping" oid="-1" return="BOOLEAN" shared="false" snippetID="10">
         <blank name="Self" order="0" type="ACTOR"/>
     </custom-block>
@@ -964,10 +972,10 @@
             </s>
             <s enabled="true" id="11">
                 <prop id="19" list="0" val=""/>
-                <prop id="21" list="0" val=""/>
                 <prop id="4" list="1" val="">
                     <text order="0" value="You cannot defeat me!"/>
                 </prop>
+                <prop id="21" list="0" val=""/>
                 <prop id="20" list="0" val="false"/>
                 <prop id="6" list="0" val="100.0"/>
                 <prop id="11" list="0" val="0.0"/>
@@ -1028,10 +1036,10 @@
             </s>
             <s enabled="true" id="11">
                 <prop id="19" list="0" val=""/>
-                <prop id="21" list="0" val=""/>
                 <prop id="4" list="1" val="">
                     <text order="0" value="Turn around. This is the end for you!"/>
                 </prop>
+                <prop id="21" list="0" val=""/>
                 <prop id="20" list="0" val="false"/>
                 <prop id="6" list="0" val="100.0"/>
                 <prop id="11" list="0" val="0.0"/>
@@ -1087,10 +1095,10 @@
             </s>
             <s enabled="true" id="11">
                 <prop id="19" list="0" val=""/>
-                <prop id="21" list="0" val=""/>
                 <prop id="4" list="1" val="">
                     <text order="0" value="You cannot win!"/>
                 </prop>
+                <prop id="21" list="0" val=""/>
                 <prop id="20" list="0" val="false"/>
                 <prop id="6" list="0" val="100.0"/>
                 <prop id="11" list="0" val="0.0"/>
@@ -1151,10 +1159,10 @@
             </s>
             <s enabled="true" id="11">
                 <prop id="19" list="0" val=""/>
-                <prop id="21" list="0" val=""/>
                 <prop id="4" list="1" val="">
                     <text order="0" value="What have you accomplished?"/>
                 </prop>
+                <prop id="21" list="0" val=""/>
                 <prop id="20" list="0" val="false"/>
                 <prop id="6" list="0" val="100.0"/>
                 <prop id="11" list="0" val="0.0"/>
